@@ -57,4 +57,21 @@ sudo dnf install nccl-local-repo-rhel9-2.26.5-cuda12.9-1.0-1.x86_64.rpm
 sudo dnf  install libnccl-2.26.5-1+cuda12.9 libnccl-devel-2.26.5-1+cuda12.9 libnccl-static-2.26.5-1+cuda12.9
 ```
 
+### pytorch
+
+down the zip file here https://pytorch.org/get-started/locally/
+
+or https://download.pytorch.org/libtorch/cu128/libtorch-cxx11-abi-shared-with-deps-2.7.0%2Bcu128.zip
+
+```shell
+wget https://download.pytorch.org/libtorch/cu128/libtorch-cxx11-abi-shared-with-deps-2.7.0%2Bcu128.zip
+mv libtorch-cxx11-abi-shared-with-deps-2.7.0+cu128.zip development/libs
+cd development/libs
+unzip libtorch-cxx11-abi-shared-with-deps-2.7.0+cu128.zip
+```
+
+I'm using cuda 12.9, so pay attention to this PR https://github.com/pytorch/pytorch/issues/152756 and make some changes accordingly
+
+run `check_torch` if the lib is working
+
 ## environment

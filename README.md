@@ -74,4 +74,8 @@ I'm using cuda 12.9, so pay attention to this PR https://github.com/pytorch/pyto
 
 run `check_torch` if the lib is working
 
-## environment
+## references
+
+- C++ Implementation of PyTorch Tutorials for Everyone - https://github.com/prabhuomkar/pytorch-cpp
+- Learning Modern C++ for Finance - https://github.com/QuantDevHacks/LearningModCppFinance/
+- distrobox - https://github.com/89luca89/distrobox?tab=readme-ov-file

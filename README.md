@@ -48,6 +48,40 @@ pip3 install typing
 pip3 install typing_extensions
 ```
 
+## flashlight
+
+```shell
+cat > flashlight_algo_fix.patch << 'EOF'
+diff --git a/flashlight/fl/tensor/backend/af/ArrayFireReductions.cpp b/flashlight/fl/tensor/backend/af/ArrayFireReductions.cpp
+index xxxxxxx..xxxxxxx 100644
+--- a/flashlight/fl/tensor/backend/af/ArrayFireReductions.cpp
++++ b/flashlight/fl/tensor/backend/af/ArrayFireReductions.cpp
+@@ -13,6 +13,7 @@
+ #include "flashlight/fl/tensor/backend/af/ArrayFireTensor.h"
+
+ #include <stdexcept>
++#include <algorithm>
+
+ #include "flashlight/fl/tensor/Index.h"
+ #include "flashlight/fl/tensor/backend/af/Utils.h"
+diff --git a/flashlight/fl/tensor/TensorBase.cpp b/flashlight/fl/tensor/TensorBase.cpp
+index xxxxxxx..xxxxxxx 100644
+--- a/flashlight/fl/tensor/TensorBase.cpp
++++ b/flashlight/fl/tensor/TensorBase.cpp
+@@ -10,6 +10,7 @@
+ #include "flashlight/fl/tensor/TensorBase.h"
+
+ #include <cstring>
++#include <algorithm>
+ #include <memory>
+ #include <numeric>
+ #include <sstream>
+EOF
+
+cd /media/wdhome/github/khofesh/machine-learning-cpp/development/libs/sources/flashlight/
+patch -p1 < /path/to/flashlight_algo_fix.patch
+```
+
 ### nccl
 
 download nccl from here https://developer.nvidia.com/nccl

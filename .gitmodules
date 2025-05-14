@@ -1,3 +1,6 @@
 [submodule "Hands-on-Machine-learning-with-C-Second-Edition"]
 	path = Hands-on-Machine-learning-with-C-Second-Edition
 	url = https://github.com/PacktPublishing/Hands-on-Machine-learning-with-C-Second-Edition.git
+[submodule "LearningModCppFinance"]
+	path = LearningModCppFinance
+	url = https://github.com/QuantDevHacks/LearningModCppFinance.git

@@ -8,6 +8,9 @@ set(CMAKE_CXX_STANDARD_REQUIRED ON)
 set(LIBS_DIR ${CMAKE_CURRENT_SOURCE_DIR}/development/libs)
 set(CMAKE_PREFIX_PATH ${LIBS_DIR}/libtorch ${CMAKE_PREFIX_PATH})
 
+# add "include" directories for all dependencies
+include_directories(${LIBS_DIR}/include)
+
 # Enable testing
 enable_testing()
 

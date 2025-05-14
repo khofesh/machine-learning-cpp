@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.22 FATAL_ERROR)
-project(eigen_samples)
+project(eigen)
 
 find_package(OpenMP)
 find_package(Eigen3 3.4.0 REQUIRED)

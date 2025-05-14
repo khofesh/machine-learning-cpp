@@ -10,7 +10,7 @@ set(CMAKE_CXX_EXTENSIONS OFF)
 
 set(CMAKE_VERBOSE_MAKEFILE ON)
 
-set(CMAKE_PREFIX_PATH ${CMAKE_PREFIX_PATH} /media/wdhome/github/khofesh/machine-learning-cpp/development/libs/)
+# set(CMAKE_PREFIX_PATH ${CMAKE_PREFIX_PATH} /media/wdhome/github/khofesh/machine-learning-cpp/development/libs/)
 
 add_compile_options(
        -Wall -Wextra -msse3

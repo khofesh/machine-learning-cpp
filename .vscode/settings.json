@@ -3,6 +3,7 @@
     "*.yaml": "yaml",
     "*.html": "html",
     "*.css": "css",
-    "vector": "cpp"
+    "vector": "cpp",
+    "iostream": "cpp"
   }
 }

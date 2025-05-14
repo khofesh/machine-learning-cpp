@@ -16,5 +16,14 @@ int main()
         // init
         a = MyMatrix33f::Zero();
         std::cout << "zero matrix:\n" << a << "\n";
+
+        a = MyMatrix33f::Identity();
+        std::cout << "identity matrix:\n" << a << "\n";
+
+        v = MyVector3f::Random();
+        std::cout << "random vector:\n" << v << "\n";
+
+        a << 1, 2, 3, 4, 5, 6, 7, 8, 9;
+        std::cout << "comma initialized matrix:\n" << a << "\n";
     }
 }

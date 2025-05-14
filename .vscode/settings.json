@@ -1,3 +1,8 @@
 {
-  "cmake.sourceDirectory": "/media/wdhome/github/khofesh/machine-learning-cpp/check_torch"
+  "files.associations": {
+    "*.yaml": "yaml",
+    "*.html": "html",
+    "*.css": "css",
+    "vector": "cpp"
+  }
 }

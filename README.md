@@ -108,6 +108,12 @@ I'm using cuda 12.9, so pay attention to this PR https://github.com/pytorch/pyto
 
 run `check_torch` if the lib is working
 
+## folder structure
+
+```shell
+tree -I "Hands-on-Machine-learning-with-C-Second-Edition|LearningModCppFinance" -L 4
+```
+
 ## references
 
 - C++ Implementation of PyTorch Tutorials for Everyone - https://github.com/prabhuomkar/pytorch-cpp

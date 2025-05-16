@@ -112,9 +112,21 @@ int main()
                   << a << "\n";
         std::cout << "b: \n"
                   << b << "\n";
-        
+
         auto c = a + b;
-        std::cout << "columns broadcasting: \n" << c << "\n";
+        std::cout << "columns broadcasting: \n"
+                  << c << "\n";
+    }
+    {
+        auto m = xt::random::rand<double>({2, 2});
+        auto v = xt::random::rand<double>({2, 1});
+        std::cout << "m: \n"
+                  << m << "\n";
+        std::cout << "v: \n"
+                  << v << "\n";
+        auto c = m + v;
+        std::cout << "m + v: \n"
+                  << c << "\n";
     }
 
     return 0;

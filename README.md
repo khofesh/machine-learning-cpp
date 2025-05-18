@@ -42,6 +42,7 @@ sudo dnf install ocl-icd-devel opencl-headers
 
 sudo dnf install fmt-devel
 sudo dnf install nnpack-devel
+sudo dnf install mlpack-devel
 
 pip3 install pyyaml
 pip3 install typing

@@ -1,3 +1,4 @@
 add_subdirectory(eigen)
 add_subdirectory(xtensor)
 add_subdirectory(blaze)
+add_subdirectory(arrayfire)

@@ -10,7 +10,7 @@ mkdir -p libs/sources
 # Blaze
 . ./install_lib.sh https://bitbucket.org/blaze-lib/blaze.git v3.8.2
 
-# Firearray
+# Arrayfire
 . ./install_lib.sh https://github.com/arrayfire/arrayfire.git v3.9.0 -DBUILD_TESTING=OFF -DAF_BUILD_EXAMPLES=OFF -DAF_BUILD_OPENCL=OFF
 
 # Flashlight

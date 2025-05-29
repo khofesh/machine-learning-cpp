@@ -44,6 +44,9 @@ sudo dnf install fmt-devel
 sudo dnf install nnpack-devel
 sudo dnf install mlpack-devel
 
+# arrayfire
+sudo dnf install spdlog-devel
+
 pip3 install pyyaml
 pip3 install typing
 pip3 install typing_extensions
@@ -108,6 +111,18 @@ unzip libtorch-cxx11-abi-shared-with-deps-2.7.0+cu128.zip
 I'm using cuda 12.9, so pay attention to this PR https://github.com/pytorch/pytorch/issues/152756 and make some changes accordingly
 
 run `check_torch` if the lib is working
+
+### arrayfire
+
+download arrayfire here https://arrayfire.com/binaries/
+
+```shell
+cd development
+mkdir arrayfire
+wget https://arrayfire.gateway.scarf.sh/linux/3.9.0/ArrayFire.sh
+chmod +x ArrayFire-v3.9.0_Linux_x86_64.sh
+./ArrayFire-v3.9.0_Linux_x86_64.sh
+```
 
 ## folder structure
 

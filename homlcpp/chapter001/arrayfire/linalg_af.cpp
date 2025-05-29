@@ -47,6 +47,51 @@ int main()
 
     // arithmetic
     {
+        auto a = af::array(af::dim4(2, 2), {1, 2, 3, 4});
+        a = a.as(af::dtype::f32);
+        auto b = a.copy();
+
+        // element wise
+        auto result = a * b;
+        std::cout << "element wise a * b:\n";
+        af_print(result);
+
+        a = b * 4;
+        std::cout << "element wise a = b * 4:\n";
+        af_print(a);
+
+        // matrix
+        result = a + b;
+        std::cout << "matrices a + b:\n";
+        af_print(result);
+
+        a += b;
+        std::cout << "matrices a += b: \n";
+        af_print(a);
+
+        result = af::matmul(a, b);
+        std::cout << "matrices a * b: \n";
+        af_print(result);
+    }
+
+    // partial access
+    {
+        auto m = af::iota(af::dim4(4, 4));
+        std::cout << "4x4 matrix:\n";
+        af_print(m);
+
+        auto b = m(af::seq(1, 2), af::seq(1, 2));
+        std::cout << "middle of 4x4 matrix:\n";
+        af_print(b);
+
+        b *= 0;
+        std::cout << "modified middle of 4x4 matrix:\n";
+        af_print(m);
+
+        m.row(1) += 3;
+        std::cout << "modified row of 4x4 matrix:\n";
+        af_print(m);
+
         
     }
     

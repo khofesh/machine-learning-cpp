@@ -1,7 +1,7 @@
 cmake_minimum_required(VERSION 3.22)
 project(arrayfire_samples)
 
-set(LIBS_DIR ${CMAKE_CURRENT_SOURCE_DIR}/../../../development/libs)
+set(LIBS_DIR ${CMAKE_CURRENT_SOURCE_DIR}/../../../development/arrayfire)
 set(CMAKE_PREFIX_PATH ${LIBS_DIR}/share/ArrayFire ${CMAKE_PREFIX_PATH})
 
 find_package(ArrayFire)

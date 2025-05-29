@@ -121,7 +121,17 @@ cd development
 mkdir arrayfire
 wget https://arrayfire.gateway.scarf.sh/linux/3.9.0/ArrayFire.sh
 chmod +x ArrayFire-v3.9.0_Linux_x86_64.sh
+
 ./ArrayFire-v3.9.0_Linux_x86_64.sh
+
+# say "no" during
+## Do you accept the license? [yn]:
+## y
+## By default the ArrayFire will be installed in:
+##   "/path/to/development/arrayfire/ArrayFire-3.9.0-Linux"
+## Do you want to include the subdirectory ArrayFire-3.9.0-Linux?
+## Saying no will install in: "/path/to/development/arrayfire" [Yn]:
+##
 ```
 
 ## folder structure

@@ -92,7 +92,23 @@ int main()
         std::cout << "modified row of 4x4 matrix:\n";
         af_print(m);
 
-        
+        m.col(2) /= 4;
+        std::cout << "modified col of 4x4 matrix:\n";
+        af_print(m);
+    }
+
+    // broadcasting
+    {
+        auto mat = af::constant(2, 4, 4);
+        std::cout << "uniform 4x4 matrix:\n";
+        af_print(mat);
+
+        auto vec = af::array(4, {1, 2, 3, 4});
+
+        mat = af::batchFunc(vec, mat, [](const auto &a, const auto &b) {return a + b;});
+
+        std::cout << "sum broadcasted over rows:\n";
+        af_print(mat);
     }
     
     return 0;

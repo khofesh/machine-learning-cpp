@@ -23,8 +23,8 @@ add_compile_definitions(
         $<$<CONFIG:RELEASE>:NDEBUG>
 )
 
-add_executable(linalg_eigen "linalg_eigen.cc")
+add_executable(linalg_eigen "linalg_eigen.cpp")
 target_link_libraries(linalg_eigen Eigen3::Eigen OpenMP::OpenMP_CXX)
 
-# add_executable(linreg_eigen "linreg_eigen.cc")
-# target_link_libraries(linreg_eigen Eigen3::Eigen OpenMP::OpenMP_CXX)
+add_executable(linreg_eigen "linreg_eigen.cpp")
+target_link_libraries(linreg_eigen Eigen3::Eigen OpenMP::OpenMP_CXX)

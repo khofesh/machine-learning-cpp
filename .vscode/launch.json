@@ -1,0 +1,68 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Debug dlib example",
+      "type": "cppdbg",
+      "request": "launch",
+      "program": "${workspaceFolder}/build/homlcpp/chapter001/dlib/linalg_dlib",
+      "args": [],
+      "stopAtEntry": false,
+      "cwd": "${workspaceFolder}",
+      "environment": [],
+      "externalConsole": false,
+      "MIMode": "gdb",
+      "setupCommands": [
+        {
+          "description": "Enable pretty-printing for gdb",
+          "text": "-enable-pretty-printing",
+          "ignoreFailures": true
+        }
+      ],
+      "preLaunchTask": "CMake: Build",
+      "miDebuggerPath": "/usr/bin/gdb"
+    },
+    {
+      "name": "Debug Eigen example",
+      "type": "cppdbg",
+      "request": "launch",
+      "program": "${workspaceFolder}/build/homlcpp/chapter001/eigen/linreg_eigen",
+      "args": [],
+      "stopAtEntry": false,
+      "cwd": "${workspaceFolder}",
+      "environment": [],
+      "externalConsole": false,
+      "MIMode": "gdb",
+      "setupCommands": [
+        {
+          "description": "Enable pretty-printing for gdb",
+          "text": "-enable-pretty-printing",
+          "ignoreFailures": true
+        }
+      ],
+      "preLaunchTask": "CMake: Build",
+      "miDebuggerPath": "/usr/bin/gdb"
+    },
+    {
+      "name": "Debug Current CMake Target",
+      "type": "cppdbg",
+      "request": "launch",
+      "program": "${command:cmake.launchTargetPath}",
+      "args": [],
+      "stopAtEntry": false,
+      "cwd": "${workspaceFolder}",
+      "environment": [],
+      "externalConsole": false,
+      "MIMode": "gdb",
+      "setupCommands": [
+        {
+          "description": "Enable pretty-printing for gdb",
+          "text": "-enable-pretty-printing",
+          "ignoreFailures": true
+        }
+      ],
+      "preLaunchTask": "CMake: Build",
+      "miDebuggerPath": "/usr/bin/gdb"
+    }
+  ]
+}

@@ -145,3 +145,7 @@ tree -I "Hands-on-Machine-learning-with-C-Second-Edition|LearningModCppFinance" 
 - C++ Implementation of PyTorch Tutorials for Everyone - https://github.com/prabhuomkar/pytorch-cpp
 - Learning Modern C++ for Finance - https://github.com/QuantDevHacks/LearningModCppFinance/
 - distrobox - https://github.com/89luca89/distrobox?tab=readme-ov-file
+
+## TODO
+
+- [ ] use vcpkg

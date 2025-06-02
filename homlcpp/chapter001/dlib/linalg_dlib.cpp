@@ -6,6 +6,8 @@ int main()
   // definitions
   {
     dlib::matrix<double, 3, 1> y;
+
+    // dynamically syzed matrix
     dlib::matrix<double> m(3, 3);
     m.set_size(6, 6);
   }
@@ -90,7 +92,7 @@ int main()
     // simulate broadcasting with partial access
     dlib::matrix<float, 2, 1> v;
     v = 10, 10;
-    
+
     dlib::matrix<float, 2, 3> m;
     m = 1, 2, 3, 4, 5, 6;
     for (int i = 0; i < m.nc(); ++i)

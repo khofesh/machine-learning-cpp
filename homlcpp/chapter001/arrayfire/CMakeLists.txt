@@ -26,6 +26,6 @@ add_compile_definitions(
 add_executable(linalg_af "linalg_af.cpp")
 target_link_libraries(linalg_af ArrayFire::afcpu)
 
-# add_executable(linreg_af "linreg_af.cpp")
-# target_link_libraries(linreg_af ArrayFire::afcpu)
+add_executable(linreg_af "linreg_af.cpp")
+target_link_libraries(linreg_af ArrayFire::afcpu)
 

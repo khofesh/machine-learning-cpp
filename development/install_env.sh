@@ -17,7 +17,7 @@ mkdir -p libs/sources
 . ./install_lib.sh https://github.com/flashlight/flashlight.git v0.4.0 -DFL_BUILD_TESTS=OFF -DFL_BUILD_EXAMPLES=OFF -DFL_USE_CPU=ON  -DFL_USE_ONEDNN=OFF -DArrayFire_DIR=/development/libs/share/ArrayFire/cmake/ -DFL_ARRAYFIRE_USE_CPU=ON -DFL_BUILD_DISTRIBUTED=OFF
 
 # # DLib
-. ./install_lib.sh https://github.com/davisking/dlib v19.24.6
+# . ./install_lib.sh https://github.com/davisking/dlib v19.24.6
 
 # Armadillo
 . ./install_lib.sh https://gitlab.com/conradsnicta/armadillo-code 14.0.x

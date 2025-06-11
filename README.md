@@ -134,6 +134,18 @@ chmod +x ArrayFire-v3.9.0_Linux_x86_64.sh
 ##
 ```
 
+### dlib
+
+I got frustrated with this, so I use vcpkg
+
+```shell
+git clone https://github.com/Microsoft/vcpkg.git
+cd vcpkg
+
+./bootstrap-vcpkg.sh  # on linux
+./vcpkg install dlib
+```
+
 ## folder structure
 
 ```shell

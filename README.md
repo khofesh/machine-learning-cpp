@@ -146,6 +146,13 @@ cd vcpkg
 ./vcpkg install dlib
 ```
 
+### chapter 2
+
+```shell
+# cd to your vcpkg
+./vcpkg install nlohmann-json
+```
+
 ## folder structure
 
 ```shell

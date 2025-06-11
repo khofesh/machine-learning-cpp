@@ -12,7 +12,7 @@
 build
 
 # data folders
-data
+# data
 
 # Prerequisites
 *.d

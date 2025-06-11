@@ -26,6 +26,6 @@ add_compile_definitions(
 add_executable(linalg_blaze "linalg_blaze.cpp")
 target_link_libraries(linalg_blaze blas lapack blaze::blaze)
 
-# add_executable(linreg_blaze "linreg_blaze.cc")
-# target_link_libraries(linreg_blaze blas lapack blaze::blaze)
+add_executable(linreg_blaze "linreg_blaze.cpp")
+target_link_libraries(linreg_blaze blas lapack blaze::blaze)
 

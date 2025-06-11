@@ -6,7 +6,7 @@
 #include <blaze/Math.h>
 
 typedef blaze::DynamicMatrix<float, blaze::columnMajor> Matrix;
-typedef blaze::DynamicMatrix<float, blaze::columnVector> Vector;
+typedef blaze::DynamicVector<float, blaze::columnVector> Vector;
 
 std::pair<Vector, Matrix> GenerateData(size_t n)
 {

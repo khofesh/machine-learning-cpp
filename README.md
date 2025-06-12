@@ -134,9 +134,7 @@ chmod +x ArrayFire-v3.9.0_Linux_x86_64.sh
 ##
 ```
 
-### dlib
-
-I got frustrated with this, so I use vcpkg
+### vcpkg
 
 ```shell
 git clone https://github.com/Microsoft/vcpkg.git
@@ -146,11 +144,31 @@ cd vcpkg
 ./vcpkg install dlib
 ```
 
-### chapter 2
+VS Code Settings
+
+1. Open VS Code settings (Ctrl+, or Cmd+,)
+2. Search for "cmake configure environment"
+3. Add the environment variable in CMake: Configure Environment:
+
+```
+json{
+  "VCPKG_ROOT": "/home/fahmad/vcpkg"
+}
+```
+
+chapter 2
 
 ```shell
 # cd to your vcpkg
+cd /to/your/path
+# optional
+./vcpkg upgrade --no-dry-run
+
+# json
 ./vcpkg install nlohmann-json
+# fast-cpp-csv-parser
+./vcpkg install fast-cpp-csv-parser
+
 ```
 
 ## folder structure

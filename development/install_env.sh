@@ -32,7 +32,7 @@ mkdir -p libs/sources
 . ./install_lib.sh https://github.com/xtensor-stack/xtensor-blas 0.21.0
 
 # NlohmanJson
-. ./install_lib.sh https://github.com/nlohmann/json.git v3.11.3 -DJSON_BuildTests=OFF
+# . ./install_lib.sh https://github.com/nlohmann/json.git v3.11.3 -DJSON_BuildTests=OFF
 
 # mlpack
 . ./install_lib.sh https://github.com/mlpack/mlpack 4.5.0 -DBUILD_PYTHON_BINDINGS=OFF -DBUILD_TESTS=OFF -DDOWNLOAD_DEPENDENCIES=ON
@@ -50,7 +50,7 @@ mkdir -p libs/sources
 . ./checkout_lib.sh https://github.com/Kolkir/plotcpp c86bd4f5d9029986f0d5f368450d79f0dd32c7e4
 
 # fast-cpp-csv-parser
-. ./checkout_lib.sh https://github.com/ben-strasser/fast-cpp-csv-parser 4ade42d5f8c454c6c57b3dce9c51c6dd02182a66
+# . ./checkout_lib.sh https://github.com/ben-strasser/fast-cpp-csv-parser 4ade42d5f8c454c6c57b3dce9c51c6dd02182a66
 
 # tapkee
 . ./install_lib.sh https://github.com/lisitsyn/tapkee ba5f052d2548ec03dcc6a4ac0ed8deeb79f1d43a -DBUILD_TESTS=OFF

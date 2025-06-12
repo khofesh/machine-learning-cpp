@@ -2,6 +2,7 @@
 #define REVIEW_H
 
 #include <string>
+#include <cstdint>
 
 struct Review {
   std::string confidence;

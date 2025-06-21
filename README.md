@@ -167,6 +167,9 @@ cd /to/your/path
 
 # fast-cpp-csv-parser
 ./vcpkg install fast-cpp-csv-parser
+
+# mlpack
+./vcpkg install mlpack
 ```
 
 **I haven't succeeded in installing flashlight-cuda or flashlight-cpu using vcpkg, this is the steps I've tried**

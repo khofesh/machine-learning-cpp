@@ -1,4 +1,4 @@
-cmake_minimum_required(VERSION 3.0)
+cmake_minimum_required(VERSION 3.10)
 project(mlpack-csv-sample)
 
 include(FindPackageHandleStandardArgs)
@@ -32,5 +32,5 @@ add_compile_definitions(
 
 include_directories(${MLPACK_INCLUDE_DIR})
 
-add_executable(csv_mlpack csv_mlpack.cc)
+add_executable(csv_mlpack csv_mlpack.cpp)
 target_link_libraries(csv_mlpack OpenMP::OpenMP_CXX)

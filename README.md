@@ -95,7 +95,7 @@ sudo dnf install nccl-local-repo-rhel9-2.26.5-cuda12.9-1.0-1.x86_64.rpm
 sudo dnf  install libnccl-2.26.5-1+cuda12.9 libnccl-devel-2.26.5-1+cuda12.9 libnccl-static-2.26.5-1+cuda12.9
 ```
 
-### pytorch
+## pytorch
 
 down the zip file here https://pytorch.org/get-started/locally/
 
@@ -112,7 +112,7 @@ I'm using cuda 12.9, so pay attention to this PR https://github.com/pytorch/pyto
 
 run `check_torch` if the lib is working
 
-### arrayfire
+## arrayfire
 
 download arrayfire here https://arrayfire.com/binaries/
 
@@ -134,7 +134,7 @@ chmod +x ArrayFire-v3.9.0_Linux_x86_64.sh
 ##
 ```
 
-### vcpkg
+## vcpkg
 
 ```shell
 git clone https://github.com/Microsoft/vcpkg.git
@@ -166,8 +166,30 @@ cd /to/your/path
 
 # json
 ./vcpkg install nlohmann-json
+
 # fast-cpp-csv-parser
 ./vcpkg install fast-cpp-csv-parser
+```
+
+**I haven't succeeded in installing flashlight-cuda or flashlight-cpu using vcpkg, this is the steps I've tried**
+
+```shell
+mkdir cudnn
+cd cudnn
+wget https://developer.download.nvidia.com/compute/cudnn/redist/cudnn/linux-x86_64/cudnn-linux-x86_64-9.10.2.21_cuda12-archive.tar.xz # https://developer.nvidia.com/cudnn-downloads?target_os=Linux&target_arch=x86_64&Distribution=Agnostic&cuda_version=12
+tar xvf cudnn-linux-x86_64-9.10.2.21_cuda12-archive.tar.xz
+cd cudnn-linux-x86_64-9.10.2.21_cuda12-archive
+sudo cp include/cudnn*.h /usr/local/cuda-12.9/include/
+sudo cp lib/libcudnn* /usr/local/cuda-12.9/lib64/
+sudo chmod a+r /usr/local/cuda-12.9/include/cudnn*.h /usr/local/cuda-12.9/lib64/libcudnn*
+export ArrayFire_DIR=/media/wdhome/github/khofesh/machine-learning-cpp/development/arrayfire
+export LD_LIBRARY_PATH=/media/wdhome/github/khofesh/machine-learning-cpp/development/arrayfire/lib64:$LD_LIBRARY_PATH
+export CXXFLAGS="-Wno-template-id-cdtor"
+export CFLAGS="-Wno-template-id-cdtor"
+cd ~/vcpkg
+./vcpkg install flashlight-cuda
+
+# flashlight cpu
 
 ```
 

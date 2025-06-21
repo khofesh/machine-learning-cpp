@@ -14,7 +14,7 @@ mkdir -p libs/sources
 . ./install_lib.sh https://github.com/arrayfire/arrayfire.git v3.9.0 -DBUILD_TESTING=OFF -DAF_BUILD_EXAMPLES=OFF -DAF_BUILD_OPENCL=OFF
 
 # Flashlight
-. ./install_lib.sh https://github.com/flashlight/flashlight.git v0.4.0 -DFL_BUILD_TESTS=OFF -DFL_BUILD_EXAMPLES=OFF -DFL_USE_CPU=ON  -DFL_USE_ONEDNN=OFF -DArrayFire_DIR=/development/libs/share/ArrayFire/cmake/ -DFL_ARRAYFIRE_USE_CPU=ON -DFL_BUILD_DISTRIBUTED=OFF
+. ./install_lib.sh https://github.com/flashlight/flashlight.git v0.4.0 -DFL_BUILD_TESTS=OFF -DFL_BUILD_EXAMPLES=OFF -DFL_USE_CPU=ON  -DFL_USE_ONEDNN=OFF -DArrayFire_DIR=/development/arrayfire/share/ArrayFire/cmake/ -DFL_ARRAYFIRE_USE_CPU=ON -DFL_BUILD_DISTRIBUTED=OFF
 
 # # DLib
 # . ./install_lib.sh https://github.com/davisking/dlib v19.24.6
@@ -63,5 +63,3 @@ mkdir -p libs/sources
 
 # return back
 cd $DEV_DIR
-
-

@@ -52,7 +52,7 @@ pip3 install typing
 pip3 install typing_extensions
 ```
 
-## flashlight
+### flashlight
 
 ```shell
 cat > flashlight_algo_fix.patch << 'EOF'
@@ -95,7 +95,7 @@ sudo dnf install nccl-local-repo-rhel9-2.26.5-cuda12.9-1.0-1.x86_64.rpm
 sudo dnf  install libnccl-2.26.5-1+cuda12.9 libnccl-devel-2.26.5-1+cuda12.9 libnccl-static-2.26.5-1+cuda12.9
 ```
 
-## pytorch
+### pytorch
 
 down the zip file here https://pytorch.org/get-started/locally/
 
@@ -112,7 +112,7 @@ I'm using cuda 12.9, so pay attention to this PR https://github.com/pytorch/pyto
 
 run `check_torch` if the lib is working
 
-## arrayfire
+### arrayfire
 
 download arrayfire here https://arrayfire.com/binaries/
 
@@ -132,7 +132,7 @@ sudo echo '/opt/ArrayFire-3.9.0-Linux/lib64' | sudo tee /etc/ld.so.conf.d/arrayf
 sudo ldconfig
 ```
 
-## vcpkg
+### vcpkg
 
 ```shell
 git clone https://github.com/Microsoft/vcpkg.git

@@ -122,16 +122,14 @@ mkdir arrayfire
 wget https://arrayfire.gateway.scarf.sh/linux/3.9.0/ArrayFire.sh
 chmod +x ArrayFire-v3.9.0_Linux_x86_64.sh
 
-./ArrayFire-v3.9.0_Linux_x86_64.sh
-
-# say "no" during
-## Do you accept the license? [yn]:
-## y
-## By default the ArrayFire will be installed in:
-##   "/path/to/development/arrayfire/ArrayFire-3.9.0-Linux"
-## Do you want to include the subdirectory ArrayFire-3.9.0-Linux?
-## Saying no will install in: "/path/to/development/arrayfire" [Yn]:
-##
+# https://arrayfire.org/docs/installing.htm#gsc.tab=0
+sudo ./ArrayFire-v3.9.0_Linux_x86_64.sh --include-subdir --prefix=/opt
+# env
+echo 'export LD_LIBRARY_PATH=/opt/ArrayFire-3.9.0-Linux/lib64:$LD_LIBRARY_PATH' >> ~/.bashrc
+source ~/.bashrc
+# or
+sudo echo '/opt/ArrayFire-3.9.0-Linux/lib64' | sudo tee /etc/ld.so.conf.d/arrayfire.conf
+sudo ldconfig
 ```
 
 ## vcpkg

@@ -170,6 +170,12 @@ cd /to/your/path
 
 # mlpack
 ./vcpkg install mlpack
+
+# HighFive
+./vcpkg install highfive
+
+# hdf5
+./vcpkg install hdf5
 ```
 
 **I haven't succeeded in installing flashlight-cuda or flashlight-cpu using vcpkg, this is the steps I've tried**

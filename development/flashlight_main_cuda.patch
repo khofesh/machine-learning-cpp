@@ -1,0 +1,49 @@
+diff --git a/CMakeLists.txt b/CMakeLists.txt
+index b94143f7..171fb213 100644
+--- a/CMakeLists.txt
++++ b/CMakeLists.txt
+@@ -12,7 +12,7 @@ if(CCACHE_PROGRAM)
+ endif()
+ 
+ list(APPEND CMAKE_MODULE_PATH "${CMAKE_CURRENT_SOURCE_DIR}/cmake")
+-set(CMAKE_CXX_STANDARD 17)
++set(CMAKE_CXX_STANDARD 20)
+ set(CMAKE_CXX_STANDARD_REQUIRED ON)
+ 
+ # The CUDA standard is still C++14 to enable interopability with
+diff --git a/cmake/flashlightConfig.cmake.in b/cmake/flashlightConfig.cmake.in
+index 1ebdae59..ae09ee2a 100644
+--- a/cmake/flashlightConfig.cmake.in
++++ b/cmake/flashlightConfig.cmake.in
+@@ -54,6 +54,7 @@ if (@FL_BUILD_STANDALONE@)
+     endif()
+   endif()
+   if (@FL_USE_CUDA@)
++    find_dependency(CUDAToolkit)
+     if (@FL_USE_CUDNN@)
+       find_dependency(CUDNN 7.1)
+     endif()
+diff --git a/flashlight/fl/tensor/TensorBase.h b/flashlight/fl/tensor/TensorBase.h
+index 194be288..be5702c0 100644
+--- a/flashlight/fl/tensor/TensorBase.h
++++ b/flashlight/fl/tensor/TensorBase.h
+@@ -7,6 +7,7 @@
+ 
+ #pragma once
+ 
++#include <cstdint>
+ #include <functional>
+ #include <memory>
+ #include <optional>
+diff --git a/flashlight/fl/tensor/backend/jit/ShapeInference.cpp b/flashlight/fl/tensor/backend/jit/ShapeInference.cpp
+index b93f75a0..b54e42ca 100644
+--- a/flashlight/fl/tensor/backend/jit/ShapeInference.cpp
++++ b/flashlight/fl/tensor/backend/jit/ShapeInference.cpp
+@@ -7,6 +7,7 @@
+ 
+ #include "flashlight/fl/tensor/backend/jit/ShapeInference.h"
+ 
++#include <algorithm>
+ #include <cassert>
+ #include <numeric>
+ #include <sstream>

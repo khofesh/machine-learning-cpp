@@ -97,6 +97,38 @@ cd /media/wdhome/github/khofesh/machine-learning-cpp/development/libs/sources/fl
 patch -p1 < /path/to/flashlight_algo_fix.patch
 ```
 
+### flashlight (CUDA 13)
+
+`main` (commit `439bb526`, "Fix CUDA 13 nvToolsExt build break") builds with CUDA 13.3 through ArrayFire's CUDA backend. The GCC 16 host compiler still needs a few fixes; they are kept as `development/flashlight_main_cuda.patch`:
+
+- `CMakeLists.txt`: `CMAKE_CXX_STANDARD 17` -> `20` (`std::unordered_map::contains`)
+- `cmake/flashlightConfig.cmake.in`: `find_dependency(CUDAToolkit)` so consumers get `CUDA::cublas`
+- `TensorBase.h`: add `<cstdint>` (GCC 16 no longer includes it transitively)
+- `backend/jit/ShapeInference.cpp`: add `<algorithm>` for `std::reverse`
+
+Build/install (NVCC 13.3 rejects GCC > 15, hence `NVCC_PREPEND_FLAGS`; this also applies to CMake's CUDA compiler detection, where `CMAKE_CUDA_FLAGS` is not used):
+
+```shell
+cd development
+patch -p1 -d libs/sources/flashlight < flashlight_main_cuda.patch   # if starting fresh
+export NVCC_PREPEND_FLAGS="-allow-unsupported-compiler"
+FORCE_REBUILD=1 . ./install_lib.sh https://github.com/flashlight/flashlight.git main \
+  -DFL_BUILD_TESTS=OFF -DFL_BUILD_EXAMPLES=OFF \
+  -DFL_USE_CUDA=ON -DFL_USE_CPU=OFF -DFL_USE_ONEDNN=OFF \
+  -DArrayFire_DIR=/opt/ArrayFire-3.9.0-Linux/share/ArrayFire/cmake/ \
+  -DFL_ARRAYFIRE_USE_CUDA=ON -DFL_ARRAYFIRE_USE_CPU=OFF \
+  -DFL_BUILD_DISTRIBUTED=OFF -DCMAKE_CUDA_ARCHITECTURES=86
+```
+
+At runtime ArrayFire's bundled `libnvrtc.so.12` needs `libnvrtc-builtins.so.12.2` from `/opt/ArrayFire-3.9.0-Linux/lib64`, which is not in the loader cache, so add it once:
+
+```shell
+echo '/opt/ArrayFire-3.9.0-Linux/lib64' | sudo tee /etc/ld.so.conf.d/arrayfire.conf
+sudo ldconfig
+```
+
+Only one ArrayFire backend may be linked at a time: `FL_ARRAYFIRE_USE_CUDA=ON` requires `FL_ARRAYFIRE_USE_CPU=OFF` (and vice versa), otherwise CMake errors out.
+
 ### nccl
 
 download nccl from here https://developer.nvidia.com/nccl
@@ -131,11 +163,11 @@ download arrayfire here https://arrayfire.com/binaries/
 ```shell
 cd development
 mkdir arrayfire
-wget https://arrayfire.gateway.scarf.sh/linux/3.9.0/ArrayFire.sh
-chmod +x ArrayFire-v3.9.0_Linux_x86_64.sh
+wget https://arrayfire.s3.amazonaws.com/3.10.0/ArrayFire-v3.10.0_Linux_x86_64.sh
+chmod +x ArrayFire-v3.10.0_Linux_x86_64.sh
 
 # https://arrayfire.org/docs/installing.htm#gsc.tab=0
-sudo ./ArrayFire-v3.9.0_Linux_x86_64.sh --include-subdir --prefix=/opt
+sudo ./ArrayFire-v3.10.0_Linux_x86_64.sh --include-subdir --prefix=/opt
 # env
 echo 'export LD_LIBRARY_PATH=/opt/ArrayFire-3.9.0-Linux/lib64:$LD_LIBRARY_PATH' >> ~/.bashrc
 source ~/.bashrc

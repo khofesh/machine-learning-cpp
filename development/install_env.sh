@@ -17,11 +17,15 @@ mkdir -p libs/sources
 # nvcc from CUDA 13.3 rejects the GCC 16 host compiler; allow it during CMake
 # compiler detection and the build. Patches in flashlight_main_cuda.patch are
 # applied in-tree, so force a rebuild.
-export NVCC_PREPEND_FLAGS="-allow-unsupported-compiler"
-FORCE_REBUILD=1 . ./install_lib.sh https://github.com/flashlight/flashlight.git main -DFL_BUILD_TESTS=OFF -DFL_BUILD_EXAMPLES=OFF -DFL_USE_CUDA=ON -DFL_USE_CPU=OFF -DFL_USE_ONEDNN=OFF -DArrayFire_DIR=/opt/ArrayFire-3.10.0-Linux/share/ArrayFire/cmake/ -DFL_ARRAYFIRE_USE_CUDA=ON -DFL_ARRAYFIRE_USE_CPU=OFF -DFL_BUILD_DISTRIBUTED=OFF -DCMAKE_CUDA_ARCHITECTURES=86
+# export NVCC_PREPEND_FLAGS="-allow-unsupported-compiler"
+# FORCE_REBUILD=1 . ./install_lib.sh https://github.com/flashlight/flashlight.git main -DFL_BUILD_TESTS=OFF -DFL_BUILD_EXAMPLES=OFF -DFL_USE_CUDA=ON -DFL_USE_CPU=OFF -DFL_USE_ONEDNN=OFF -DArrayFire_DIR=/opt/ArrayFire-3.10.0-Linux/share/ArrayFire/cmake/ -DFL_ARRAYFIRE_USE_CUDA=ON -DFL_ARRAYFIRE_USE_CPU=OFF -DFL_BUILD_DISTRIBUTED=OFF -DCMAKE_CUDA_ARCHITECTURES=86
 
-# # DLib
-# . ./install_lib.sh https://github.com/davisking/dlib v19.24.6
+# DLib with CUDA (CUDA 13.3 + cuDNN 9.12 in /opt/cudnn/current).  nvcc from
+# CUDA 13.3 rejects the GCC 16 host compiler, so allow it explicitly.
+export NVCC_PREPEND_FLAGS="-allow-unsupported-compiler"
+FORCE_REBUILD=1 . ./install_lib.sh https://github.com/davisking/dlib v20.0.1 \
+    -DCMAKE_BUILD_TYPE=Release -DDLIB_USE_CUDA=ON -DDLIB_NO_GUI_SUPPORT=OFF \
+    -DCMAKE_CUDA_ARCHITECTURES=86 -DCUDNN_ROOT=/opt/cudnn/current
 
 # # Armadillo
 # . ./install_lib.sh https://gitlab.com/conradsnicta/armadillo-code 14.0.x

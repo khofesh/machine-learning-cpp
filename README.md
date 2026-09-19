@@ -222,21 +222,21 @@ cd /to/your/path
 ./vcpkg install hdf5
 ```
 
-### dlib (GUI support)
+### dlib (CUDA + GUI support)
 
-vcpkg's `dlib` port is built with `DLIB_NO_GUI_SUPPORT=ON`, so the GUI example (`chapter002/img/dlib`) cannot link. Build the bundled dlib source with X11 GUI support and install it into `development/libs`:
+vcpkg's `dlib` port has neither GUI nor CUDA, so `chapter002/img/dlib` (GUI) and `chapter004/dlib` (CUDA) use the dlib source in `development/libs/sources/dlib`, built with both and installed into `development/libs`. This is the active `DLib` step in `development/install_env.sh`:
 
 ```shell
-cmake -S development/libs/sources/dlib -B development/libs/sources/dlib/build \
-  -DCMAKE_BUILD_TYPE=Release \
-  -DDLIB_NO_GUI_SUPPORT=OFF \
-  -DBUILD_SHARED_LIBS=OFF \
-  -DCMAKE_INSTALL_PREFIX=$PWD/development/libs
-cmake --build development/libs/sources/dlib/build --parallel
-cmake --install development/libs/sources/dlib/build
+cd development
+export NVCC_PREPEND_FLAGS="-allow-unsupported-compiler"   # CUDA 13.3 vs GCC 16
+FORCE_REBUILD=1 . ./install_lib.sh https://github.com/davisking/dlib v20.0.1 \
+  -DCMAKE_BUILD_TYPE=Release -DDLIB_USE_CUDA=ON -DDLIB_NO_GUI_SUPPORT=OFF \
+  -DCMAKE_CUDA_ARCHITECTURES=86 -DCUDNN_ROOT=/opt/cudnn/current
 ```
 
-`homlcpp/chapter002/img/dlib/CMakeLists.txt` points `dlib_DIR` at this install (`development/libs/lib64/cmake/dlib`); the other dlib examples keep using vcpkg's build.
+dlib requires cuDNN alongside CUDA; `FindCUDNN.cmake` in v20.0.1 locates it via `-DCUDNN_ROOT`. `homlcpp/chapter002/img/dlib` and `homlcpp/chapter004/dlib` point `dlib_DIR` at this install (`development/libs/lib64/cmake/dlib`); the other dlib examples keep using vcpkg's build.
+
+ArrayFire ships its own cuDNN 9.8 and puts `/opt/ArrayFire-3.10.0-Linux/lib64` first in `LD_LIBRARY_PATH`, shadowing the system cuDNN 9.12 dlib links against. `chapter004/dlib` links with `--disable-new-dtags` (DT_RPATH) so it always resolves `/opt/cudnn/current/lib`.
 
 ### build notes for newer packages
 

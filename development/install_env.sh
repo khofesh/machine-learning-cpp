@@ -11,14 +11,14 @@ mkdir -p libs/sources
 # . ./install_lib.sh https://bitbucket.org/blaze-lib/blaze.git v3.8.2
 
 # Arrayfire
-# . ./install_lib.sh https://github.com/arrayfire/arrayfire.git v3.9.0 -DBUILD_TESTING=OFF -DAF_BUILD_EXAMPLES=OFF -DAF_BUILD_OPENCL=OFF
+# . ./install_lib.sh https://github.com/arrayfire/arrayfire.git v3.10.0 -DBUILD_TESTING=OFF -DAF_BUILD_EXAMPLES=OFF -DAF_BUILD_OPENCL=OFF
 
 # Flashlight (CUDA 13 via main)
 # nvcc from CUDA 13.3 rejects the GCC 16 host compiler; allow it during CMake
 # compiler detection and the build. Patches in flashlight_main_cuda.patch are
 # applied in-tree, so force a rebuild.
 export NVCC_PREPEND_FLAGS="-allow-unsupported-compiler"
-FORCE_REBUILD=1 . ./install_lib.sh https://github.com/flashlight/flashlight.git main -DFL_BUILD_TESTS=OFF -DFL_BUILD_EXAMPLES=OFF -DFL_USE_CUDA=ON -DFL_USE_CPU=OFF -DFL_USE_ONEDNN=OFF -DArrayFire_DIR=/opt/ArrayFire-3.9.0-Linux/share/ArrayFire/cmake/ -DFL_ARRAYFIRE_USE_CUDA=ON -DFL_ARRAYFIRE_USE_CPU=OFF -DFL_BUILD_DISTRIBUTED=OFF -DCMAKE_CUDA_ARCHITECTURES=86
+FORCE_REBUILD=1 . ./install_lib.sh https://github.com/flashlight/flashlight.git main -DFL_BUILD_TESTS=OFF -DFL_BUILD_EXAMPLES=OFF -DFL_USE_CUDA=ON -DFL_USE_CPU=OFF -DFL_USE_ONEDNN=OFF -DArrayFire_DIR=/opt/ArrayFire-3.10.0-Linux/share/ArrayFire/cmake/ -DFL_ARRAYFIRE_USE_CUDA=ON -DFL_ARRAYFIRE_USE_CPU=OFF -DFL_BUILD_DISTRIBUTED=OFF -DCMAKE_CUDA_ARCHITECTURES=86
 
 # # DLib
 # . ./install_lib.sh https://github.com/davisking/dlib v19.24.6

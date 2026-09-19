@@ -19,7 +19,7 @@ add_compile_definitions(
 # flashlight is installed manually under development/libs; ArrayFire lives in /opt
 list(APPEND CMAKE_PREFIX_PATH
      "${CMAKE_CURRENT_LIST_DIR}/../../../../development/libs"
-     "/opt/ArrayFire-3.9.0-Linux")
+     "/opt/ArrayFire-3.10.0-Linux")
 find_package(flashlight CONFIG REQUIRED)
 
 find_path(FAST_CPP_CSV_PARSER_INCLUDE_DIR csv.h

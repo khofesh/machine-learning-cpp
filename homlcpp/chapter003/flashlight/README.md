@@ -15,7 +15,7 @@ Requires flashlight from `development/libs` and ArrayFire from `/opt` (wired in 
 
 ## Run
 
-If `/opt/ArrayFire-3.9.0-Linux/lib64` is not in the loader cache, prefix the run with `LD_LIBRARY_PATH=/opt/ArrayFire-3.9.0-Linux/lib64:$LD_LIBRARY_PATH` (or add it to `/etc/ld.so.conf.d/arrayfire.conf` once):
+If `/opt/ArrayFire-3.10.0-Linux/lib64` is not in the loader cache, prefix the run with `LD_LIBRARY_PATH=/opt/ArrayFire-3.10.0-Linux/lib64:$LD_LIBRARY_PATH` (or add it to `/etc/ld.so.conf.d/arrayfire.conf` once):
 
 ```bash
 ./build/homlcpp/chapter003/flashlight/grid_fl <polynomial_degree> <learning_rate> <batch_size>

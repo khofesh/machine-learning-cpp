@@ -115,15 +115,15 @@ export NVCC_PREPEND_FLAGS="-allow-unsupported-compiler"
 FORCE_REBUILD=1 . ./install_lib.sh https://github.com/flashlight/flashlight.git main \
   -DFL_BUILD_TESTS=OFF -DFL_BUILD_EXAMPLES=OFF \
   -DFL_USE_CUDA=ON -DFL_USE_CPU=OFF -DFL_USE_ONEDNN=OFF \
-  -DArrayFire_DIR=/opt/ArrayFire-3.9.0-Linux/share/ArrayFire/cmake/ \
+  -DArrayFire_DIR=/opt/ArrayFire-3.10.0-Linux/share/ArrayFire/cmake/ \
   -DFL_ARRAYFIRE_USE_CUDA=ON -DFL_ARRAYFIRE_USE_CPU=OFF \
   -DFL_BUILD_DISTRIBUTED=OFF -DCMAKE_CUDA_ARCHITECTURES=86
 ```
 
-At runtime ArrayFire's bundled `libnvrtc.so.12` needs `libnvrtc-builtins.so.12.2` from `/opt/ArrayFire-3.9.0-Linux/lib64`, which is not in the loader cache, so add it once:
+At runtime ArrayFire's bundled `libnvrtc.so.12` needs `libnvrtc-builtins.so.12.2` from `/opt/ArrayFire-3.10.0-Linux/lib64`, which is not in the loader cache, so add it once:
 
 ```shell
-echo '/opt/ArrayFire-3.9.0-Linux/lib64' | sudo tee /etc/ld.so.conf.d/arrayfire.conf
+echo '/opt/ArrayFire-3.10.0-Linux/lib64' | sudo tee /etc/ld.so.conf.d/arrayfire.conf
 sudo ldconfig
 ```
 
@@ -169,10 +169,10 @@ chmod +x ArrayFire-v3.10.0_Linux_x86_64.sh
 # https://arrayfire.org/docs/installing.htm#gsc.tab=0
 sudo ./ArrayFire-v3.10.0_Linux_x86_64.sh --include-subdir --prefix=/opt
 # env
-echo 'export LD_LIBRARY_PATH=/opt/ArrayFire-3.9.0-Linux/lib64:$LD_LIBRARY_PATH' >> ~/.bashrc
+echo 'export LD_LIBRARY_PATH=/opt/ArrayFire-3.10.0-Linux/lib64:$LD_LIBRARY_PATH' >> ~/.bashrc
 source ~/.bashrc
 # or
-sudo echo '/opt/ArrayFire-3.9.0-Linux/lib64' | sudo tee /etc/ld.so.conf.d/arrayfire.conf
+sudo echo '/opt/ArrayFire-3.10.0-Linux/lib64' | sudo tee /etc/ld.so.conf.d/arrayfire.conf
 sudo ldconfig
 ```
 

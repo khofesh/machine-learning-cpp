@@ -1,7 +1,7 @@
 cmake_minimum_required(VERSION 3.10)
 
 # Set ArrayFire paths - using system installation in /opt
-set(ARRAYFIRE_ROOT /opt/ArrayFire-3.9.0-Linux)
+set(ARRAYFIRE_ROOT /opt/ArrayFire-3.10.0-Linux)
 
 # Add ArrayFire to CMAKE_PREFIX_PATH for find_package
 list(APPEND CMAKE_PREFIX_PATH ${ARRAYFIRE_ROOT})
@@ -119,7 +119,7 @@ else()
     
     # Add RPATH so the executable can find the libraries at runtime
     set_target_properties(linalg_af PROPERTIES
-        INSTALL_RPATH "/opt/ArrayFire-3.9.0-Linux/lib64"
+        INSTALL_RPATH "/opt/ArrayFire-3.10.0-Linux/lib64"
         BUILD_WITH_INSTALL_RPATH TRUE
         INSTALL_RPATH_USE_LINK_PATH TRUE
     )
@@ -149,7 +149,7 @@ else()
     
     # Add RPATH so the executable can find the libraries at runtime
     set_target_properties(linreg_af PROPERTIES
-        INSTALL_RPATH "/opt/ArrayFire-3.9.0-Linux/lib64"
+        INSTALL_RPATH "/opt/ArrayFire-3.10.0-Linux/lib64"
         BUILD_WITH_INSTALL_RPATH TRUE
         INSTALL_RPATH_USE_LINK_PATH TRUE
     )

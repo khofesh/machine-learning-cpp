@@ -180,6 +180,8 @@ cd /to/your/path
 
 **I haven't succeeded in installing flashlight-cuda or flashlight-cpu using vcpkg, this is the steps I've tried**
 
+https://www.if-not-true-then-false.com/2024/install-nvidia-cudnn-on-fedora/
+
 ```shell
 mkdir cudnn
 cd cudnn

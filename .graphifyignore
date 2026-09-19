@@ -1,0 +1,8 @@
+build/
+temp/
+cudnn/
+datasets/
+development/
+graphify-out/
+Hands-on-Machine-learning-with-C-Second-Edition/
+LearningModCppFinance/

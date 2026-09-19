@@ -1923,18 +1923,6 @@
       "source_location": "L280"
     },
     {
-      "id": "readme_todo",
-      "label": "TODO",
-      "_origin": "ast",
-      "community": 4,
-      "community_name": "local development environment",
-      "file_type": "document",
-      "node_kind": "heading",
-      "norm_label": "todo",
-      "source_file": "README.md",
-      "source_location": "L286"
-    },
-    {
       "id": "readme_vcpkg",
       "label": "vcpkg",
       "_origin": "ast",
@@ -4262,17 +4250,6 @@
     },
     {
       "source": "readme_hands_on_machine_learning_with_c_2nd_edition",
-      "target": "readme_todo",
-      "relation": "contains",
-      "_origin": "ast",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "README.md",
-      "source_location": "L286",
-      "weight": 1.0
-    },
-    {
-      "source": "readme_hands_on_machine_learning_with_c_2nd_edition",
       "target": "readme_cuda_version_on_local",
       "relation": "contains",
       "_origin": "ast",
@@ -4583,5 +4560,5 @@
     }
   ],
   "hyperedges": [],
-  "built_at_commit": "846d17158f34c3de19a04cda142e305848ae4ed8"
+  "built_at_commit": "8ae3264cbade053dff2d36a1520a5e49de3d4ae7"
 }

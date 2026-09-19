@@ -102,6 +102,7 @@ patch -p1 < /path/to/flashlight_algo_fix.patch
 download nccl from here https://developer.nvidia.com/nccl
 
 ```shell
+# adjust the +cudaXX suffix to match the installed toolkit (CUDA 13.3 here)
 sudo dnf install nccl-local-repo-rhel9-2.26.5-cuda12.9-1.0-1.x86_64.rpm
 sudo dnf  install libnccl-2.26.5-1+cuda12.9 libnccl-devel-2.26.5-1+cuda12.9 libnccl-static-2.26.5-1+cuda12.9
 ```
@@ -189,6 +190,30 @@ cd /to/your/path
 ./vcpkg install hdf5
 ```
 
+### dlib (GUI support)
+
+vcpkg's `dlib` port is built with `DLIB_NO_GUI_SUPPORT=ON`, so the GUI example (`chapter002/img/dlib`) cannot link. Build the bundled dlib source with X11 GUI support and install it into `development/libs`:
+
+```shell
+cmake -S development/libs/sources/dlib -B development/libs/sources/dlib/build \
+  -DCMAKE_BUILD_TYPE=Release \
+  -DDLIB_NO_GUI_SUPPORT=OFF \
+  -DBUILD_SHARED_LIBS=OFF \
+  -DCMAKE_INSTALL_PREFIX=$PWD/development/libs
+cmake --build development/libs/sources/dlib/build --parallel
+cmake --install development/libs/sources/dlib/build
+```
+
+`homlcpp/chapter002/img/dlib/CMakeLists.txt` points `dlib_DIR` at this install (`development/libs/lib64/cmake/dlib`); the other dlib examples keep using vcpkg's build.
+
+### build notes for newer packages
+
+- **HDF5 2.2.0** (vcpkg): use config mode (`find_package(HDF5 CONFIG REQUIRED)`) so the imported target pulls in zlib/libaec transitively. Module mode only links `libhdf5.a`, which fails with undefined `inflate`/`SZ_*` symbols.
+- **mlpack 4.8**: the `mlpack::data::` namespace was removed; use `mlpack::DatasetInfo`, `mlpack::Load`, `mlpack::MinMaxScaler`, `mlpack::StandardScaler`.
+- **libtorch 2.14**: requires C++20.
+- **CUDA 13.3 + GCC 16**: nvcc rejects GCC > 15 as host compiler; the root `CMakeLists.txt` appends `-allow-unsupported-compiler` to `CMAKE_CUDA_FLAGS`.
+- GUI examples (`img-opencv`, `img-dlib`) are interactive; run them under `xvfb-run` for headless smoke tests.
+
 **I haven't succeeded in installing flashlight-cuda or flashlight-cpu using vcpkg, this is the steps I've tried**
 
 https://www.if-not-true-then-false.com/2024/install-nvidia-cudnn-on-fedora/
@@ -199,9 +224,10 @@ cd cudnn
 wget https://developer.download.nvidia.com/compute/cudnn/redist/cudnn/linux-x86_64/cudnn-linux-x86_64-9.10.2.21_cuda12-archive.tar.xz # https://developer.nvidia.com/cudnn-downloads?target_os=Linux&target_arch=x86_64&Distribution=Agnostic&cuda_version=12
 tar xvf cudnn-linux-x86_64-9.10.2.21_cuda12-archive.tar.xz
 cd cudnn-linux-x86_64-9.10.2.21_cuda12-archive
-sudo cp include/cudnn*.h /usr/local/cuda-12.9/include/
-sudo cp lib/libcudnn* /usr/local/cuda-12.9/lib64/
-sudo chmod a+r /usr/local/cuda-12.9/include/cudnn*.h /usr/local/cuda-12.9/lib64/libcudnn*
+# pick the archive matching your toolkit (cuda13 for CUDA 13.3); /usr/local/cuda points at the active one
+sudo cp include/cudnn*.h /usr/local/cuda/include/
+sudo cp lib/libcudnn* /usr/local/cuda/lib64/
+sudo chmod a+r /usr/local/cuda/include/cudnn*.h /usr/local/cuda/lib64/libcudnn*
 export ArrayFire_DIR=/media/wdhome/github/khofesh/machine-learning-cpp/development/arrayfire
 export LD_LIBRARY_PATH=/media/wdhome/github/khofesh/machine-learning-cpp/development/arrayfire/lib64:$LD_LIBRARY_PATH
 export CXXFLAGS="-Wno-template-id-cdtor"

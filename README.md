@@ -1,5 +1,16 @@
 # Hands-on machine learning with C++ 2nd edition
 
+## cuda version on local
+
+```shell
+$ nvcc --version
+nvcc: NVIDIA (R) Cuda compiler driver
+Copyright (c) 2005-2026 NVIDIA Corporation
+Built on Tue_Jun_09_02:43:40_PM_PDT_2026
+Cuda compilation tools, release 13.3, V13.3.73
+Build cuda_13.3.r13.3/compiler.38244171_0
+```
+
 ## local development environment
 
 installing several dependencies
@@ -99,16 +110,16 @@ sudo dnf  install libnccl-2.26.5-1+cuda12.9 libnccl-devel-2.26.5-1+cuda12.9 libn
 
 down the zip file here https://pytorch.org/get-started/locally/
 
-or https://download.pytorch.org/libtorch/cu128/libtorch-cxx11-abi-shared-with-deps-2.7.0%2Bcu128.zip
+or https://download.pytorch.org/libtorch/cu132/libtorch-shared-with-deps-2.14.0%2Bcu132.zip
 
 ```shell
-wget https://download.pytorch.org/libtorch/cu128/libtorch-cxx11-abi-shared-with-deps-2.7.0%2Bcu128.zip
-mv libtorch-cxx11-abi-shared-with-deps-2.7.0+cu128.zip development/libs
+wget https://download.pytorch.org/libtorch/cu132/libtorch-shared-with-deps-2.14.0%2Bcu132.zip
+mv libtorch-shared-with-deps-2.14.0+cu132.zip development/libs
 cd development/libs
-unzip libtorch-cxx11-abi-shared-with-deps-2.7.0+cu128.zip
+unzip libtorch-shared-with-deps-2.14.0+cu132.zip
 ```
 
-I'm using cuda 12.9, so pay attention to this PR https://github.com/pytorch/pytorch/issues/152756 and make some changes accordingly
+libtorch 2.14 requires C++20 (`check_torch` is built with `CXX_STANDARD 20`). CUDA 13.3 rejects GCC > 15 as host compiler, so the root `CMakeLists.txt` adds `-allow-unsupported-compiler` to `CMAKE_CUDA_FLAGS`.
 
 run `check_torch` if the lib is working
 

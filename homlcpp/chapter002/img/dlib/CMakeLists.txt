@@ -1,6 +1,7 @@
 cmake_minimum_required(VERSION 3.22)
 project(img-dlib)
 
+set(dlib_DIR ${CMAKE_SOURCE_DIR}/development/libs/lib64/cmake/dlib)
 find_package(dlib 19.24 REQUIRED)
 
 set(CMAKE_CXX_STANDARD_REQUIRED ON)

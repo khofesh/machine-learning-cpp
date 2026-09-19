@@ -15,8 +15,8 @@ int main(int argc, char **argv)
             if (fs::exists(argv[1]))
             {
                 arma::mat dataset;
-                mlpack::data::DatasetInfo info;
-                mlpack::data::Load(argv[1], dataset, info, /*fail with error*/ true);
+                mlpack::DatasetInfo info;
+                mlpack::Load(argv[1], dataset, info, /*fail with error*/ true);
                 std::cout << "Number of dimensions: " << info.Dimensionality() << std::endl;
                 std::cout << "Number of classes: " << info.NumMappings(4) << std::endl;
 
@@ -24,7 +24,7 @@ int main(int argc, char **argv)
                 labels = arma::conv_to<arma::Row<size_t>>::from(dataset.row(dataset.n_rows - 1));
                 dataset.shed_row(dataset.n_rows - 1);
 
-                mlpack::data::MinMaxScaler min_max_scaler;
+                mlpack::MinMaxScaler min_max_scaler;
                 min_max_scaler.Fit(dataset);
 
                 arma::mat scaled_dataset;
@@ -34,7 +34,7 @@ int main(int argc, char **argv)
 
                 min_max_scaler.InverseTransform(scaled_dataset, dataset);
 
-                mlpack::data::StandardScaler standard_scaler;
+                mlpack::StandardScaler standard_scaler;
                 standard_scaler.Fit(dataset);
 
                 standard_scaler.Transform(dataset, scaled_dataset);

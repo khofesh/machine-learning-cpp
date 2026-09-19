@@ -15,6 +15,11 @@ include(${VCPKG_DIR}/scripts/buildsystems/vcpkg.cmake)
 set(LIBS_DIR ${CMAKE_CURRENT_SOURCE_DIR}/development/libs)
 set(CMAKE_PREFIX_PATH ${LIBS_DIR}/libtorch ${CMAKE_PREFIX_PATH})
 
+# CUDA 13.3 rejects GCC > 15 as host compiler; allow it explicitly
+if(CMAKE_CXX_COMPILER_ID STREQUAL "GNU" AND CMAKE_CXX_COMPILER_VERSION VERSION_GREATER 15)
+    set(CMAKE_CUDA_FLAGS "${CMAKE_CUDA_FLAGS} -allow-unsupported-compiler")
+endif()
+
 # add "include" directories for all dependencies (keep for other libs)
 # causes dlib vcpkg
 # make it available to subdirectories that need it

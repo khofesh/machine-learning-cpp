@@ -1123,7 +1123,7 @@
       "node_kind": "heading",
       "norm_label": "ast-grep",
       "source_file": "AGENTS.md",
-      "source_location": "L78"
+      "source_location": "L80"
     },
     {
       "id": "agents_build",
@@ -1135,7 +1135,7 @@
       "node_kind": "heading",
       "norm_label": "build",
       "source_file": "AGENTS.md",
-      "source_location": "L14"
+      "source_location": "L16"
     },
     {
       "id": "agents_code_style",
@@ -1147,7 +1147,7 @@
       "node_kind": "heading",
       "norm_label": "code style",
       "source_file": "AGENTS.md",
-      "source_location": "L37"
+      "source_location": "L39"
     },
     {
       "id": "agents_context_retrieval_policy",
@@ -1159,7 +1159,7 @@
       "node_kind": "heading",
       "norm_label": "context retrieval policy",
       "source_file": "AGENTS.md",
-      "source_location": "L46"
+      "source_location": "L48"
     },
     {
       "id": "agents_graphify",
@@ -1171,7 +1171,7 @@
       "node_kind": "heading",
       "norm_label": "graphify",
       "source_file": "AGENTS.md",
-      "source_location": "L84"
+      "source_location": "L86"
     },
     {
       "id": "agents_layout",
@@ -1183,7 +1183,7 @@
       "node_kind": "heading",
       "norm_label": "layout",
       "source_file": "AGENTS.md",
-      "source_location": "L5"
+      "source_location": "L7"
     },
     {
       "id": "agents_machine_learning_cpp_agent_instructions",
@@ -1207,7 +1207,7 @@
       "node_kind": "heading",
       "norm_label": "response style",
       "source_file": "AGENTS.md",
-      "source_location": "L25"
+      "source_location": "L27"
     },
     {
       "id": "agents_rtk_rust_token_killer_token_optimized_cli",
@@ -1219,7 +1219,19 @@
       "node_kind": "heading",
       "norm_label": "rtk (rust token killer) - token-optimized cli",
       "source_file": "AGENTS.md",
-      "source_location": "L61"
+      "source_location": "L63"
+    },
+    {
+      "id": "todo",
+      "label": "todo.md",
+      "_origin": "ast",
+      "community": 22,
+      "community_name": "todo.md",
+      "file_type": "document",
+      "node_kind": "page",
+      "norm_label": "todo.md",
+      "source_file": "todo.md",
+      "source_location": "L1"
     },
     {
       "id": "homlcpp_chapter001_xtensor_linalg_xtensor",
@@ -2828,7 +2840,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "AGENTS.md",
-      "source_location": "L14",
+      "source_location": "L16",
       "weight": 1.0
     },
     {
@@ -2839,7 +2851,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "AGENTS.md",
-      "source_location": "L25",
+      "source_location": "L27",
       "weight": 1.0
     },
     {
@@ -2850,7 +2862,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "AGENTS.md",
-      "source_location": "L37",
+      "source_location": "L39",
       "weight": 1.0
     },
     {
@@ -2861,18 +2873,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "AGENTS.md",
-      "source_location": "L46",
-      "weight": 1.0
-    },
-    {
-      "source": "agents_machine_learning_cpp_agent_instructions",
-      "target": "agents_layout",
-      "relation": "contains",
-      "_origin": "ast",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "AGENTS.md",
-      "source_location": "L5",
+      "source_location": "L48",
       "weight": 1.0
     },
     {
@@ -2883,7 +2884,18 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "AGENTS.md",
-      "source_location": "L61",
+      "source_location": "L63",
+      "weight": 1.0
+    },
+    {
+      "source": "agents_machine_learning_cpp_agent_instructions",
+      "target": "agents_layout",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "AGENTS.md",
+      "source_location": "L7",
       "weight": 1.0
     },
     {
@@ -2894,7 +2906,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "AGENTS.md",
-      "source_location": "L78",
+      "source_location": "L80",
       "weight": 1.0
     },
     {
@@ -2905,7 +2917,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "AGENTS.md",
-      "source_location": "L84",
+      "source_location": "L86",
       "weight": 1.0
     },
     {
@@ -3682,5 +3694,5 @@
     }
   ],
   "hyperedges": [],
-  "built_at_commit": "fd1e77f6562c3afd0dcae7e0dabdebee0dd5e1f9"
+  "built_at_commit": "7519ab252bea1688962fd4c1566931556aba315e"
 }

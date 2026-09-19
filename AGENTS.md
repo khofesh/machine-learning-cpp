@@ -15,14 +15,14 @@ don't make changes to `Hands-on-Machine-learning-with-C-Second-Edition` and `Lea
 
 ## Build
 
-- C++17, CMake >= 3.10, Fedora, GCC, CUDA 12.9
+- C++17 (C++20 for libtorch-dependent code), CMake >= 3.10, Fedora, GCC, CUDA 13.3
 - Dependencies via vcpkg at `/home/fahmad/vcpkg` (toolchain included in root `CMakeLists.txt`); libtorch from `development/libs/libtorch`; ArrayFire in `/opt`
 - Configure: `cmake -B build -S . -DCMAKE_BUILD_TYPE=Debug`
 - Build: `cmake --build build --parallel`
 - Build one target: `cmake --build build --target <name>`
 - New example: add a subdirectory with its own `CMakeLists.txt` and register it with `add_subdirectory` in the parent
 - Libraries in `development/libs/include` need `target_include_directories(<target> PRIVATE ${MANUAL_LIBS_INCLUDE_DIR})`
-- Library install quirks (flashlight patch, cudnn, nccl, libtorch + CUDA 12.9) are documented in `README.md`
+- Library install quirks (flashlight patch, cudnn, nccl, libtorch + CUDA 13.3) are documented in `README.md`
 
 ## Response Style
 

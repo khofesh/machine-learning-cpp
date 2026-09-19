@@ -1,16 +1,16 @@
 # Graph Report - machine-learning-cpp  (2026-09-19)
 
 ## Corpus Check
-- 38 files · ~86,243 words
+- 39 files · ~86,356 words
 - Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary
-- 152 nodes · 162 edges · 22 communities (12 shown, 3 thin omitted)
+- 153 nodes · 162 edges · 23 communities (12 shown, 3 thin omitted)
 - Extraction: 99% EXTRACTED · 1% INFERRED · 0% AMBIGUOUS · INFERRED: 2 edges (avg confidence: 0.85)
 - Token cost: 0 input · 0 output
 
 ## Graph Freshness
-- Built from commit: `fd1e77f6`
+- Built from commit: `7519ab25`
 - Run `git rev-parse HEAD` and compare to check if the graph is stale.
 - Run `graphify update .` after code changes (no API cost).
 
@@ -58,7 +58,7 @@
 ## Import Cycles
 - None detected.
 
-## Communities (22 total, 3 thin omitted)
+## Communities (23 total, 3 thin omitted)
 
 ### Community 0 - "ReviewsHandler"
 Cohesion: 0.08
@@ -110,16 +110,16 @@ Nodes (9): ast-grep, Build, Code Style, Context Retrieval Policy, graphify, Layo
 
 ## Knowledge Gaps
 - **48 isolated node(s):** `checkout_lib.sh script`, `install_android.sh script`, `ANDROID_NDK`, `ANDROID_ABI`, `ANDROID_STL_SHARED` (+43 more)
-  These have ≤1 connection - possible missing edges or undocumented components. (Counts symbols only; 91 node(s) total have ≤1 connection when file, concept and rationale nodes are included.)
+  These have ≤1 connection - possible missing edges or undocumented components. (Counts symbols only; 92 node(s) total have ≤1 connection when file, concept and rationale nodes are included.)
 - **3 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
 
 ## Suggested Questions
 _Questions this graph is uniquely positioned to answer:_
 
 - **Why does `ReviewsHandler` connect `ReviewsHandler` to `ReadPapersReviews`, `Paper`, `Review`?**
-  _High betweenness centrality (0.199) - this node is a cross-community bridge._
+  _High betweenness centrality (0.196) - this node is a cross-community bridge._
 - **Why does `Paper` connect `Paper` to `ReviewsHandler`, `Review`?**
-  _High betweenness centrality (0.195) - this node is a cross-community bridge._
+  _High betweenness centrality (0.192) - this node is a cross-community bridge._
 - **What connects `checkout_lib.sh script`, `install_android.sh script`, `ANDROID_NDK` to the rest of the system?**
   _48 weakly-connected nodes found - possible documentation gaps or missing edges._
 - **Should `ReviewsHandler` be split into smaller, more focused modules?**

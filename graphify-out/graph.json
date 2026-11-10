@@ -17,6 +17,19 @@
       "source_location": "L19"
     },
     {
+      "id": "homlcpp_chapter003_dlib_grid_dlib_foldstats",
+      "label": "FoldStats",
+      "_callable": true,
+      "_callable_class": true,
+      "_origin": "ast",
+      "community": 11,
+      "community_name": "FoldStats",
+      "file_type": "code",
+      "norm_label": "foldstats",
+      "source_file": "homlcpp/chapter003/dlib/grid-dlib.cc",
+      "source_location": "L45"
+    },
+    {
       "id": "homlcpp_chapter002_json_paper_paper",
       "label": "Paper",
       "_callable": true,
@@ -259,30 +272,6 @@
       "source_location": "L45"
     },
     {
-      "id": "homlcpp_chapter001_eigen_linreg_eigen_generatedata",
-      "label": "GenerateData()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 11,
-      "community_name": "GenerateData",
-      "file_type": "code",
-      "norm_label": "generatedata()",
-      "source_file": "homlcpp/chapter001/eigen/linreg_eigen.cpp",
-      "source_location": "L9"
-    },
-    {
-      "id": "homlcpp_chapter001_eigen_linreg_eigen_main",
-      "label": "main()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 11,
-      "community_name": "GenerateData",
-      "file_type": "code",
-      "norm_label": "main()",
-      "source_file": "homlcpp/chapter001/eigen/linreg_eigen.cpp",
-      "source_location": "L39"
-    },
-    {
       "id": "check_torch_example_main",
       "label": "main()",
       "_callable": true,
@@ -372,7 +361,7 @@
       "_callable": true,
       "_origin": "ast",
       "community": 2,
-      "community_name": "GenerateData",
+      "community_name": "vector",
       "file_type": "code",
       "norm_label": "generatedata()",
       "source_file": "homlcpp/chapter001/blaze/linreg_blaze.cpp",
@@ -384,59 +373,59 @@
       "_callable": true,
       "_origin": "ast",
       "community": 2,
-      "community_name": "GenerateData",
+      "community_name": "vector",
       "file_type": "code",
       "norm_label": "main()",
       "source_file": "homlcpp/chapter001/blaze/linreg_blaze.cpp",
       "source_location": "L41"
     },
     {
-      "id": "homlcpp_chapter001_dlib_linalg_dlib_main",
+      "id": "homlcpp_chapter001_eigen_linreg_eigen_generatedata",
+      "label": "GenerateData()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 2,
+      "community_name": "vector",
+      "file_type": "code",
+      "norm_label": "generatedata()",
+      "source_file": "homlcpp/chapter001/eigen/linreg_eigen.cpp",
+      "source_location": "L9"
+    },
+    {
+      "id": "homlcpp_chapter001_eigen_linreg_eigen_main",
       "label": "main()",
       "_callable": true,
       "_origin": "ast",
       "community": 2,
-      "community_name": "GenerateData",
+      "community_name": "vector",
       "file_type": "code",
       "norm_label": "main()",
-      "source_file": "homlcpp/chapter001/dlib/linalg_dlib.cpp",
-      "source_location": "L4"
+      "source_file": "homlcpp/chapter001/eigen/linreg_eigen.cpp",
+      "source_location": "L39"
     },
     {
-      "id": "homlcpp_chapter001_dlib_linreg_dlib_func",
-      "label": "func()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 2,
-      "community_name": "GenerateData",
-      "file_type": "code",
-      "norm_label": "func()",
-      "source_file": "homlcpp/chapter001/dlib/linreg_dlib.cpp",
-      "source_location": "L7"
-    },
-    {
-      "id": "homlcpp_chapter001_dlib_linreg_dlib_main",
+      "id": "homlcpp_chapter001_xtensor_linalg_xtensor_main",
       "label": "main()",
       "_callable": true,
       "_origin": "ast",
       "community": 2,
-      "community_name": "GenerateData",
+      "community_name": "vector",
       "file_type": "code",
       "norm_label": "main()",
-      "source_file": "homlcpp/chapter001/dlib/linreg_dlib.cpp",
-      "source_location": "L16"
+      "source_file": "homlcpp/chapter001/xtensor/linalg_xtensor.cc",
+      "source_location": "L12"
     },
     {
-      "id": "homlcpp_chapter002_csv_dlib_csv_dlib_main",
+      "id": "homlcpp_chapter004_dlib_cuda_dlib_main",
       "label": "main()",
       "_callable": true,
       "_origin": "ast",
       "community": 2,
-      "community_name": "GenerateData",
+      "community_name": "vector",
       "file_type": "code",
       "norm_label": "main()",
-      "source_file": "homlcpp/chapter002/csv/dlib/csv_dlib.cpp",
-      "source_location": "L10"
+      "source_file": "homlcpp/chapter004/dlib/cuda_dlib.cc",
+      "source_location": "L18"
     },
     {
       "id": "homlcpp_chapter003_flashlight_grid_fl_generate_data",
@@ -544,31 +533,43 @@
       "file_type": "code",
       "norm_label": "main()",
       "source_file": "homlcpp/chapter003/dlib/grid-dlib.cc",
-      "source_location": "L45"
+      "source_location": "L154"
     },
     {
-      "id": "homlcpp_chapter004_dlib_cuda_dlib_main",
+      "id": "homlcpp_chapter003_dlib_grid_dlib_parallelcrossvalidate",
+      "label": "ParallelCrossValidate()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 28,
+      "community_name": "grid-dlib.cc",
+      "file_type": "code",
+      "norm_label": "parallelcrossvalidate()",
+      "source_file": "homlcpp/chapter003/dlib/grid-dlib.cc",
+      "source_location": "L60"
+    },
+    {
+      "id": "homlcpp_chapter001_dlib_linreg_dlib_func",
+      "label": "func()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 29,
+      "community_name": "linreg_dlib.cpp",
+      "file_type": "code",
+      "norm_label": "func()",
+      "source_file": "homlcpp/chapter001/dlib/linreg_dlib.cpp",
+      "source_location": "L7"
+    },
+    {
+      "id": "homlcpp_chapter001_dlib_linreg_dlib_main",
       "label": "main()",
       "_callable": true,
       "_origin": "ast",
       "community": 29,
-      "community_name": "cuda_dlib.cc",
+      "community_name": "linreg_dlib.cpp",
       "file_type": "code",
       "norm_label": "main()",
-      "source_file": "homlcpp/chapter004/dlib/cuda_dlib.cc",
-      "source_location": "L18"
-    },
-    {
-      "id": "homlcpp_chapter001_xtensor_linalg_xtensor_main",
-      "label": "main()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 3,
-      "community_name": "Review",
-      "file_type": "code",
-      "norm_label": "main()",
-      "source_file": "homlcpp/chapter001/xtensor/linalg_xtensor.cc",
-      "source_location": "L12"
+      "source_file": "homlcpp/chapter001/dlib/linreg_dlib.cpp",
+      "source_location": "L16"
     },
     {
       "id": "homlcpp_chapter002_img_opencv_ocv_main",
@@ -593,6 +594,30 @@
       "norm_label": ".end_object()",
       "source_file": "homlcpp/chapter002/json/reviewsreader.cpp",
       "source_location": "L113"
+    },
+    {
+      "id": "homlcpp_chapter001_dlib_linalg_dlib_main",
+      "label": "main()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 30,
+      "community_name": "linalg_dlib.cpp",
+      "file_type": "code",
+      "norm_label": "main()",
+      "source_file": "homlcpp/chapter001/dlib/linalg_dlib.cpp",
+      "source_location": "L4"
+    },
+    {
+      "id": "homlcpp_chapter002_csv_dlib_csv_dlib_main",
+      "label": "main()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 31,
+      "community_name": "csv_dlib.cpp",
+      "file_type": "code",
+      "norm_label": "main()",
+      "source_file": "homlcpp/chapter002/csv/dlib/csv_dlib.cpp",
+      "source_location": "L10"
     },
     {
       "id": "homlcpp_chapter002_hdf5_hdf5_main",
@@ -981,37 +1006,103 @@
       "source_location": "L1"
     },
     {
-      "id": "homlcpp_chapter001_eigen_linreg_eigen",
-      "label": "linreg_eigen.cpp",
+      "id": "homlcpp_chapter003_dlib_grid_dlib_foldstats_n",
+      "label": "n",
       "_origin": "ast",
       "community": 11,
-      "community_name": "GenerateData",
+      "community_name": "FoldStats",
       "file_type": "code",
-      "norm_label": "linreg_eigen.cpp",
-      "source_file": "homlcpp/chapter001/eigen/linreg_eigen.cpp",
-      "source_location": "L1"
+      "norm_label": "n",
+      "source_file": "homlcpp/chapter003/dlib/grid-dlib.cc",
+      "source_location": "L46"
     },
     {
-      "id": "homlcpp_chapter001_eigen_linreg_eigen_cpp_pair",
-      "label": "pair",
+      "id": "homlcpp_chapter003_dlib_grid_dlib_foldstats_sum_abs_err",
+      "label": "sum_abs_err",
       "_origin": "ast",
       "community": 11,
-      "community_name": "GenerateData",
+      "community_name": "FoldStats",
       "file_type": "code",
-      "norm_label": "pair",
-      "source_file": "",
-      "source_location": ""
+      "norm_label": "sum_abs_err",
+      "source_file": "homlcpp/chapter003/dlib/grid-dlib.cc",
+      "source_location": "L48"
     },
     {
-      "id": "matrixxf",
-      "label": "MatrixXf",
+      "id": "homlcpp_chapter003_dlib_grid_dlib_foldstats_sum_abs_err_sq",
+      "label": "sum_abs_err_sq",
       "_origin": "ast",
       "community": 11,
-      "community_name": "GenerateData",
+      "community_name": "FoldStats",
       "file_type": "code",
-      "norm_label": "matrixxf",
-      "source_file": "",
-      "source_location": ""
+      "norm_label": "sum_abs_err_sq",
+      "source_file": "homlcpp/chapter003/dlib/grid-dlib.cc",
+      "source_location": "L49"
+    },
+    {
+      "id": "homlcpp_chapter003_dlib_grid_dlib_foldstats_sum_sq_err",
+      "label": "sum_sq_err",
+      "_origin": "ast",
+      "community": 11,
+      "community_name": "FoldStats",
+      "file_type": "code",
+      "norm_label": "sum_sq_err",
+      "source_file": "homlcpp/chapter003/dlib/grid-dlib.cc",
+      "source_location": "L47"
+    },
+    {
+      "id": "homlcpp_chapter003_dlib_grid_dlib_foldstats_sum_x",
+      "label": "sum_x",
+      "_origin": "ast",
+      "community": 11,
+      "community_name": "FoldStats",
+      "file_type": "code",
+      "norm_label": "sum_x",
+      "source_file": "homlcpp/chapter003/dlib/grid-dlib.cc",
+      "source_location": "L51"
+    },
+    {
+      "id": "homlcpp_chapter003_dlib_grid_dlib_foldstats_sum_xx",
+      "label": "sum_xx",
+      "_origin": "ast",
+      "community": 11,
+      "community_name": "FoldStats",
+      "file_type": "code",
+      "norm_label": "sum_xx",
+      "source_file": "homlcpp/chapter003/dlib/grid-dlib.cc",
+      "source_location": "L53"
+    },
+    {
+      "id": "homlcpp_chapter003_dlib_grid_dlib_foldstats_sum_xy",
+      "label": "sum_xy",
+      "_origin": "ast",
+      "community": 11,
+      "community_name": "FoldStats",
+      "file_type": "code",
+      "norm_label": "sum_xy",
+      "source_file": "homlcpp/chapter003/dlib/grid-dlib.cc",
+      "source_location": "L50"
+    },
+    {
+      "id": "homlcpp_chapter003_dlib_grid_dlib_foldstats_sum_y",
+      "label": "sum_y",
+      "_origin": "ast",
+      "community": 11,
+      "community_name": "FoldStats",
+      "file_type": "code",
+      "norm_label": "sum_y",
+      "source_file": "homlcpp/chapter003/dlib/grid-dlib.cc",
+      "source_location": "L52"
+    },
+    {
+      "id": "homlcpp_chapter003_dlib_grid_dlib_foldstats_sum_yy",
+      "label": "sum_yy",
+      "_origin": "ast",
+      "community": 11,
+      "community_name": "FoldStats",
+      "file_type": "code",
+      "norm_label": "sum_yy",
+      "source_file": "homlcpp/chapter003/dlib/grid-dlib.cc",
+      "source_location": "L54"
     },
     {
       "id": "check_torch_example",
@@ -1125,18 +1216,29 @@
       "label": "linreg_blaze.cpp",
       "_origin": "ast",
       "community": 2,
-      "community_name": "GenerateData",
+      "community_name": "vector",
       "file_type": "code",
       "norm_label": "linreg_blaze.cpp",
       "source_file": "homlcpp/chapter001/blaze/linreg_blaze.cpp",
       "source_location": "L1"
     },
     {
+      "id": "homlcpp_chapter001_blaze_linreg_blaze_cpp_matrix",
+      "label": "Matrix",
+      "_origin": "ast",
+      "community": 2,
+      "community_name": "vector",
+      "file_type": "code",
+      "norm_label": "matrix",
+      "source_file": "",
+      "source_location": ""
+    },
+    {
       "id": "homlcpp_chapter001_blaze_linreg_blaze_cpp_pair",
       "label": "pair",
       "_origin": "ast",
       "community": 2,
-      "community_name": "GenerateData",
+      "community_name": "vector",
       "file_type": "code",
       "norm_label": "pair",
       "source_file": "",
@@ -1147,53 +1249,75 @@
       "label": "Vector",
       "_origin": "ast",
       "community": 2,
-      "community_name": "GenerateData",
+      "community_name": "vector",
       "file_type": "code",
       "norm_label": "vector",
       "source_file": "",
       "source_location": ""
     },
     {
-      "id": "homlcpp_chapter001_dlib_linalg_dlib",
-      "label": "linalg_dlib.cpp",
+      "id": "homlcpp_chapter001_eigen_linreg_eigen",
+      "label": "linreg_eigen.cpp",
       "_origin": "ast",
       "community": 2,
-      "community_name": "GenerateData",
+      "community_name": "vector",
       "file_type": "code",
-      "norm_label": "linalg_dlib.cpp",
-      "source_file": "homlcpp/chapter001/dlib/linalg_dlib.cpp",
+      "norm_label": "linreg_eigen.cpp",
+      "source_file": "homlcpp/chapter001/eigen/linreg_eigen.cpp",
       "source_location": "L1"
     },
     {
-      "id": "homlcpp_chapter001_dlib_linreg_dlib",
-      "label": "linreg_dlib.cpp",
+      "id": "homlcpp_chapter001_eigen_linreg_eigen_cpp_pair",
+      "label": "pair",
       "_origin": "ast",
       "community": 2,
-      "community_name": "GenerateData",
+      "community_name": "vector",
       "file_type": "code",
-      "norm_label": "linreg_dlib.cpp",
-      "source_file": "homlcpp/chapter001/dlib/linreg_dlib.cpp",
+      "norm_label": "pair",
+      "source_file": "",
+      "source_location": ""
+    },
+    {
+      "id": "homlcpp_chapter001_xtensor_linalg_xtensor",
+      "label": "linalg_xtensor.cc",
+      "_origin": "ast",
+      "community": 2,
+      "community_name": "vector",
+      "file_type": "code",
+      "norm_label": "linalg_xtensor.cc",
+      "source_file": "homlcpp/chapter001/xtensor/linalg_xtensor.cc",
       "source_location": "L1"
     },
     {
-      "id": "homlcpp_chapter002_csv_dlib_csv_dlib",
-      "label": "csv_dlib.cpp",
+      "id": "homlcpp_chapter002_json_paper_h_vector",
+      "label": "vector",
       "_origin": "ast",
       "community": 2,
-      "community_name": "GenerateData",
+      "community_name": "vector",
       "file_type": "code",
-      "norm_label": "csv_dlib.cpp",
-      "source_file": "homlcpp/chapter002/csv/dlib/csv_dlib.cpp",
+      "norm_label": "vector",
+      "source_file": "",
+      "source_location": ""
+    },
+    {
+      "id": "homlcpp_chapter004_dlib_cuda_dlib",
+      "label": "cuda_dlib.cc",
+      "_origin": "ast",
+      "community": 2,
+      "community_name": "vector",
+      "file_type": "code",
+      "norm_label": "cuda_dlib.cc",
+      "source_file": "homlcpp/chapter004/dlib/cuda_dlib.cc",
       "source_location": "L1"
     },
     {
-      "id": "matrix",
-      "label": "Matrix",
+      "id": "matrixxf",
+      "label": "MatrixXf",
       "_origin": "ast",
       "community": 2,
-      "community_name": "GenerateData",
+      "community_name": "vector",
       "file_type": "code",
-      "norm_label": "matrix",
+      "norm_label": "matrixxf",
       "source_file": "",
       "source_location": ""
     },
@@ -1560,6 +1684,17 @@
       "source_location": "L1"
     },
     {
+      "id": "homlcpp_chapter003_dlib_grid_dlib_cc_matrix",
+      "label": "matrix",
+      "_origin": "ast",
+      "community": 28,
+      "community_name": "grid-dlib.cc",
+      "file_type": "code",
+      "norm_label": "matrix",
+      "source_file": "",
+      "source_location": ""
+    },
+    {
       "id": "homlcpp_chapter003_dlib_grid_dlib_cc_pair",
       "label": "pair",
       "_origin": "ast",
@@ -1567,6 +1702,17 @@
       "community_name": "grid-dlib.cc",
       "file_type": "code",
       "norm_label": "pair",
+      "source_file": "",
+      "source_location": ""
+    },
+    {
+      "id": "homlcpp_chapter003_dlib_grid_dlib_cc_vector",
+      "label": "vector",
+      "_origin": "ast",
+      "community": 28,
+      "community_name": "grid-dlib.cc",
+      "file_type": "code",
+      "norm_label": "vector",
       "source_file": "",
       "source_location": ""
     },
@@ -1593,25 +1739,25 @@
       "source_location": ""
     },
     {
-      "id": "homlcpp_chapter004_dlib_cuda_dlib",
-      "label": "cuda_dlib.cc",
+      "id": "trainer",
+      "label": "Trainer",
       "_origin": "ast",
-      "community": 29,
-      "community_name": "cuda_dlib.cc",
+      "community": 28,
+      "community_name": "grid-dlib.cc",
       "file_type": "code",
-      "norm_label": "cuda_dlib.cc",
-      "source_file": "homlcpp/chapter004/dlib/cuda_dlib.cc",
-      "source_location": "L1"
+      "norm_label": "trainer",
+      "source_file": "",
+      "source_location": ""
     },
     {
-      "id": "homlcpp_chapter001_xtensor_linalg_xtensor",
-      "label": "linalg_xtensor.cc",
+      "id": "homlcpp_chapter001_dlib_linreg_dlib",
+      "label": "linreg_dlib.cpp",
       "_origin": "ast",
-      "community": 3,
-      "community_name": "Review",
+      "community": 29,
+      "community_name": "linreg_dlib.cpp",
       "file_type": "code",
-      "norm_label": "linalg_xtensor.cc",
-      "source_file": "homlcpp/chapter001/xtensor/linalg_xtensor.cc",
+      "norm_label": "linreg_dlib.cpp",
+      "source_file": "homlcpp/chapter001/dlib/linreg_dlib.cpp",
       "source_location": "L1"
     },
     {
@@ -1644,17 +1790,6 @@
       "community_name": "Review",
       "file_type": "code",
       "norm_label": "string",
-      "source_file": "",
-      "source_location": ""
-    },
-    {
-      "id": "homlcpp_chapter002_json_paper_h_vector",
-      "label": "vector",
-      "_origin": "ast",
-      "community": 3,
-      "community_name": "Review",
-      "file_type": "code",
-      "norm_label": "vector",
       "source_file": "",
       "source_location": ""
     },
@@ -1800,6 +1935,28 @@
       "norm_label": "timespan",
       "source_file": "homlcpp/chapter002/json/review.h",
       "source_location": "L15"
+    },
+    {
+      "id": "homlcpp_chapter001_dlib_linalg_dlib",
+      "label": "linalg_dlib.cpp",
+      "_origin": "ast",
+      "community": 30,
+      "community_name": "linalg_dlib.cpp",
+      "file_type": "code",
+      "norm_label": "linalg_dlib.cpp",
+      "source_file": "homlcpp/chapter001/dlib/linalg_dlib.cpp",
+      "source_location": "L1"
+    },
+    {
+      "id": "homlcpp_chapter002_csv_dlib_csv_dlib",
+      "label": "csv_dlib.cpp",
+      "_origin": "ast",
+      "community": 31,
+      "community_name": "csv_dlib.cpp",
+      "file_type": "code",
+      "norm_label": "csv_dlib.cpp",
+      "source_file": "homlcpp/chapter002/csv/dlib/csv_dlib.cpp",
+      "source_location": "L1"
     },
     {
       "id": "readme",
@@ -2004,6 +2161,18 @@
       "norm_label": "chapter003 / dlib",
       "source_file": "homlcpp/chapter003/dlib/README.md",
       "source_location": "L1"
+    },
+    {
+      "id": "homlcpp_chapter003_dlib_readme_performance",
+      "label": "Performance",
+      "_origin": "ast",
+      "community": 5,
+      "community_name": "chapter003 / dlib",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "performance",
+      "source_file": "homlcpp/chapter003/dlib/README.md",
+      "source_location": "L22"
     },
     {
       "id": "homlcpp_chapter003_dlib_readme_run",
@@ -2365,18 +2534,6 @@
     },
     {
       "source": "homlcpp_chapter003_dlib_grid_dlib_main",
-      "target": "homlcpp_chapter003_dlib_grid_dlib_linspace",
-      "relation": "calls",
-      "_origin": "ast",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "context": "call",
-      "source_file": "homlcpp/chapter003/dlib/grid-dlib.cc",
-      "source_location": "L115",
-      "weight": 1.0
-    },
-    {
-      "source": "homlcpp_chapter003_dlib_grid_dlib_main",
       "target": "homlcpp_chapter003_dlib_grid_dlib_generatedata",
       "relation": "calls",
       "_origin": "ast",
@@ -2384,7 +2541,31 @@
       "confidence_score": 1.0,
       "context": "call",
       "source_file": "homlcpp/chapter003/dlib/grid-dlib.cc",
-      "source_location": "L49",
+      "source_location": "L158",
+      "weight": 1.0
+    },
+    {
+      "source": "homlcpp_chapter003_dlib_grid_dlib_main",
+      "target": "homlcpp_chapter003_dlib_grid_dlib_parallelcrossvalidate",
+      "relation": "calls",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "call",
+      "source_file": "homlcpp/chapter003/dlib/grid-dlib.cc",
+      "source_location": "L195",
+      "weight": 1.0
+    },
+    {
+      "source": "homlcpp_chapter003_dlib_grid_dlib_main",
+      "target": "homlcpp_chapter003_dlib_grid_dlib_linspace",
+      "relation": "calls",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "call",
+      "source_file": "homlcpp/chapter003/dlib/grid-dlib.cc",
+      "source_location": "L224",
       "weight": 1.0
     },
     {
@@ -2616,6 +2797,114 @@
       "weight": 1.0
     },
     {
+      "source": "homlcpp_chapter003_dlib_grid_dlib_foldstats",
+      "target": "homlcpp_chapter003_dlib_grid_dlib_foldstats_n",
+      "relation": "defines",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "field",
+      "source_file": "homlcpp/chapter003/dlib/grid-dlib.cc",
+      "source_location": "L46",
+      "weight": 1.0
+    },
+    {
+      "source": "homlcpp_chapter003_dlib_grid_dlib_foldstats",
+      "target": "homlcpp_chapter003_dlib_grid_dlib_foldstats_sum_sq_err",
+      "relation": "defines",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "field",
+      "source_file": "homlcpp/chapter003/dlib/grid-dlib.cc",
+      "source_location": "L47",
+      "weight": 1.0
+    },
+    {
+      "source": "homlcpp_chapter003_dlib_grid_dlib_foldstats",
+      "target": "homlcpp_chapter003_dlib_grid_dlib_foldstats_sum_abs_err",
+      "relation": "defines",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "field",
+      "source_file": "homlcpp/chapter003/dlib/grid-dlib.cc",
+      "source_location": "L48",
+      "weight": 1.0
+    },
+    {
+      "source": "homlcpp_chapter003_dlib_grid_dlib_foldstats",
+      "target": "homlcpp_chapter003_dlib_grid_dlib_foldstats_sum_abs_err_sq",
+      "relation": "defines",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "field",
+      "source_file": "homlcpp/chapter003/dlib/grid-dlib.cc",
+      "source_location": "L49",
+      "weight": 1.0
+    },
+    {
+      "source": "homlcpp_chapter003_dlib_grid_dlib_foldstats",
+      "target": "homlcpp_chapter003_dlib_grid_dlib_foldstats_sum_xy",
+      "relation": "defines",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "field",
+      "source_file": "homlcpp/chapter003/dlib/grid-dlib.cc",
+      "source_location": "L50",
+      "weight": 1.0
+    },
+    {
+      "source": "homlcpp_chapter003_dlib_grid_dlib_foldstats",
+      "target": "homlcpp_chapter003_dlib_grid_dlib_foldstats_sum_x",
+      "relation": "defines",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "field",
+      "source_file": "homlcpp/chapter003/dlib/grid-dlib.cc",
+      "source_location": "L51",
+      "weight": 1.0
+    },
+    {
+      "source": "homlcpp_chapter003_dlib_grid_dlib_foldstats",
+      "target": "homlcpp_chapter003_dlib_grid_dlib_foldstats_sum_y",
+      "relation": "defines",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "field",
+      "source_file": "homlcpp/chapter003/dlib/grid-dlib.cc",
+      "source_location": "L52",
+      "weight": 1.0
+    },
+    {
+      "source": "homlcpp_chapter003_dlib_grid_dlib_foldstats",
+      "target": "homlcpp_chapter003_dlib_grid_dlib_foldstats_sum_xx",
+      "relation": "defines",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "field",
+      "source_file": "homlcpp/chapter003/dlib/grid-dlib.cc",
+      "source_location": "L53",
+      "weight": 1.0
+    },
+    {
+      "source": "homlcpp_chapter003_dlib_grid_dlib_foldstats",
+      "target": "homlcpp_chapter003_dlib_grid_dlib_foldstats_sum_yy",
+      "relation": "defines",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "field",
+      "source_file": "homlcpp/chapter003/dlib/grid-dlib.cc",
+      "source_location": "L54",
+      "weight": 1.0
+    },
+    {
       "source": "homlcpp_chapter002_json_reviewsreader_reviewshandler",
       "target": "homlcpp_chapter002_json_reviewsreader_reviewshandler_key",
       "relation": "method",
@@ -2725,7 +3014,7 @@
     },
     {
       "source": "homlcpp_chapter001_blaze_linreg_blaze_generatedata",
-      "target": "homlcpp_chapter001_blaze_linreg_blaze_cpp_vector",
+      "target": "homlcpp_chapter001_blaze_linreg_blaze_cpp_matrix",
       "relation": "references",
       "_origin": "ast",
       "confidence": "EXTRACTED",
@@ -2737,7 +3026,7 @@
     },
     {
       "source": "homlcpp_chapter001_blaze_linreg_blaze_generatedata",
-      "target": "matrix",
+      "target": "homlcpp_chapter001_blaze_linreg_blaze_cpp_vector",
       "relation": "references",
       "_origin": "ast",
       "confidence": "EXTRACTED",
@@ -2856,30 +3145,6 @@
       "weight": 1.0
     },
     {
-      "source": "homlcpp_chapter001_dlib_linalg_dlib",
-      "target": "matrix",
-      "relation": "imports",
-      "_origin": "ast",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "context": "import",
-      "source_file": "homlcpp/chapter001/dlib/linalg_dlib.cpp",
-      "source_location": "L1",
-      "weight": 1.0
-    },
-    {
-      "source": "homlcpp_chapter001_dlib_linreg_dlib",
-      "target": "matrix",
-      "relation": "imports",
-      "_origin": "ast",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "context": "import",
-      "source_file": "homlcpp/chapter001/dlib/linreg_dlib.cpp",
-      "source_location": "L1",
-      "weight": 1.0
-    },
-    {
       "source": "homlcpp_chapter001_eigen_linreg_eigen",
       "target": "homlcpp_chapter002_json_paper_h_vector",
       "relation": "imports",
@@ -2901,18 +3166,6 @@
       "context": "import",
       "source_file": "homlcpp/chapter001/xtensor/linalg_xtensor.cc",
       "source_location": "L10",
-      "weight": 1.0
-    },
-    {
-      "source": "homlcpp_chapter002_csv_dlib_csv_dlib",
-      "target": "matrix",
-      "relation": "imports",
-      "_origin": "ast",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "context": "import",
-      "source_file": "homlcpp/chapter002/csv/dlib/csv_dlib.cpp",
-      "source_location": "L2",
       "weight": 1.0
     },
     {
@@ -3061,7 +3314,7 @@
     },
     {
       "source": "homlcpp_chapter003_dlib_grid_dlib",
-      "target": "matrix",
+      "target": "homlcpp_chapter003_dlib_grid_dlib_cc_matrix",
       "relation": "imports",
       "_origin": "ast",
       "confidence": "EXTRACTED",
@@ -3081,6 +3334,18 @@
       "context": "import",
       "source_file": "homlcpp/chapter003/dlib/grid-dlib.cc",
       "source_location": "L9",
+      "weight": 1.0
+    },
+    {
+      "source": "homlcpp_chapter004_dlib_cuda_dlib",
+      "target": "homlcpp_chapter002_json_paper_h_vector",
+      "relation": "imports",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "import",
+      "source_file": "homlcpp/chapter004/dlib/cuda_dlib.cc",
+      "source_location": "L5",
       "weight": 1.0
     },
     {
@@ -3372,6 +3637,42 @@
       "weight": 1.0
     },
     {
+      "source": "homlcpp_chapter003_dlib_grid_dlib_parallelcrossvalidate",
+      "target": "homlcpp_chapter003_dlib_grid_dlib_cc_vector",
+      "relation": "references",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "parameter_type",
+      "source_file": "homlcpp/chapter003/dlib/grid-dlib.cc",
+      "source_location": "L60",
+      "weight": 1.0
+    },
+    {
+      "source": "homlcpp_chapter003_dlib_grid_dlib_parallelcrossvalidate",
+      "target": "samples",
+      "relation": "references",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "parameter_type",
+      "source_file": "homlcpp/chapter003/dlib/grid-dlib.cc",
+      "source_location": "L60",
+      "weight": 1.0
+    },
+    {
+      "source": "homlcpp_chapter003_dlib_grid_dlib_parallelcrossvalidate",
+      "target": "trainer",
+      "relation": "references",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "parameter_type",
+      "source_file": "homlcpp/chapter003/dlib/grid-dlib.cc",
+      "source_location": "L60",
+      "weight": 1.0
+    },
+    {
       "source": "homlcpp_chapter003_flashlight_grid_fl_make_samples_polynomial",
       "target": "homlcpp_chapter003_flashlight_grid_fl_cc_tensor",
       "relation": "references",
@@ -3465,6 +3766,18 @@
       "context": "return_type",
       "source_file": "homlcpp/chapter003/dlib/grid-dlib.cc",
       "source_location": "L15",
+      "weight": 1.0
+    },
+    {
+      "source": "homlcpp_chapter003_dlib_grid_dlib_parallelcrossvalidate",
+      "target": "homlcpp_chapter003_dlib_grid_dlib_cc_matrix",
+      "relation": "references",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "return_type",
+      "source_file": "homlcpp/chapter003/dlib/grid-dlib.cc",
+      "source_location": "L60",
       "weight": 1.0
     },
     {
@@ -4043,6 +4356,17 @@
     },
     {
       "source": "homlcpp_chapter003_dlib_grid_dlib",
+      "target": "homlcpp_chapter003_dlib_grid_dlib_main",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "homlcpp/chapter003/dlib/grid-dlib.cc",
+      "source_location": "L154",
+      "weight": 1.0
+    },
+    {
+      "source": "homlcpp_chapter003_dlib_grid_dlib",
       "target": "homlcpp_chapter003_dlib_grid_dlib_generatedata",
       "relation": "contains",
       "_origin": "ast",
@@ -4054,13 +4378,24 @@
     },
     {
       "source": "homlcpp_chapter003_dlib_grid_dlib",
-      "target": "homlcpp_chapter003_dlib_grid_dlib_main",
+      "target": "homlcpp_chapter003_dlib_grid_dlib_foldstats",
       "relation": "contains",
       "_origin": "ast",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "homlcpp/chapter003/dlib/grid-dlib.cc",
       "source_location": "L45",
+      "weight": 1.0
+    },
+    {
+      "source": "homlcpp_chapter003_dlib_grid_dlib",
+      "target": "homlcpp_chapter003_dlib_grid_dlib_parallelcrossvalidate",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "homlcpp/chapter003/dlib/grid-dlib.cc",
+      "source_location": "L60",
       "weight": 1.0
     },
     {
@@ -4083,6 +4418,17 @@
       "confidence_score": 1.0,
       "source_file": "homlcpp/chapter003/dlib/README.md",
       "source_location": "L14",
+      "weight": 1.0
+    },
+    {
+      "source": "homlcpp_chapter003_dlib_readme_chapter003_dlib",
+      "target": "homlcpp_chapter003_dlib_readme_performance",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "homlcpp/chapter003/dlib/README.md",
+      "source_location": "L22",
       "weight": 1.0
     },
     {
@@ -4606,5 +4952,5 @@
     }
   ],
   "hyperedges": [],
-  "built_at_commit": "66cad043010973f1f8c870d04f4ea0ed46a1d723"
+  "built_at_commit": "8d25b38241d154a822beb4d83c519e2bbb90d2b2"
 }

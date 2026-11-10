@@ -42,6 +42,115 @@ std::pair<Samples, Labels> GenerateData(size_t num_samples, size_t seed) {
   return {x_values, y_values};
 }
 
+struct FoldStats {
+  double n = 0.0;
+  double sum_sq_err = 0.0;
+  double sum_abs_err = 0.0;
+  double sum_abs_err_sq = 0.0;
+  double sum_xy = 0.0;
+  double sum_x = 0.0;
+  double sum_y = 0.0;
+  double sum_xx = 0.0;
+  double sum_yy = 0.0;
+};
+
+// Same k-fold split as dlib::cross_validate_regression_trainer(), but the
+// independent folds run in parallel.
+template <typename Trainer>
+dlib::matrix<double, 1, 4> ParallelCrossValidate(const Trainer& trainer,
+                                                 const Samples& samples,
+                                                 const std::vector<double>& labels,
+                                                 long folds) {
+  const long n = static_cast<long>(samples.size());
+  const long num_in_test = n / folds;
+  const long num_in_train = n - num_in_test;
+
+  std::vector<FoldStats> partial(folds);
+
+#pragma omp parallel for schedule(dynamic)
+  for (long i = 0; i < folds; ++i) {
+    long idx = (i * num_in_test) % n;
+
+    Samples x_test, x_train;
+    std::vector<double> y_test, y_train;
+    x_test.reserve(num_in_test);
+    y_test.reserve(num_in_test);
+    x_train.reserve(num_in_train);
+    y_train.reserve(num_in_train);
+
+    for (long cnt = 0; cnt < num_in_test; ++cnt) {
+      x_test.push_back(samples[idx]);
+      y_test.push_back(labels[idx]);
+      idx = (idx + 1) % n;
+    }
+    for (long cnt = 0; cnt < num_in_train; ++cnt) {
+      x_train.push_back(samples[idx]);
+      y_train.push_back(labels[idx]);
+      idx = (idx + 1) % n;
+    }
+
+    FoldStats& stats = partial[i];
+    try {
+      const auto df = trainer.train(x_train, y_train);
+      for (size_t j = 0; j < x_test.size(); ++j) {
+        const double out = df(x_test[j]);
+        const double err = out - y_test[j];
+        const double abs_err = std::abs(err);
+        stats.sum_sq_err += err * err;
+        stats.sum_abs_err += abs_err;
+        stats.sum_abs_err_sq += abs_err * abs_err;
+        stats.sum_xy += out * y_test[j];
+        stats.sum_x += out;
+        stats.sum_y += y_test[j];
+        stats.sum_xx += out * out;
+        stats.sum_yy += y_test[j] * y_test[j];
+        stats.n += 1.0;
+      }
+    } catch (const dlib::invalid_nu_error&) {
+      stats = FoldStats{};
+    }
+  }
+
+  FoldStats total;
+  for (const auto& s : partial) {
+    total.n += s.n;
+    total.sum_sq_err += s.sum_sq_err;
+    total.sum_abs_err += s.sum_abs_err;
+    total.sum_abs_err_sq += s.sum_abs_err_sq;
+    total.sum_xy += s.sum_xy;
+    total.sum_x += s.sum_x;
+    total.sum_y += s.sum_y;
+    total.sum_xx += s.sum_xx;
+    total.sum_yy += s.sum_yy;
+  }
+
+  const double mse = total.n > 0 ? total.sum_sq_err / total.n : 0.0;
+  const double mae = total.n > 0 ? total.sum_abs_err / total.n : 0.0;
+  double corr = 0.0;
+  double mae_stddev = 0.0;
+  if (total.n > 1.0) {
+    const double mae_var =
+        (total.sum_abs_err_sq - total.sum_abs_err * total.sum_abs_err / total.n) /
+        (total.n - 1.0);
+    mae_stddev = mae_var > 0.0 ? std::sqrt(mae_var) : 0.0;
+
+    const double cov =
+        (total.sum_xy - total.sum_y * total.sum_x / total.n) / (total.n - 1.0);
+    double var_x =
+        (total.sum_xx - total.sum_x * total.sum_x / total.n) / (total.n - 1.0);
+    double var_y =
+        (total.sum_yy - total.sum_y * total.sum_y / total.n) / (total.n - 1.0);
+    if (var_x < 0.0) var_x = 0.0;
+    if (var_y < 0.0) var_y = 0.0;
+    const double denom = std::sqrt(var_x * var_y);
+    corr = denom > 0.0 ? cov / denom : 0.0;
+  }
+
+  dlib::matrix<double, 1, 4> result;
+  result = mse, corr, mae, mae_stddev;
+  return result;
+}
+
 int main(int /*argc*/, char** /*argv*/) {
   using namespace dlib;
 
@@ -82,8 +191,8 @@ int main(int /*argc*/, char** /*argv*/) {
               << c << "  degree: " << std::setw(11) << degree;
     std::cout.flush();
 
-    dlib::matrix<double> result = dlib::cross_validate_regression_trainer(
-        trainer, samples, raw_labels, 10);
+    dlib::matrix<double> result =
+        ParallelCrossValidate(trainer, samples, raw_labels, 10);
     std::cout << std::setw(11) << "  MSE: " << result(0, 0) << std::setw(11)
               << "  MAE: " << result(0, 2) << std::endl;
 

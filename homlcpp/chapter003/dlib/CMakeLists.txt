@@ -25,3 +25,4 @@ set(PLOTCPP_PATH "${CMAKE_CURRENT_LIST_DIR}/../../../development/libs/sources/pl
 add_executable(grid-dlib "grid-dlib.cc")
 target_include_directories(grid-dlib PRIVATE ${PLOTCPP_PATH})
 target_link_libraries(grid-dlib dlib::dlib)
+target_link_options(grid-dlib PRIVATE -fopenmp)

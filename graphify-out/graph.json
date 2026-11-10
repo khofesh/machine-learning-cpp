@@ -7239,13 +7239,13 @@
     },
     {
       "id": "homlcpp_chapter003_mlpack_readme",
-      "label": "mlpack/README.md",
+      "label": "chapter003/mlpack/README.md",
       "_origin": "ast",
       "community": 27,
       "community_name": "chapter003 / mlpack",
       "file_type": "document",
       "node_kind": "page",
-      "norm_label": "mlpack/readme.md",
+      "norm_label": "chapter003/mlpack/readme.md",
       "source_file": "homlcpp/chapter003/mlpack/README.md",
       "source_location": "L1"
     },
@@ -10823,6 +10823,18 @@
       "norm_label": "string",
       "source_file": "",
       "source_location": ""
+    },
+    {
+      "id": "homlcpp_chapter004_mlpack_readme",
+      "label": "chapter004/mlpack/README.md",
+      "_origin": "ast",
+      "community": 67,
+      "community_name": "chapter004/mlpack/README.md",
+      "file_type": "document",
+      "node_kind": "page",
+      "norm_label": "chapter004/mlpack/readme.md",
+      "source_file": "homlcpp/chapter004/mlpack/README.md",
+      "source_location": "L1"
     },
     {
       "id": "env_scripts_checkout_lib",
@@ -29326,5 +29338,5 @@
     }
   ],
   "hyperedges": [],
-  "built_at_commit": "c7666f986c475f9fb928f1bed32e61b51521a0ab"
+  "built_at_commit": "9d34264f766b6850baa8b2b967c7ec59a32fc6c9"
 }

@@ -1,17 +1,17 @@
 # Graph Report - machine-learning-cpp  (2026-11-10)
 
 ## Corpus Check
-- 109 files · ~184,556 words
+- 110 files · ~184,567 words
 - Verdict: corpus is large enough that graph structure adds value.
 - Unclassified: 51 file(s) not represented in the graph (top: .csv 15, .xml 12, .cmake 8)
 
 ## Summary
-- 879 nodes · 1432 edges · 67 communities (37 shown, 30 thin omitted)
+- 880 nodes · 1432 edges · 68 communities (37 shown, 31 thin omitted)
 - Extraction: 96% EXTRACTED · 4% INFERRED · 0% AMBIGUOUS · INFERRED: 52 edges (avg confidence: 0.85)
 - Token cost: 0 input · 0 output
 
 ## Graph Freshness
-- Built from commit: `c7666f98`
+- Built from commit: `9d34264f`
 - Run `git rev-parse HEAD` and compare to check if the graph is stale.
 - Run `graphify update .` after code changes (no API cost).
 
@@ -86,15 +86,15 @@
   homlcpp/chapter010/flashlight/mlp_fl.cc → homlcpp/chapter010/data/data.cc
 - `main()` --references--> `ImdbDataset`  [INFERRED]
   homlcpp/chapter011/pytorch/main.cpp → homlcpp/chapter011/pytorch/imdbdataset.h
-- `main()` --calls--> `ReadPapersReviews()`  [INFERRED]
-  homlcpp/chapter002/hdf5/hdf5.cpp → homlcpp/chapter002/json/reviewsreader.cpp
-- `main()` --calls--> `ReadPapersReviews()`  [INFERRED]
-  homlcpp/chapter002/json/json.cc → homlcpp/chapter002/json/reviewsreader.cpp
+- `main()` --calls--> `inputs`  [INFERRED]
+  homlcpp/chapter007/flashlight/fl_classify.cc → homlcpp/chapter009/mlpack/stacking.cc
+- `main()` --calls--> `labels`  [INFERRED]
+  homlcpp/chapter007/flashlight/fl_classify.cc → homlcpp/chapter009/mlpack/stacking.cc
 
 ## Import Cycles
 - None detected.
 
-## Communities (67 total, 30 thin omitted)
+## Communities (68 total, 31 thin omitted)
 
 ### Community 0 - "ReviewsHandler"
 Cohesion: 0.10
@@ -245,16 +245,16 @@ Cohesion: 0.20
 Nodes (9): Review, confidence, evaluation, id, language, orientation, remarks, text (+1 more)
 
 ## Knowledge Gaps
-- **94 isolated node(s):** `Global`, `None`, `Paper`, `PapersArray`, `Review` (+89 more)
-  These have ≤1 connection - possible missing edges or undocumented components. (Counts symbols only; 392 node(s) total have ≤1 connection when file, concept and rationale nodes are included.)
-- **30 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
+- **94 isolated node(s):** `error_`, `paper_`, `papers_`, `review_`, `state_` (+89 more)
+  These have ≤1 connection - possible missing edges or undocumented components. (Counts symbols only; 393 node(s) total have ≤1 connection when file, concept and rationale nodes are included.)
+- **31 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
 
 ## Suggested Questions
 _Questions this graph is uniquely positioned to answer:_
 
 - **Why does `ObjectDetector` connect `ObjectDetector` to `YOLO`, `detector.cpp`, `native-lib.cpp`, `.process_image`?**
-  _High betweenness centrality (0.068) - this node is a cross-community bridge._
-- **What connects `Global`, `None`, `Paper` to the rest of the system?**
+  _High betweenness centrality (0.067) - this node is a cross-community bridge._
+- **What connects `error_`, `paper_`, `papers_` to the rest of the system?**
   _94 weakly-connected nodes found - possible documentation gaps or missing edges._
 - **Should `ReviewsHandler` be split into smaller, more focused modules?**
   _Cohesion score 0.1 - nodes in this community are weakly interconnected._
@@ -263,6 +263,6 @@ _Questions this graph is uniquely positioned to answer:_
 - **Should `fl_classify.cc` be split into smaller, more focused modules?**
   _Cohesion score 0.08708708708708708 - nodes in this community are weakly interconnected._
 - **Why does `YOLO` connect `YOLO` to `ObjectDetector`?**
-  _High betweenness centrality (0.030) - this node is a cross-community bridge._
+  _High betweenness centrality (0.029) - this node is a cross-community bridge._
 - **Should `local development environment` be split into smaller, more focused modules?**
   _Cohesion score 0.10526315789473684 - nodes in this community are weakly interconnected._

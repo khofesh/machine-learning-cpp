@@ -41,7 +41,6 @@ sudo dnf install -y opencv  # main package
 sudo dnf install -y hdf5-devel  # equivalent to libhdf5-dev
 sudo dnf install -y json-c-devel  # equivalent to libjson-c-dev
 sudo dnf install -y libX11-devel  # equivalent to libx11-dev
-sudo dnf install -y java-1.8.0-openjdk-devel  # equivalent to openjdk-8-jdk
 sudo dnf install -y wget
 sudo dnf install -y ninja-build
 sudo dnf install -y gnuplot
@@ -53,51 +52,15 @@ sudo dnf install ocl-icd-devel opencl-headers
 
 sudo dnf install fmt-devel
 sudo dnf install nnpack-devel
-sudo dnf install mlpack-devel
 
 # arrayfire
 sudo dnf install spdlog-devel
 
 pip3 install pyyaml
-pip3 install typing
 pip3 install typing_extensions
 ```
 
 ### flashlight
-
-```shell
-cat > flashlight_algo_fix.patch << 'EOF'
-diff --git a/flashlight/fl/tensor/backend/af/ArrayFireReductions.cpp b/flashlight/fl/tensor/backend/af/ArrayFireReductions.cpp
-index xxxxxxx..xxxxxxx 100644
---- a/flashlight/fl/tensor/backend/af/ArrayFireReductions.cpp
-+++ b/flashlight/fl/tensor/backend/af/ArrayFireReductions.cpp
-@@ -13,6 +13,7 @@
- #include "flashlight/fl/tensor/backend/af/ArrayFireTensor.h"
-
- #include <stdexcept>
-+#include <algorithm>
-
- #include "flashlight/fl/tensor/Index.h"
- #include "flashlight/fl/tensor/backend/af/Utils.h"
-diff --git a/flashlight/fl/tensor/TensorBase.cpp b/flashlight/fl/tensor/TensorBase.cpp
-index xxxxxxx..xxxxxxx 100644
---- a/flashlight/fl/tensor/TensorBase.cpp
-+++ b/flashlight/fl/tensor/TensorBase.cpp
-@@ -10,6 +10,7 @@
- #include "flashlight/fl/tensor/TensorBase.h"
-
- #include <cstring>
-+#include <algorithm>
- #include <memory>
- #include <numeric>
- #include <sstream>
-EOF
-
-cd /media/wdhome/github/khofesh/machine-learning-cpp/development/libs/sources/flashlight/
-patch -p1 < /path/to/flashlight_algo_fix.patch
-```
-
-### flashlight (CUDA 13)
 
 `main` (commit `439bb526`, "Fix CUDA 13 nvToolsExt build break") builds with CUDA 13.3 through ArrayFire's CUDA backend. The GCC 16 host compiler still needs a few fixes; they are kept as `development/flashlight_main_cuda.patch`:
 
@@ -131,13 +94,11 @@ Only one ArrayFire backend may be linked at a time: `FL_ARRAYFIRE_USE_CUDA=ON` r
 
 ### nccl
 
-download nccl from here https://developer.nvidia.com/nccl
+download the NCCL tarball for CUDA 13 from https://developer.nvidia.com/nccl and extract it to `/opt/nccl/<version>` with a `current` symlink (currently `/opt/nccl/2.27.7-cuda13.0`).
 
-```shell
-# adjust the +cudaXX suffix to match the installed toolkit (CUDA 13.3 here)
-sudo dnf install nccl-local-repo-rhel9-2.26.5-cuda12.9-1.0-1.x86_64.rpm
-sudo dnf  install libnccl-2.26.5-1+cuda12.9 libnccl-devel-2.26.5-1+cuda12.9 libnccl-static-2.26.5-1+cuda12.9
-```
+### cudnn
+
+download the cuDNN tarball for CUDA 13 from https://developer.nvidia.com/cudnn-downloads and extract it to `/opt/cudnn/<version>` with a `current` symlink (currently `/opt/cudnn/9.12.0-cuda13`). dlib is built against `/opt/cudnn/current` (see below).
 
 ### pytorch
 
@@ -162,7 +123,6 @@ download arrayfire here https://arrayfire.com/binaries/
 
 ```shell
 cd development
-mkdir arrayfire
 wget https://arrayfire.s3.amazonaws.com/3.10.0/ArrayFire-v3.10.0_Linux_x86_64.sh
 chmod +x ArrayFire-v3.10.0_Linux_x86_64.sh
 
@@ -172,7 +132,7 @@ sudo ./ArrayFire-v3.10.0_Linux_x86_64.sh --include-subdir --prefix=/opt
 echo 'export LD_LIBRARY_PATH=/opt/ArrayFire-3.10.0-Linux/lib64:$LD_LIBRARY_PATH' >> ~/.bashrc
 source ~/.bashrc
 # or
-sudo echo '/opt/ArrayFire-3.10.0-Linux/lib64' | sudo tee /etc/ld.so.conf.d/arrayfire.conf
+echo '/opt/ArrayFire-3.10.0-Linux/lib64' | sudo tee /etc/ld.so.conf.d/arrayfire.conf
 sudo ldconfig
 ```
 
@@ -192,13 +152,13 @@ VS Code Settings
 2. Search for "cmake configure environment"
 3. Add the environment variable in CMake: Configure Environment:
 
-```
-json{
+```json
+{
   "VCPKG_ROOT": "/home/fahmad/vcpkg"
 }
 ```
 
-chapter 2
+packages used from vcpkg
 
 ```shell
 # cd to your vcpkg
@@ -220,6 +180,9 @@ cd /to/your/path
 
 # hdf5
 ./vcpkg install hdf5
+
+# armadillo, boost serialization (mlpack samples), cpp-httplib (chapter013), fmt (tapkee)
+./vcpkg install armadillo boost-serialization cpp-httplib fmt
 ```
 
 ### dlib (CUDA + GUI support)
@@ -241,35 +204,11 @@ ArrayFire ships its own cuDNN 9.8 and puts `/opt/ArrayFire-3.10.0-Linux/lib64` f
 ### build notes for newer packages
 
 - **HDF5 2.2.0** (vcpkg): use config mode (`find_package(HDF5 CONFIG REQUIRED)`) so the imported target pulls in zlib/libaec transitively. Module mode only links `libhdf5.a`, which fails with undefined `inflate`/`SZ_*` symbols.
-- **mlpack 4.8**: the `mlpack::data::` namespace was removed; use `mlpack::DatasetInfo`, `mlpack::Load`, `mlpack::MinMaxScaler`, `mlpack::StandardScaler`.
+- **mlpack 4.8**: the `mlpack::data::` namespace was removed; use `mlpack::MinMaxScaler`, `mlpack::StandardScaler` and the `DataOptions` overloads of `Load`/`Save`, e.g. `Load(file, mat, mlpack::Fatal + mlpack::Categorical)`. The `bool fatal` / `DatasetInfo&` overloads are deprecated (removed in mlpack 5).
+- **Eigen 5**: `Eigen::initParallel()` is deprecated (no-op); `find_package(Eigen3)` is called without a version because Eigen 3.4's config does not accept a `3.4...5` range.
 - **libtorch 2.14**: requires C++20.
 - **CUDA 13.3 + GCC 16**: nvcc rejects GCC > 15 as host compiler; the root `CMakeLists.txt` appends `-allow-unsupported-compiler` to `CMAKE_CUDA_FLAGS`.
 - GUI examples (`img-opencv`, `img-dlib`) are interactive; run them under `xvfb-run` for headless smoke tests.
-
-**I haven't succeeded in installing flashlight-cuda or flashlight-cpu using vcpkg, this is the steps I've tried**
-
-https://www.if-not-true-then-false.com/2024/install-nvidia-cudnn-on-fedora/
-
-```shell
-mkdir cudnn
-cd cudnn
-wget https://developer.download.nvidia.com/compute/cudnn/redist/cudnn/linux-x86_64/cudnn-linux-x86_64-9.10.2.21_cuda12-archive.tar.xz # https://developer.nvidia.com/cudnn-downloads?target_os=Linux&target_arch=x86_64&Distribution=Agnostic&cuda_version=12
-tar xvf cudnn-linux-x86_64-9.10.2.21_cuda12-archive.tar.xz
-cd cudnn-linux-x86_64-9.10.2.21_cuda12-archive
-# pick the archive matching your toolkit (cuda13 for CUDA 13.3); /usr/local/cuda points at the active one
-sudo cp include/cudnn*.h /usr/local/cuda/include/
-sudo cp lib/libcudnn* /usr/local/cuda/lib64/
-sudo chmod a+r /usr/local/cuda/include/cudnn*.h /usr/local/cuda/lib64/libcudnn*
-export ArrayFire_DIR=/media/wdhome/github/khofesh/machine-learning-cpp/development/arrayfire
-export LD_LIBRARY_PATH=/media/wdhome/github/khofesh/machine-learning-cpp/development/arrayfire/lib64:$LD_LIBRARY_PATH
-export CXXFLAGS="-Wno-template-id-cdtor"
-export CFLAGS="-Wno-template-id-cdtor"
-cd ~/vcpkg
-./vcpkg install flashlight-cuda
-
-# flashlight cpu
-
-```
 
 ## building and running the samples
 
@@ -310,7 +249,7 @@ Datasets used by the runs above but not committed:
 - MNIST: https://storage.googleapis.com/cvdf-datasets/mnist/
 - ResNet-50 ONNX: https://github.com/onnx/models (`validated/vision/classification/resnet/model/resnet50-v1-7.onnx`) plus `synset.txt`
 
-`chapter008/eigen` is heavy in a `Debug` build (`-O0`); build with `-DCMAKE_BUILD_TYPE=Release` if it seems to hang.
+`chapter006/*` and `chapter008/eigen` are heavy in a `Debug` build (`-O0`); build with `-DCMAKE_BUILD_TYPE=Release` if it seems to hang.
 
 ### sentiment-pytorch (chapter 011)
 

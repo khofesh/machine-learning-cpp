@@ -324,7 +324,14 @@ cd homlcpp/chapter011/pytorch
 python export.py
 ```
 
-2. IMDB reviews in torchtext layout, i.e. `<dataset>/train/pos/*.txt` and `<dataset>/train/neg/*.txt` from https://ai.stanford.edu/~amaas/data/sentiment/aclImdb_v1.tar.gz (the `aclImdb` folder).
+2. IMDB reviews in torchtext layout, i.e. `<dataset>/train/pos/*.txt` and `<dataset>/train/neg/*.txt`. Download and extract them with the helper:
+
+```shell
+env_scripts/download_sentiment_data.sh              # -> development/datasets/aclImdb
+env_scripts/download_sentiment_data.sh -n 20        # + small subset for smoke tests
+```
+
+If the Stanford host is unreachable, the script falls back to the HuggingFace parquet mirror and converts it to `train/{pos,neg}` (needs `pyarrow`: `pip install pyarrow`).
 
 `vocab.txt` (BERT cased vocabulary) is already in the repo. Run:
 

@@ -50,6 +50,11 @@ build
 temp/
 cudnn/
 
+# chapter011 sentiment-pytorch assets
+homlcpp/chapter011/pytorch/bert_model.pt
+homlcpp/chapter011/pytorch/.venv/
+aclImdb/
+
 graphify-out/cache/
 graphify-out/.graphify_*
 graphify-out/manifest.json

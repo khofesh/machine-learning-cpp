@@ -1,7 +1,10 @@
 {
   "directed": false,
   "multigraph": false,
-  "graph": {},
+  "graph": {
+    "schema_version": 1,
+    "graphify_version": "0.9.82"
+  },
   "nodes": [
     {
       "id": "homlcpp_chapter002_json_reviewsreader_reviewshandler",
@@ -17,13 +20,26 @@
       "source_location": "L19"
     },
     {
+      "id": "homlcpp_chapter004_dlib2_dlib_cluster_knn_kernel",
+      "label": "knn_kernel",
+      "_callable": true,
+      "_callable_class": true,
+      "_origin": "ast",
+      "community": 1,
+      "community_name": "knn_kernel",
+      "file_type": "code",
+      "norm_label": "knn_kernel",
+      "source_file": "homlcpp/chapter004/dlib2/dlib-cluster.cc",
+      "source_location": "L160"
+    },
+    {
       "id": "homlcpp_chapter003_dlib_grid_dlib_foldstats",
       "label": "FoldStats",
       "_callable": true,
       "_callable_class": true,
       "_origin": "ast",
       "community": 11,
-      "community_name": "FoldStats",
+      "community_name": "grid-dlib.cc",
       "file_type": "code",
       "norm_label": "foldstats",
       "source_file": "homlcpp/chapter003/dlib/grid-dlib.cc",
@@ -54,6 +70,42 @@
       "norm_label": "review",
       "source_file": "homlcpp/chapter002/json/review.h",
       "source_location": "L7"
+    },
+    {
+      "id": "homlcpp_chapter002_hdf5_hdf5_main",
+      "label": "main()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 0,
+      "community_name": "ReviewsHandler",
+      "file_type": "code",
+      "norm_label": "main()",
+      "source_file": "homlcpp/chapter002/hdf5/hdf5.cpp",
+      "source_location": "L11"
+    },
+    {
+      "id": "homlcpp_chapter002_json_json_main",
+      "label": "main()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 0,
+      "community_name": "ReviewsHandler",
+      "file_type": "code",
+      "norm_label": "main()",
+      "source_file": "homlcpp/chapter002/json/json.cc",
+      "source_location": "L11"
+    },
+    {
+      "id": "homlcpp_chapter002_json_reviewsreader_readpapersreviews",
+      "label": "ReadPapersReviews()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 0,
+      "community_name": "ReviewsHandler",
+      "file_type": "code",
+      "norm_label": "readpapersreviews()",
+      "source_file": "homlcpp/chapter002/json/reviewsreader.cpp",
+      "source_location": "L161"
     },
     {
       "id": "homlcpp_chapter002_json_reviewsreader_reviewshandler_binary",
@@ -217,7 +269,7 @@
       "_callable": true,
       "_origin": "ast",
       "community": 1,
-      "community_name": "csv.cpp",
+      "community_name": "knn_kernel",
       "file_type": "code",
       "norm_label": "fill_values()",
       "source_file": "homlcpp/chapter002/csv/eigen/csv.cpp",
@@ -229,7 +281,7 @@
       "_callable": true,
       "_origin": "ast",
       "community": 1,
-      "community_name": "csv.cpp",
+      "community_name": "knn_kernel",
       "file_type": "code",
       "norm_label": "main()",
       "source_file": "homlcpp/chapter002/csv/eigen/csv.cpp",
@@ -241,35 +293,141 @@
       "_callable": true,
       "_origin": "ast",
       "community": 1,
-      "community_name": "csv.cpp",
+      "community_name": "knn_kernel",
       "file_type": "code",
       "norm_label": "read_row_help()",
       "source_file": "homlcpp/chapter002/csv/eigen/csv.cpp",
       "source_location": "L11"
     },
     {
-      "id": "homlcpp_chapter002_csv_flashlight_csv_flashlight_load_dataset",
-      "label": "load_dataset()",
+      "id": "homlcpp_chapter004_dlib2_dlib_cluster_knn_kernel_knn_kernel",
+      "label": ".knn_kernel()",
       "_callable": true,
       "_origin": "ast",
       "community": 1,
-      "community_name": "csv.cpp",
+      "community_name": "knn_kernel",
       "file_type": "code",
-      "norm_label": "load_dataset()",
-      "source_file": "homlcpp/chapter002/csv/flashlight/csv_flashlight.cpp",
-      "source_location": "L13"
+      "norm_label": ".knn_kernel()",
+      "source_file": "homlcpp/chapter004/dlib2/dlib-cluster.cc",
+      "source_location": "L161"
     },
     {
-      "id": "homlcpp_chapter002_csv_flashlight_csv_flashlight_main",
+      "id": "homlcpp_chapter004_dlib2_dlib_cluster_knn_kernel_operator",
+      "label": ".operator()()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 1,
+      "community_name": "knn_kernel",
+      "file_type": "code",
+      "norm_label": ".operator()()",
+      "source_file": "homlcpp/chapter004/dlib2/dlib-cluster.cc",
+      "source_location": "L168"
+    },
+    {
+      "id": "homlcpp_chapter003_dlib_grid_dlib_generatedata",
+      "label": "GenerateData()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 11,
+      "community_name": "grid-dlib.cc",
+      "file_type": "code",
+      "norm_label": "generatedata()",
+      "source_file": "homlcpp/chapter003/dlib/grid-dlib.cc",
+      "source_location": "L28"
+    },
+    {
+      "id": "homlcpp_chapter003_dlib_grid_dlib_linspace",
+      "label": "LinSpace()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 11,
+      "community_name": "grid-dlib.cc",
+      "file_type": "code",
+      "norm_label": "linspace()",
+      "source_file": "homlcpp/chapter003/dlib/grid-dlib.cc",
+      "source_location": "L15"
+    },
+    {
+      "id": "homlcpp_chapter003_dlib_grid_dlib_main",
       "label": "main()",
       "_callable": true,
       "_origin": "ast",
-      "community": 1,
-      "community_name": "csv.cpp",
+      "community": 11,
+      "community_name": "grid-dlib.cc",
       "file_type": "code",
+      "metadata": {
+        "unresolved_calls": [
+          {
+            "callee": "SetTerminal",
+            "receiver_type": "Plot",
+            "lang": "cpp",
+            "line": "L232"
+          },
+          {
+            "callee": "SetOutput",
+            "receiver_type": "Plot",
+            "lang": "cpp",
+            "line": "L233"
+          },
+          {
+            "callee": "SetTitle",
+            "receiver_type": "Plot",
+            "lang": "cpp",
+            "line": "L234"
+          },
+          {
+            "callee": "SetXLabel",
+            "receiver_type": "Plot",
+            "lang": "cpp",
+            "line": "L235"
+          },
+          {
+            "callee": "SetYLabel",
+            "receiver_type": "Plot",
+            "lang": "cpp",
+            "line": "L236"
+          },
+          {
+            "callee": "SetAutoscale",
+            "receiver_type": "Plot",
+            "lang": "cpp",
+            "line": "L237"
+          },
+          {
+            "callee": "GnuplotCommand",
+            "receiver_type": "Plot",
+            "lang": "cpp",
+            "line": "L238"
+          },
+          {
+            "callee": "Draw2D",
+            "receiver_type": "Plot",
+            "lang": "cpp",
+            "line": "L248"
+          },
+          {
+            "callee": "Flush",
+            "receiver_type": "Plot",
+            "lang": "cpp",
+            "line": "L252"
+          }
+        ]
+      },
       "norm_label": "main()",
-      "source_file": "homlcpp/chapter002/csv/flashlight/csv_flashlight.cpp",
-      "source_location": "L45"
+      "source_file": "homlcpp/chapter003/dlib/grid-dlib.cc",
+      "source_location": "L154"
+    },
+    {
+      "id": "homlcpp_chapter003_dlib_grid_dlib_parallelcrossvalidate",
+      "label": "ParallelCrossValidate()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 11,
+      "community_name": "grid-dlib.cc",
+      "file_type": "code",
+      "norm_label": "parallelcrossvalidate()",
+      "source_file": "homlcpp/chapter003/dlib/grid-dlib.cc",
+      "source_location": "L60"
     },
     {
       "id": "check_torch_example_main",
@@ -361,7 +519,7 @@
       "_callable": true,
       "_origin": "ast",
       "community": 2,
-      "community_name": "vector",
+      "community_name": "GenerateData",
       "file_type": "code",
       "norm_label": "generatedata()",
       "source_file": "homlcpp/chapter001/blaze/linreg_blaze.cpp",
@@ -373,59 +531,11 @@
       "_callable": true,
       "_origin": "ast",
       "community": 2,
-      "community_name": "vector",
+      "community_name": "GenerateData",
       "file_type": "code",
       "norm_label": "main()",
       "source_file": "homlcpp/chapter001/blaze/linreg_blaze.cpp",
       "source_location": "L41"
-    },
-    {
-      "id": "homlcpp_chapter001_eigen_linreg_eigen_generatedata",
-      "label": "GenerateData()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 2,
-      "community_name": "vector",
-      "file_type": "code",
-      "norm_label": "generatedata()",
-      "source_file": "homlcpp/chapter001/eigen/linreg_eigen.cpp",
-      "source_location": "L9"
-    },
-    {
-      "id": "homlcpp_chapter001_eigen_linreg_eigen_main",
-      "label": "main()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 2,
-      "community_name": "vector",
-      "file_type": "code",
-      "norm_label": "main()",
-      "source_file": "homlcpp/chapter001/eigen/linreg_eigen.cpp",
-      "source_location": "L39"
-    },
-    {
-      "id": "homlcpp_chapter001_xtensor_linalg_xtensor_main",
-      "label": "main()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 2,
-      "community_name": "vector",
-      "file_type": "code",
-      "norm_label": "main()",
-      "source_file": "homlcpp/chapter001/xtensor/linalg_xtensor.cc",
-      "source_location": "L12"
-    },
-    {
-      "id": "homlcpp_chapter004_dlib_cuda_dlib_main",
-      "label": "main()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 2,
-      "community_name": "vector",
-      "file_type": "code",
-      "norm_label": "main()",
-      "source_file": "homlcpp/chapter004/dlib/cuda_dlib.cc",
-      "source_location": "L18"
     },
     {
       "id": "homlcpp_chapter003_flashlight_grid_fl_generate_data",
@@ -500,54 +610,6 @@
       "source_location": "L24"
     },
     {
-      "id": "homlcpp_chapter003_dlib_grid_dlib_generatedata",
-      "label": "GenerateData()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 28,
-      "community_name": "grid-dlib.cc",
-      "file_type": "code",
-      "norm_label": "generatedata()",
-      "source_file": "homlcpp/chapter003/dlib/grid-dlib.cc",
-      "source_location": "L28"
-    },
-    {
-      "id": "homlcpp_chapter003_dlib_grid_dlib_linspace",
-      "label": "LinSpace()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 28,
-      "community_name": "grid-dlib.cc",
-      "file_type": "code",
-      "norm_label": "linspace()",
-      "source_file": "homlcpp/chapter003/dlib/grid-dlib.cc",
-      "source_location": "L15"
-    },
-    {
-      "id": "homlcpp_chapter003_dlib_grid_dlib_main",
-      "label": "main()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 28,
-      "community_name": "grid-dlib.cc",
-      "file_type": "code",
-      "norm_label": "main()",
-      "source_file": "homlcpp/chapter003/dlib/grid-dlib.cc",
-      "source_location": "L154"
-    },
-    {
-      "id": "homlcpp_chapter003_dlib_grid_dlib_parallelcrossvalidate",
-      "label": "ParallelCrossValidate()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 28,
-      "community_name": "grid-dlib.cc",
-      "file_type": "code",
-      "norm_label": "parallelcrossvalidate()",
-      "source_file": "homlcpp/chapter003/dlib/grid-dlib.cc",
-      "source_location": "L60"
-    },
-    {
       "id": "homlcpp_chapter001_dlib_linreg_dlib_func",
       "label": "func()",
       "_callable": true,
@@ -570,6 +632,18 @@
       "norm_label": "main()",
       "source_file": "homlcpp/chapter001/dlib/linreg_dlib.cpp",
       "source_location": "L16"
+    },
+    {
+      "id": "homlcpp_chapter001_xtensor_linalg_xtensor_main",
+      "label": "main()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 3,
+      "community_name": "Review",
+      "file_type": "code",
+      "norm_label": "main()",
+      "source_file": "homlcpp/chapter001/xtensor/linalg_xtensor.cc",
+      "source_location": "L12"
     },
     {
       "id": "homlcpp_chapter002_img_opencv_ocv_main",
@@ -596,6 +670,18 @@
       "source_location": "L113"
     },
     {
+      "id": "homlcpp_chapter004_dlib_cuda_dlib_main",
+      "label": "main()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 3,
+      "community_name": "Review",
+      "file_type": "code",
+      "norm_label": "main()",
+      "source_file": "homlcpp/chapter004/dlib/cuda_dlib.cc",
+      "source_location": "L18"
+    },
+    {
       "id": "homlcpp_chapter001_dlib_linalg_dlib_main",
       "label": "main()",
       "_callable": true,
@@ -620,40 +706,380 @@
       "source_location": "L10"
     },
     {
-      "id": "homlcpp_chapter002_hdf5_hdf5_main",
+      "id": "homlcpp_chapter002_csv_flashlight_csv_flashlight_load_dataset",
+      "label": "load_dataset()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 32,
+      "community_name": "load_dataset",
+      "file_type": "code",
+      "norm_label": "load_dataset()",
+      "source_file": "homlcpp/chapter002/csv/flashlight/csv_flashlight.cpp",
+      "source_location": "L13"
+    },
+    {
+      "id": "homlcpp_chapter002_csv_flashlight_csv_flashlight_main",
+      "label": "main()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 32,
+      "community_name": "load_dataset",
+      "file_type": "code",
+      "norm_label": "main()",
+      "source_file": "homlcpp/chapter002/csv/flashlight/csv_flashlight.cpp",
+      "source_location": "L45"
+    },
+    {
+      "id": "homlcpp_chapter001_eigen_linreg_eigen_generatedata",
+      "label": "GenerateData()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 33,
+      "community_name": "GenerateData",
+      "file_type": "code",
+      "norm_label": "generatedata()",
+      "source_file": "homlcpp/chapter001/eigen/linreg_eigen.cpp",
+      "source_location": "L9"
+    },
+    {
+      "id": "homlcpp_chapter001_eigen_linreg_eigen_main",
+      "label": "main()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 33,
+      "community_name": "GenerateData",
+      "file_type": "code",
+      "norm_label": "main()",
+      "source_file": "homlcpp/chapter001/eigen/linreg_eigen.cpp",
+      "source_location": "L39"
+    },
+    {
+      "id": "homlcpp_chapter004_mlpack_mlpack_cluster_dodbscanclustering",
+      "label": "DoDBScanClustering()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 5,
+      "community_name": "mlpack-cluster.cc",
+      "file_type": "code",
+      "norm_label": "dodbscanclustering()",
+      "source_file": "homlcpp/chapter004/mlpack/mlpack-cluster.cc",
+      "source_location": "L71"
+    },
+    {
+      "id": "homlcpp_chapter004_mlpack_mlpack_cluster_dogmmclustering",
+      "label": "DoGMMClustering()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 5,
+      "community_name": "mlpack-cluster.cc",
+      "file_type": "code",
+      "metadata": {
+        "unresolved_calls": [
+          {
+            "callee": "Train",
+            "receiver_type": "GMM",
+            "lang": "cpp",
+            "line": "L118"
+          },
+          {
+            "callee": "Classify",
+            "receiver_type": "GMM",
+            "lang": "cpp",
+            "line": "L121"
+          }
+        ]
+      },
+      "norm_label": "dogmmclustering()",
+      "source_file": "homlcpp/chapter004/mlpack/mlpack-cluster.cc",
+      "source_location": "L110"
+    },
+    {
+      "id": "homlcpp_chapter004_mlpack_mlpack_cluster_dokmeansclustering",
+      "label": "DoKMeansClustering()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 5,
+      "community_name": "mlpack-cluster.cc",
+      "file_type": "code",
+      "norm_label": "dokmeansclustering()",
+      "source_file": "homlcpp/chapter004/mlpack/mlpack-cluster.cc",
+      "source_location": "L54"
+    },
+    {
+      "id": "homlcpp_chapter004_mlpack_mlpack_cluster_domeanshiftclustering",
+      "label": "DoMeanShiftClustering()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 5,
+      "community_name": "mlpack-cluster.cc",
+      "file_type": "code",
+      "norm_label": "domeanshiftclustering()",
+      "source_file": "homlcpp/chapter004/mlpack/mlpack-cluster.cc",
+      "source_location": "L90"
+    },
+    {
+      "id": "homlcpp_chapter004_mlpack_mlpack_cluster_main",
+      "label": "main()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 5,
+      "community_name": "mlpack-cluster.cc",
+      "file_type": "code",
+      "metadata": {
+        "unresolved_calls": [
+          {
+            "callee": "begin",
+            "receiver_type": "Row<size_t>",
+            "lang": "cpp",
+            "line": "L154"
+          },
+          {
+            "callee": "end",
+            "receiver_type": "Row<size_t>",
+            "lang": "cpp",
+            "line": "L154"
+          }
+        ]
+      },
+      "norm_label": "main()",
+      "source_file": "homlcpp/chapter004/mlpack/mlpack-cluster.cc",
+      "source_location": "L133"
+    },
+    {
+      "id": "homlcpp_chapter004_mlpack_mlpack_cluster_plotclusters",
+      "label": "PlotClusters()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 5,
+      "community_name": "mlpack-cluster.cc",
+      "file_type": "code",
+      "metadata": {
+        "unresolved_calls": [
+          {
+            "callee": "SetTerminal",
+            "receiver_type": "Plot",
+            "lang": "cpp",
+            "line": "L30"
+          },
+          {
+            "callee": "SetOutput",
+            "receiver_type": "Plot",
+            "lang": "cpp",
+            "line": "L31"
+          },
+          {
+            "callee": "SetTitle",
+            "receiver_type": "Plot",
+            "lang": "cpp",
+            "line": "L32"
+          },
+          {
+            "callee": "SetXLabel",
+            "receiver_type": "Plot",
+            "lang": "cpp",
+            "line": "L33"
+          },
+          {
+            "callee": "SetYLabel",
+            "receiver_type": "Plot",
+            "lang": "cpp",
+            "line": "L34"
+          },
+          {
+            "callee": "SetAutoscale",
+            "receiver_type": "Plot",
+            "lang": "cpp",
+            "line": "L35"
+          },
+          {
+            "callee": "GnuplotCommand",
+            "receiver_type": "Plot",
+            "lang": "cpp",
+            "line": "L36"
+          },
+          {
+            "callee": "StartDraw2D<Coords::const_iterator>",
+            "receiver_type": "Plot",
+            "lang": "cpp",
+            "line": "L38"
+          },
+          {
+            "callee": "AddDrawing",
+            "receiver_type": "Plot",
+            "lang": "cpp",
+            "line": "L43"
+          },
+          {
+            "callee": "EndDraw2D",
+            "receiver_type": "Plot",
+            "lang": "cpp",
+            "line": "L50"
+          },
+          {
+            "callee": "Flush",
+            "receiver_type": "Plot",
+            "lang": "cpp",
+            "line": "L51"
+          }
+        ]
+      },
+      "norm_label": "plotclusters()",
+      "source_file": "homlcpp/chapter004/mlpack/mlpack-cluster.cc",
+      "source_location": "L26"
+    },
+    {
+      "id": "homlcpp_chapter004_dlib2_dlib_cluster_dographclustering",
+      "label": "DoGraphClustering()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 8,
+      "community_name": "dlib-cluster.cc",
+      "file_type": "code",
+      "norm_label": "dographclustering()",
+      "source_file": "homlcpp/chapter004/dlib2/dlib-cluster.cc",
+      "source_location": "L77"
+    },
+    {
+      "id": "homlcpp_chapter004_dlib2_dlib_cluster_dographnewmanclustering",
+      "label": "DoGraphNewmanClustering()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 8,
+      "community_name": "dlib-cluster.cc",
+      "file_type": "code",
+      "norm_label": "dographnewmanclustering()",
+      "source_file": "homlcpp/chapter004/dlib2/dlib-cluster.cc",
+      "source_location": "L101"
+    },
+    {
+      "id": "homlcpp_chapter004_dlib2_dlib_cluster_dohierarhicalclustering",
+      "label": "DoHierarhicalClustering()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 8,
+      "community_name": "dlib-cluster.cc",
+      "file_type": "code",
+      "norm_label": "dohierarhicalclustering()",
+      "source_file": "homlcpp/chapter004/dlib2/dlib-cluster.cc",
+      "source_location": "L54"
+    },
+    {
+      "id": "homlcpp_chapter004_dlib2_dlib_cluster_dokmeansclustering",
+      "label": "DoKMeansClustering()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 8,
+      "community_name": "dlib-cluster.cc",
+      "file_type": "code",
+      "norm_label": "dokmeansclustering()",
+      "source_file": "homlcpp/chapter004/dlib2/dlib-cluster.cc",
+      "source_location": "L127"
+    },
+    {
+      "id": "homlcpp_chapter004_dlib2_dlib_cluster_dospectralclustering",
+      "label": "DoSpectralClustering()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 8,
+      "community_name": "dlib-cluster.cc",
+      "file_type": "code",
+      "norm_label": "dospectralclustering()",
+      "source_file": "homlcpp/chapter004/dlib2/dlib-cluster.cc",
+      "source_location": "L186"
+    },
+    {
+      "id": "homlcpp_chapter004_dlib2_dlib_cluster_main",
       "label": "main()",
       "_callable": true,
       "_origin": "ast",
       "community": 8,
-      "community_name": "ReadPapersReviews",
+      "community_name": "dlib-cluster.cc",
       "file_type": "code",
       "norm_label": "main()",
-      "source_file": "homlcpp/chapter002/hdf5/hdf5.cpp",
-      "source_location": "L11"
+      "source_file": "homlcpp/chapter004/dlib2/dlib-cluster.cc",
+      "source_location": "L211"
     },
     {
-      "id": "homlcpp_chapter002_json_json_main",
-      "label": "main()",
+      "id": "homlcpp_chapter004_dlib2_dlib_cluster_plotclusters",
+      "label": "PlotClusters()",
       "_callable": true,
       "_origin": "ast",
       "community": 8,
-      "community_name": "ReadPapersReviews",
+      "community_name": "dlib-cluster.cc",
       "file_type": "code",
-      "norm_label": "main()",
-      "source_file": "homlcpp/chapter002/json/json.cc",
-      "source_location": "L11"
-    },
-    {
-      "id": "homlcpp_chapter002_json_reviewsreader_readpapersreviews",
-      "label": "ReadPapersReviews()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 8,
-      "community_name": "ReadPapersReviews",
-      "file_type": "code",
-      "norm_label": "readpapersreviews()",
-      "source_file": "homlcpp/chapter002/json/reviewsreader.cpp",
-      "source_location": "L161"
+      "metadata": {
+        "unresolved_calls": [
+          {
+            "callee": "SetTerminal",
+            "receiver_type": "Plot",
+            "lang": "cpp",
+            "line": "L30"
+          },
+          {
+            "callee": "SetOutput",
+            "receiver_type": "Plot",
+            "lang": "cpp",
+            "line": "L31"
+          },
+          {
+            "callee": "SetTitle",
+            "receiver_type": "Plot",
+            "lang": "cpp",
+            "line": "L32"
+          },
+          {
+            "callee": "SetXLabel",
+            "receiver_type": "Plot",
+            "lang": "cpp",
+            "line": "L33"
+          },
+          {
+            "callee": "SetYLabel",
+            "receiver_type": "Plot",
+            "lang": "cpp",
+            "line": "L34"
+          },
+          {
+            "callee": "SetAutoscale",
+            "receiver_type": "Plot",
+            "lang": "cpp",
+            "line": "L35"
+          },
+          {
+            "callee": "GnuplotCommand",
+            "receiver_type": "Plot",
+            "lang": "cpp",
+            "line": "L36"
+          },
+          {
+            "callee": "StartDraw2D<Coords::const_iterator>",
+            "receiver_type": "Plot",
+            "lang": "cpp",
+            "line": "L38"
+          },
+          {
+            "callee": "AddDrawing",
+            "receiver_type": "Plot",
+            "lang": "cpp",
+            "line": "L42"
+          },
+          {
+            "callee": "EndDraw2D",
+            "receiver_type": "Plot",
+            "lang": "cpp",
+            "line": "L49"
+          },
+          {
+            "callee": "Flush",
+            "receiver_type": "Plot",
+            "lang": "cpp",
+            "line": "L50"
+          }
+        ]
+      },
+      "norm_label": "plotclusters()",
+      "source_file": "homlcpp/chapter004/dlib2/dlib-cluster.cc",
+      "source_location": "L26"
     },
     {
       "id": "binary_t",
@@ -689,6 +1115,39 @@
       "source_location": ""
     },
     {
+      "id": "homlcpp_chapter002_hdf5_hdf5",
+      "label": "hdf5.cpp",
+      "_origin": "ast",
+      "community": 0,
+      "community_name": "ReviewsHandler",
+      "file_type": "code",
+      "norm_label": "hdf5.cpp",
+      "source_file": "homlcpp/chapter002/hdf5/hdf5.cpp",
+      "source_location": "L1"
+    },
+    {
+      "id": "homlcpp_chapter002_json_json",
+      "label": "json.cc",
+      "_origin": "ast",
+      "community": 0,
+      "community_name": "ReviewsHandler",
+      "file_type": "code",
+      "norm_label": "json.cc",
+      "source_file": "homlcpp/chapter002/json/json.cc",
+      "source_location": "L1"
+    },
+    {
+      "id": "homlcpp_chapter002_json_reviewsreader_cpp_homlcpp_chapter002_json_reviewsreader",
+      "label": "reviewsreader.cpp",
+      "_origin": "ast",
+      "community": 0,
+      "community_name": "ReviewsHandler",
+      "file_type": "code",
+      "norm_label": "reviewsreader.cpp",
+      "source_file": "homlcpp/chapter002/json/reviewsreader.cpp",
+      "source_location": "L1"
+    },
+    {
       "id": "homlcpp_chapter002_json_reviewsreader_cpp_string",
       "label": "string",
       "_origin": "ast",
@@ -698,6 +1157,17 @@
       "norm_label": "string",
       "source_file": "",
       "source_location": ""
+    },
+    {
+      "id": "homlcpp_chapter002_json_reviewsreader_h_homlcpp_chapter002_json_reviewsreader",
+      "label": "reviewsreader.h",
+      "_origin": "ast",
+      "community": 0,
+      "community_name": "ReviewsHandler",
+      "file_type": "code",
+      "norm_label": "reviewsreader.h",
+      "source_file": "homlcpp/chapter002/json/reviewsreader.h",
+      "source_location": "L1"
     },
     {
       "id": "homlcpp_chapter002_json_reviewsreader_reviewshandler_error",
@@ -832,11 +1302,22 @@
       "source_location": ""
     },
     {
+      "id": "datatype",
+      "label": "DataType",
+      "_origin": "ast",
+      "community": 1,
+      "community_name": "knn_kernel",
+      "file_type": "code",
+      "norm_label": "datatype",
+      "source_file": "",
+      "source_location": ""
+    },
+    {
       "id": "homlcpp_chapter002_csv_eigen_csv",
       "label": "csv.cpp",
       "_origin": "ast",
       "community": 1,
-      "community_name": "csv.cpp",
+      "community_name": "knn_kernel",
       "file_type": "code",
       "norm_label": "csv.cpp",
       "source_file": "homlcpp/chapter002/csv/eigen/csv.cpp",
@@ -847,51 +1328,51 @@
       "label": "vector",
       "_origin": "ast",
       "community": 1,
-      "community_name": "csv.cpp",
+      "community_name": "knn_kernel",
       "file_type": "code",
       "norm_label": "vector",
       "source_file": "",
       "source_location": ""
     },
     {
-      "id": "homlcpp_chapter002_csv_flashlight_csv_flashlight",
-      "label": "csv_flashlight.cpp",
+      "id": "homlcpp_chapter004_dlib2_dlib_cluster_cc_vector",
+      "label": "vector",
       "_origin": "ast",
       "community": 1,
-      "community_name": "csv.cpp",
+      "community_name": "knn_kernel",
       "file_type": "code",
-      "norm_label": "csv_flashlight.cpp",
-      "source_file": "homlcpp/chapter002/csv/flashlight/csv_flashlight.cpp",
-      "source_location": "L1"
-    },
-    {
-      "id": "homlcpp_chapter002_csv_flashlight_csv_flashlight_cpp_string",
-      "label": "string",
-      "_origin": "ast",
-      "community": 1,
-      "community_name": "csv.cpp",
-      "file_type": "code",
-      "norm_label": "string",
+      "norm_label": "vector",
       "source_file": "",
       "source_location": ""
     },
     {
-      "id": "homlcpp_chapter002_csv_flashlight_csv_flashlight_cpp_tensor",
-      "label": "Tensor",
+      "id": "homlcpp_chapter004_dlib2_dlib_cluster_knn_kernel_edges",
+      "label": "edges_",
       "_origin": "ast",
       "community": 1,
-      "community_name": "csv.cpp",
+      "community_name": "knn_kernel",
       "file_type": "code",
-      "norm_label": "tensor",
-      "source_file": "",
-      "source_location": ""
+      "norm_label": "edges_",
+      "source_file": "homlcpp/chapter004/dlib2/dlib-cluster.cc",
+      "source_location": "L181"
+    },
+    {
+      "id": "homlcpp_chapter004_dlib2_dlib_cluster_knn_kernel_samples",
+      "label": "samples_",
+      "_origin": "ast",
+      "community": 1,
+      "community_name": "knn_kernel",
+      "file_type": "code",
+      "norm_label": "samples_",
+      "source_file": "homlcpp/chapter004/dlib2/dlib-cluster.cc",
+      "source_location": "L182"
     },
     {
       "id": "index_sequence",
       "label": "index_sequence",
       "_origin": "ast",
       "community": 1,
-      "community_name": "csv.cpp",
+      "community_name": "knn_kernel",
       "file_type": "code",
       "norm_label": "index_sequence",
       "source_file": "",
@@ -902,9 +1383,20 @@
       "label": "R",
       "_origin": "ast",
       "community": 1,
-      "community_name": "csv.cpp",
+      "community_name": "knn_kernel",
       "file_type": "code",
       "norm_label": "r",
+      "source_file": "",
+      "source_location": ""
+    },
+    {
+      "id": "sample_pair",
+      "label": "sample_pair",
+      "_origin": "ast",
+      "community": 1,
+      "community_name": "knn_kernel",
+      "file_type": "code",
+      "norm_label": "sample_pair",
       "source_file": "",
       "source_location": ""
     },
@@ -913,20 +1405,9 @@
       "label": "T",
       "_origin": "ast",
       "community": 1,
-      "community_name": "csv.cpp",
+      "community_name": "knn_kernel",
       "file_type": "code",
       "norm_label": "t",
-      "source_file": "",
-      "source_location": ""
-    },
-    {
-      "id": "tuple",
-      "label": "tuple",
-      "_origin": "ast",
-      "community": 1,
-      "community_name": "csv.cpp",
-      "file_type": "code",
-      "norm_label": "tuple",
       "source_file": "",
       "source_location": ""
     },
@@ -1006,11 +1487,33 @@
       "source_location": "L1"
     },
     {
+      "id": "homlcpp_chapter003_dlib_grid_dlib",
+      "label": "grid-dlib.cc",
+      "_origin": "ast",
+      "community": 11,
+      "community_name": "grid-dlib.cc",
+      "file_type": "code",
+      "norm_label": "grid-dlib.cc",
+      "source_file": "homlcpp/chapter003/dlib/grid-dlib.cc",
+      "source_location": "L1"
+    },
+    {
+      "id": "homlcpp_chapter003_dlib_grid_dlib_cc_vector",
+      "label": "vector",
+      "_origin": "ast",
+      "community": 11,
+      "community_name": "grid-dlib.cc",
+      "file_type": "code",
+      "norm_label": "vector",
+      "source_file": "",
+      "source_location": ""
+    },
+    {
       "id": "homlcpp_chapter003_dlib_grid_dlib_foldstats_n",
       "label": "n",
       "_origin": "ast",
       "community": 11,
-      "community_name": "FoldStats",
+      "community_name": "grid-dlib.cc",
       "file_type": "code",
       "norm_label": "n",
       "source_file": "homlcpp/chapter003/dlib/grid-dlib.cc",
@@ -1021,7 +1524,7 @@
       "label": "sum_abs_err",
       "_origin": "ast",
       "community": 11,
-      "community_name": "FoldStats",
+      "community_name": "grid-dlib.cc",
       "file_type": "code",
       "norm_label": "sum_abs_err",
       "source_file": "homlcpp/chapter003/dlib/grid-dlib.cc",
@@ -1032,7 +1535,7 @@
       "label": "sum_abs_err_sq",
       "_origin": "ast",
       "community": 11,
-      "community_name": "FoldStats",
+      "community_name": "grid-dlib.cc",
       "file_type": "code",
       "norm_label": "sum_abs_err_sq",
       "source_file": "homlcpp/chapter003/dlib/grid-dlib.cc",
@@ -1043,7 +1546,7 @@
       "label": "sum_sq_err",
       "_origin": "ast",
       "community": 11,
-      "community_name": "FoldStats",
+      "community_name": "grid-dlib.cc",
       "file_type": "code",
       "norm_label": "sum_sq_err",
       "source_file": "homlcpp/chapter003/dlib/grid-dlib.cc",
@@ -1054,7 +1557,7 @@
       "label": "sum_x",
       "_origin": "ast",
       "community": 11,
-      "community_name": "FoldStats",
+      "community_name": "grid-dlib.cc",
       "file_type": "code",
       "norm_label": "sum_x",
       "source_file": "homlcpp/chapter003/dlib/grid-dlib.cc",
@@ -1065,7 +1568,7 @@
       "label": "sum_xx",
       "_origin": "ast",
       "community": 11,
-      "community_name": "FoldStats",
+      "community_name": "grid-dlib.cc",
       "file_type": "code",
       "norm_label": "sum_xx",
       "source_file": "homlcpp/chapter003/dlib/grid-dlib.cc",
@@ -1076,7 +1579,7 @@
       "label": "sum_xy",
       "_origin": "ast",
       "community": 11,
-      "community_name": "FoldStats",
+      "community_name": "grid-dlib.cc",
       "file_type": "code",
       "norm_label": "sum_xy",
       "source_file": "homlcpp/chapter003/dlib/grid-dlib.cc",
@@ -1087,7 +1590,7 @@
       "label": "sum_y",
       "_origin": "ast",
       "community": 11,
-      "community_name": "FoldStats",
+      "community_name": "grid-dlib.cc",
       "file_type": "code",
       "norm_label": "sum_y",
       "source_file": "homlcpp/chapter003/dlib/grid-dlib.cc",
@@ -1098,11 +1601,126 @@
       "label": "sum_yy",
       "_origin": "ast",
       "community": 11,
-      "community_name": "FoldStats",
+      "community_name": "grid-dlib.cc",
       "file_type": "code",
       "norm_label": "sum_yy",
       "source_file": "homlcpp/chapter003/dlib/grid-dlib.cc",
       "source_location": "L54"
+    },
+    {
+      "id": "labels",
+      "label": "Labels",
+      "_origin": "ast",
+      "community": 11,
+      "community_name": "grid-dlib.cc",
+      "file_type": "code",
+      "norm_label": "labels",
+      "source_file": "",
+      "source_location": ""
+    },
+    {
+      "id": "matrix",
+      "label": "matrix",
+      "_origin": "ast",
+      "community": 11,
+      "community_name": "grid-dlib.cc",
+      "file_type": "code",
+      "norm_label": "matrix",
+      "source_file": "",
+      "source_location": ""
+    },
+    {
+      "id": "pair",
+      "label": "pair",
+      "_origin": "ast",
+      "community": 11,
+      "community_name": "grid-dlib.cc",
+      "file_type": "code",
+      "norm_label": "pair",
+      "source_file": "",
+      "source_location": ""
+    },
+    {
+      "id": "samples",
+      "label": "Samples",
+      "_origin": "ast",
+      "community": 11,
+      "community_name": "grid-dlib.cc",
+      "file_type": "code",
+      "norm_label": "samples",
+      "source_file": "",
+      "source_location": ""
+    },
+    {
+      "id": "trainer",
+      "label": "Trainer",
+      "_origin": "ast",
+      "community": 11,
+      "community_name": "grid-dlib.cc",
+      "file_type": "code",
+      "norm_label": "trainer",
+      "source_file": "",
+      "source_location": ""
+    },
+    {
+      "id": "homlcpp_chapter003_dlib_readme",
+      "label": "dlib/README.md",
+      "_origin": "ast",
+      "community": 11,
+      "community_name": "grid-dlib.cc",
+      "file_type": "document",
+      "node_kind": "page",
+      "norm_label": "dlib/readme.md",
+      "source_file": "homlcpp/chapter003/dlib/README.md",
+      "source_location": "L1"
+    },
+    {
+      "id": "homlcpp_chapter003_dlib_readme_build",
+      "label": "Build",
+      "_origin": "ast",
+      "community": 11,
+      "community_name": "grid-dlib.cc",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "build",
+      "source_file": "homlcpp/chapter003/dlib/README.md",
+      "source_location": "L5"
+    },
+    {
+      "id": "homlcpp_chapter003_dlib_readme_chapter003_dlib",
+      "label": "chapter003 / dlib",
+      "_origin": "ast",
+      "community": 11,
+      "community_name": "grid-dlib.cc",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "chapter003 / dlib",
+      "source_file": "homlcpp/chapter003/dlib/README.md",
+      "source_location": "L1"
+    },
+    {
+      "id": "homlcpp_chapter003_dlib_readme_performance",
+      "label": "Performance",
+      "_origin": "ast",
+      "community": 11,
+      "community_name": "grid-dlib.cc",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "performance",
+      "source_file": "homlcpp/chapter003/dlib/README.md",
+      "source_location": "L22"
+    },
+    {
+      "id": "homlcpp_chapter003_dlib_readme_run",
+      "label": "Run",
+      "_origin": "ast",
+      "community": 11,
+      "community_name": "grid-dlib.cc",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "run",
+      "source_file": "homlcpp/chapter003/dlib/README.md",
+      "source_location": "L14"
     },
     {
       "id": "check_torch_example",
@@ -1216,7 +1834,7 @@
       "label": "linreg_blaze.cpp",
       "_origin": "ast",
       "community": 2,
-      "community_name": "vector",
+      "community_name": "GenerateData",
       "file_type": "code",
       "norm_label": "linreg_blaze.cpp",
       "source_file": "homlcpp/chapter001/blaze/linreg_blaze.cpp",
@@ -1227,7 +1845,7 @@
       "label": "Matrix",
       "_origin": "ast",
       "community": 2,
-      "community_name": "vector",
+      "community_name": "GenerateData",
       "file_type": "code",
       "norm_label": "matrix",
       "source_file": "",
@@ -1238,7 +1856,7 @@
       "label": "pair",
       "_origin": "ast",
       "community": 2,
-      "community_name": "vector",
+      "community_name": "GenerateData",
       "file_type": "code",
       "norm_label": "pair",
       "source_file": "",
@@ -1249,75 +1867,9 @@
       "label": "Vector",
       "_origin": "ast",
       "community": 2,
-      "community_name": "vector",
+      "community_name": "GenerateData",
       "file_type": "code",
       "norm_label": "vector",
-      "source_file": "",
-      "source_location": ""
-    },
-    {
-      "id": "homlcpp_chapter001_eigen_linreg_eigen",
-      "label": "linreg_eigen.cpp",
-      "_origin": "ast",
-      "community": 2,
-      "community_name": "vector",
-      "file_type": "code",
-      "norm_label": "linreg_eigen.cpp",
-      "source_file": "homlcpp/chapter001/eigen/linreg_eigen.cpp",
-      "source_location": "L1"
-    },
-    {
-      "id": "homlcpp_chapter001_eigen_linreg_eigen_cpp_pair",
-      "label": "pair",
-      "_origin": "ast",
-      "community": 2,
-      "community_name": "vector",
-      "file_type": "code",
-      "norm_label": "pair",
-      "source_file": "",
-      "source_location": ""
-    },
-    {
-      "id": "homlcpp_chapter001_xtensor_linalg_xtensor",
-      "label": "linalg_xtensor.cc",
-      "_origin": "ast",
-      "community": 2,
-      "community_name": "vector",
-      "file_type": "code",
-      "norm_label": "linalg_xtensor.cc",
-      "source_file": "homlcpp/chapter001/xtensor/linalg_xtensor.cc",
-      "source_location": "L1"
-    },
-    {
-      "id": "homlcpp_chapter002_json_paper_h_vector",
-      "label": "vector",
-      "_origin": "ast",
-      "community": 2,
-      "community_name": "vector",
-      "file_type": "code",
-      "norm_label": "vector",
-      "source_file": "",
-      "source_location": ""
-    },
-    {
-      "id": "homlcpp_chapter004_dlib_cuda_dlib",
-      "label": "cuda_dlib.cc",
-      "_origin": "ast",
-      "community": 2,
-      "community_name": "vector",
-      "file_type": "code",
-      "norm_label": "cuda_dlib.cc",
-      "source_file": "homlcpp/chapter004/dlib/cuda_dlib.cc",
-      "source_location": "L1"
-    },
-    {
-      "id": "matrixxf",
-      "label": "MatrixXf",
-      "_origin": "ast",
-      "community": 2,
-      "community_name": "vector",
-      "file_type": "code",
-      "norm_label": "matrixxf",
       "source_file": "",
       "source_location": ""
     },
@@ -1533,17 +2085,6 @@
       "source_location": ""
     },
     {
-      "id": "mat",
-      "label": "mat",
-      "_origin": "ast",
-      "community": 24,
-      "community_name": "GenerateData",
-      "file_type": "code",
-      "norm_label": "mat",
-      "source_file": "",
-      "source_location": ""
-    },
-    {
       "id": "rowvec",
       "label": "rowvec",
       "_origin": "ast",
@@ -1673,79 +2214,13 @@
       "source_location": "L16"
     },
     {
-      "id": "homlcpp_chapter003_dlib_grid_dlib",
-      "label": "grid-dlib.cc",
-      "_origin": "ast",
-      "community": 28,
-      "community_name": "grid-dlib.cc",
-      "file_type": "code",
-      "norm_label": "grid-dlib.cc",
-      "source_file": "homlcpp/chapter003/dlib/grid-dlib.cc",
-      "source_location": "L1"
-    },
-    {
       "id": "homlcpp_chapter003_dlib_grid_dlib_cc_matrix",
       "label": "matrix",
       "_origin": "ast",
       "community": 28,
-      "community_name": "grid-dlib.cc",
+      "community_name": "matrix",
       "file_type": "code",
       "norm_label": "matrix",
-      "source_file": "",
-      "source_location": ""
-    },
-    {
-      "id": "homlcpp_chapter003_dlib_grid_dlib_cc_pair",
-      "label": "pair",
-      "_origin": "ast",
-      "community": 28,
-      "community_name": "grid-dlib.cc",
-      "file_type": "code",
-      "norm_label": "pair",
-      "source_file": "",
-      "source_location": ""
-    },
-    {
-      "id": "homlcpp_chapter003_dlib_grid_dlib_cc_vector",
-      "label": "vector",
-      "_origin": "ast",
-      "community": 28,
-      "community_name": "grid-dlib.cc",
-      "file_type": "code",
-      "norm_label": "vector",
-      "source_file": "",
-      "source_location": ""
-    },
-    {
-      "id": "labels",
-      "label": "Labels",
-      "_origin": "ast",
-      "community": 28,
-      "community_name": "grid-dlib.cc",
-      "file_type": "code",
-      "norm_label": "labels",
-      "source_file": "",
-      "source_location": ""
-    },
-    {
-      "id": "samples",
-      "label": "Samples",
-      "_origin": "ast",
-      "community": 28,
-      "community_name": "grid-dlib.cc",
-      "file_type": "code",
-      "norm_label": "samples",
-      "source_file": "",
-      "source_location": ""
-    },
-    {
-      "id": "trainer",
-      "label": "Trainer",
-      "_origin": "ast",
-      "community": 28,
-      "community_name": "grid-dlib.cc",
-      "file_type": "code",
-      "norm_label": "trainer",
       "source_file": "",
       "source_location": ""
     },
@@ -1758,6 +2233,17 @@
       "file_type": "code",
       "norm_label": "linreg_dlib.cpp",
       "source_file": "homlcpp/chapter001/dlib/linreg_dlib.cpp",
+      "source_location": "L1"
+    },
+    {
+      "id": "homlcpp_chapter001_xtensor_linalg_xtensor",
+      "label": "linalg_xtensor.cc",
+      "_origin": "ast",
+      "community": 3,
+      "community_name": "Review",
+      "file_type": "code",
+      "norm_label": "linalg_xtensor.cc",
+      "source_file": "homlcpp/chapter001/xtensor/linalg_xtensor.cc",
       "source_location": "L1"
     },
     {
@@ -1790,6 +2276,17 @@
       "community_name": "Review",
       "file_type": "code",
       "norm_label": "string",
+      "source_file": "",
+      "source_location": ""
+    },
+    {
+      "id": "homlcpp_chapter002_json_paper_h_vector",
+      "label": "vector",
+      "_origin": "ast",
+      "community": 3,
+      "community_name": "Review",
+      "file_type": "code",
+      "norm_label": "vector",
       "source_file": "",
       "source_location": ""
     },
@@ -1937,6 +2434,17 @@
       "source_location": "L15"
     },
     {
+      "id": "homlcpp_chapter004_dlib_cuda_dlib",
+      "label": "cuda_dlib.cc",
+      "_origin": "ast",
+      "community": 3,
+      "community_name": "Review",
+      "file_type": "code",
+      "norm_label": "cuda_dlib.cc",
+      "source_file": "homlcpp/chapter004/dlib/cuda_dlib.cc",
+      "source_location": "L1"
+    },
+    {
       "id": "homlcpp_chapter001_dlib_linalg_dlib",
       "label": "linalg_dlib.cpp",
       "_origin": "ast",
@@ -1957,6 +2465,94 @@
       "norm_label": "csv_dlib.cpp",
       "source_file": "homlcpp/chapter002/csv/dlib/csv_dlib.cpp",
       "source_location": "L1"
+    },
+    {
+      "id": "homlcpp_chapter002_csv_flashlight_csv_flashlight",
+      "label": "csv_flashlight.cpp",
+      "_origin": "ast",
+      "community": 32,
+      "community_name": "load_dataset",
+      "file_type": "code",
+      "norm_label": "csv_flashlight.cpp",
+      "source_file": "homlcpp/chapter002/csv/flashlight/csv_flashlight.cpp",
+      "source_location": "L1"
+    },
+    {
+      "id": "homlcpp_chapter002_csv_flashlight_csv_flashlight_cpp_string",
+      "label": "string",
+      "_origin": "ast",
+      "community": 32,
+      "community_name": "load_dataset",
+      "file_type": "code",
+      "norm_label": "string",
+      "source_file": "",
+      "source_location": ""
+    },
+    {
+      "id": "homlcpp_chapter002_csv_flashlight_csv_flashlight_cpp_tensor",
+      "label": "Tensor",
+      "_origin": "ast",
+      "community": 32,
+      "community_name": "load_dataset",
+      "file_type": "code",
+      "norm_label": "tensor",
+      "source_file": "",
+      "source_location": ""
+    },
+    {
+      "id": "tuple",
+      "label": "tuple",
+      "_origin": "ast",
+      "community": 32,
+      "community_name": "load_dataset",
+      "file_type": "code",
+      "norm_label": "tuple",
+      "source_file": "",
+      "source_location": ""
+    },
+    {
+      "id": "homlcpp_chapter001_eigen_linreg_eigen",
+      "label": "linreg_eigen.cpp",
+      "_origin": "ast",
+      "community": 33,
+      "community_name": "GenerateData",
+      "file_type": "code",
+      "norm_label": "linreg_eigen.cpp",
+      "source_file": "homlcpp/chapter001/eigen/linreg_eigen.cpp",
+      "source_location": "L1"
+    },
+    {
+      "id": "homlcpp_chapter001_eigen_linreg_eigen_cpp_pair",
+      "label": "pair",
+      "_origin": "ast",
+      "community": 33,
+      "community_name": "GenerateData",
+      "file_type": "code",
+      "norm_label": "pair",
+      "source_file": "",
+      "source_location": ""
+    },
+    {
+      "id": "matrixxf",
+      "label": "MatrixXf",
+      "_origin": "ast",
+      "community": 33,
+      "community_name": "GenerateData",
+      "file_type": "code",
+      "norm_label": "matrixxf",
+      "source_file": "",
+      "source_location": ""
+    },
+    {
+      "id": "homlcpp_chapter003_dlib_grid_dlib_cc_pair",
+      "label": "pair",
+      "_origin": "ast",
+      "community": 34,
+      "community_name": "pair",
+      "file_type": "code",
+      "norm_label": "pair",
+      "source_file": "",
+      "source_location": ""
     },
     {
       "id": "readme",
@@ -2127,64 +2723,48 @@
       "source_location": "L179"
     },
     {
-      "id": "homlcpp_chapter003_dlib_readme",
-      "label": "dlib/README.md",
+      "id": "homlcpp_chapter004_mlpack_mlpack_cluster",
+      "label": "mlpack-cluster.cc",
       "_origin": "ast",
       "community": 5,
-      "community_name": "chapter003 / dlib",
-      "file_type": "document",
-      "node_kind": "page",
-      "norm_label": "dlib/readme.md",
-      "source_file": "homlcpp/chapter003/dlib/README.md",
+      "community_name": "mlpack-cluster.cc",
+      "file_type": "code",
+      "norm_label": "mlpack-cluster.cc",
+      "source_file": "homlcpp/chapter004/mlpack/mlpack-cluster.cc",
       "source_location": "L1"
     },
     {
-      "id": "homlcpp_chapter003_dlib_readme_build",
-      "label": "Build",
+      "id": "homlcpp_chapter004_mlpack_mlpack_cluster_cc_clusters",
+      "label": "Clusters",
       "_origin": "ast",
       "community": 5,
-      "community_name": "chapter003 / dlib",
-      "file_type": "document",
-      "node_kind": "heading",
-      "norm_label": "build",
-      "source_file": "homlcpp/chapter003/dlib/README.md",
-      "source_location": "L5"
+      "community_name": "mlpack-cluster.cc",
+      "file_type": "code",
+      "norm_label": "clusters",
+      "source_file": "",
+      "source_location": ""
     },
     {
-      "id": "homlcpp_chapter003_dlib_readme_chapter003_dlib",
-      "label": "chapter003 / dlib",
+      "id": "homlcpp_chapter004_mlpack_mlpack_cluster_cc_string",
+      "label": "string",
       "_origin": "ast",
       "community": 5,
-      "community_name": "chapter003 / dlib",
-      "file_type": "document",
-      "node_kind": "heading",
-      "norm_label": "chapter003 / dlib",
-      "source_file": "homlcpp/chapter003/dlib/README.md",
-      "source_location": "L1"
+      "community_name": "mlpack-cluster.cc",
+      "file_type": "code",
+      "norm_label": "string",
+      "source_file": "",
+      "source_location": ""
     },
     {
-      "id": "homlcpp_chapter003_dlib_readme_performance",
-      "label": "Performance",
+      "id": "mat",
+      "label": "mat",
       "_origin": "ast",
       "community": 5,
-      "community_name": "chapter003 / dlib",
-      "file_type": "document",
-      "node_kind": "heading",
-      "norm_label": "performance",
-      "source_file": "homlcpp/chapter003/dlib/README.md",
-      "source_location": "L22"
-    },
-    {
-      "id": "homlcpp_chapter003_dlib_readme_run",
-      "label": "Run",
-      "_origin": "ast",
-      "community": 5,
-      "community_name": "chapter003 / dlib",
-      "file_type": "document",
-      "node_kind": "heading",
-      "norm_label": "run",
-      "source_file": "homlcpp/chapter003/dlib/README.md",
-      "source_location": "L14"
+      "community_name": "mlpack-cluster.cc",
+      "file_type": "code",
+      "norm_label": "mat",
+      "source_file": "",
+      "source_location": ""
     },
     {
       "id": "claude",
@@ -2331,48 +2911,48 @@
       "source_location": "L1"
     },
     {
-      "id": "homlcpp_chapter002_hdf5_hdf5",
-      "label": "hdf5.cpp",
+      "id": "homlcpp_chapter004_dlib2_dlib_cluster",
+      "label": "dlib-cluster.cc",
       "_origin": "ast",
       "community": 8,
-      "community_name": "ReadPapersReviews",
+      "community_name": "dlib-cluster.cc",
       "file_type": "code",
-      "norm_label": "hdf5.cpp",
-      "source_file": "homlcpp/chapter002/hdf5/hdf5.cpp",
+      "norm_label": "dlib-cluster.cc",
+      "source_file": "homlcpp/chapter004/dlib2/dlib-cluster.cc",
       "source_location": "L1"
     },
     {
-      "id": "homlcpp_chapter002_json_json",
-      "label": "json.cc",
+      "id": "homlcpp_chapter004_dlib2_dlib_cluster_cc_clusters",
+      "label": "Clusters",
       "_origin": "ast",
       "community": 8,
-      "community_name": "ReadPapersReviews",
+      "community_name": "dlib-cluster.cc",
       "file_type": "code",
-      "norm_label": "json.cc",
-      "source_file": "homlcpp/chapter002/json/json.cc",
-      "source_location": "L1"
+      "norm_label": "clusters",
+      "source_file": "",
+      "source_location": ""
     },
     {
-      "id": "homlcpp_chapter002_json_reviewsreader_cpp_homlcpp_chapter002_json_reviewsreader",
-      "label": "reviewsreader.cpp",
+      "id": "homlcpp_chapter004_dlib2_dlib_cluster_cc_string",
+      "label": "string",
       "_origin": "ast",
       "community": 8,
-      "community_name": "ReadPapersReviews",
+      "community_name": "dlib-cluster.cc",
       "file_type": "code",
-      "norm_label": "reviewsreader.cpp",
-      "source_file": "homlcpp/chapter002/json/reviewsreader.cpp",
-      "source_location": "L1"
+      "norm_label": "string",
+      "source_file": "",
+      "source_location": ""
     },
     {
-      "id": "homlcpp_chapter002_json_reviewsreader_h_homlcpp_chapter002_json_reviewsreader",
-      "label": "reviewsreader.h",
+      "id": "i",
+      "label": "I",
       "_origin": "ast",
       "community": 8,
-      "community_name": "ReadPapersReviews",
+      "community_name": "dlib-cluster.cc",
       "file_type": "code",
-      "norm_label": "reviewsreader.h",
-      "source_file": "homlcpp/chapter002/json/reviewsreader.h",
-      "source_location": "L1"
+      "norm_label": "i",
+      "source_file": "",
+      "source_location": ""
     },
     {
       "id": "env_scripts_readme",
@@ -2445,6 +3025,160 @@
       "norm_label": "list of all third-party libraries",
       "source_file": "env_scripts/README.md",
       "source_location": "L103"
+    },
+    {
+      "id": "global_optimization",
+      "label": "global_optimization",
+      "community": 11,
+      "community_name": "grid-dlib.cc",
+      "external": true,
+      "file_type": "concept",
+      "norm_label": "global_optimization",
+      "source_file": "",
+      "type": "external"
+    },
+    {
+      "id": "iostream",
+      "label": "iostream",
+      "community": 11,
+      "community_name": "grid-dlib.cc",
+      "external": true,
+      "file_type": "concept",
+      "norm_label": "iostream",
+      "source_file": "",
+      "type": "external"
+    },
+    {
+      "id": "plot",
+      "label": "plot",
+      "community": 11,
+      "community_name": "grid-dlib.cc",
+      "external": true,
+      "file_type": "concept",
+      "norm_label": "plot",
+      "source_file": "",
+      "type": "external"
+    },
+    {
+      "id": "random",
+      "label": "random",
+      "community": 11,
+      "community_name": "grid-dlib.cc",
+      "external": true,
+      "file_type": "concept",
+      "norm_label": "random",
+      "source_file": "",
+      "type": "external"
+    },
+    {
+      "id": "svm",
+      "label": "svm",
+      "community": 11,
+      "community_name": "grid-dlib.cc",
+      "external": true,
+      "file_type": "concept",
+      "norm_label": "svm",
+      "source_file": "",
+      "type": "external"
+    },
+    {
+      "id": "algorithm",
+      "label": "algorithm",
+      "community": 5,
+      "community_name": "mlpack-cluster.cc",
+      "external": true,
+      "file_type": "concept",
+      "norm_label": "algorithm",
+      "source_file": "",
+      "type": "external"
+    },
+    {
+      "id": "core",
+      "label": "core",
+      "community": 5,
+      "community_name": "mlpack-cluster.cc",
+      "external": true,
+      "file_type": "concept",
+      "norm_label": "core",
+      "source_file": "",
+      "type": "external"
+    },
+    {
+      "id": "dbscan",
+      "label": "dbscan",
+      "community": 5,
+      "community_name": "mlpack-cluster.cc",
+      "external": true,
+      "file_type": "concept",
+      "norm_label": "dbscan",
+      "source_file": "",
+      "type": "external"
+    },
+    {
+      "id": "filesystem",
+      "label": "filesystem",
+      "community": 5,
+      "community_name": "mlpack-cluster.cc",
+      "external": true,
+      "file_type": "concept",
+      "norm_label": "filesystem",
+      "source_file": "",
+      "type": "external"
+    },
+    {
+      "id": "gmm",
+      "label": "gmm",
+      "community": 5,
+      "community_name": "mlpack-cluster.cc",
+      "external": true,
+      "file_type": "concept",
+      "norm_label": "gmm",
+      "source_file": "",
+      "type": "external"
+    },
+    {
+      "id": "kmeans",
+      "label": "kmeans",
+      "community": 5,
+      "community_name": "mlpack-cluster.cc",
+      "external": true,
+      "file_type": "concept",
+      "norm_label": "kmeans",
+      "source_file": "",
+      "type": "external"
+    },
+    {
+      "id": "mean_shift",
+      "label": "mean_shift",
+      "community": 5,
+      "community_name": "mlpack-cluster.cc",
+      "external": true,
+      "file_type": "concept",
+      "norm_label": "mean_shift",
+      "source_file": "",
+      "type": "external"
+    },
+    {
+      "id": "clustering",
+      "label": "clustering",
+      "community": 8,
+      "community_name": "dlib-cluster.cc",
+      "external": true,
+      "file_type": "concept",
+      "norm_label": "clustering",
+      "source_file": "",
+      "type": "external"
+    },
+    {
+      "id": "unordered_map",
+      "label": "unordered_map",
+      "community": 8,
+      "community_name": "dlib-cluster.cc",
+      "external": true,
+      "file_type": "concept",
+      "norm_label": "unordered_map",
+      "source_file": "",
+      "type": "external"
     }
   ],
   "links": [
@@ -2602,6 +3336,174 @@
       "context": "call",
       "source_file": "homlcpp/chapter003/mlpack/grid-mlpack.cc",
       "source_location": "L21",
+      "weight": 1.0
+    },
+    {
+      "source": "homlcpp_chapter004_dlib2_dlib_cluster_dographclustering",
+      "target": "homlcpp_chapter004_dlib2_dlib_cluster_plotclusters",
+      "relation": "calls",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "call",
+      "source_file": "homlcpp/chapter004/dlib2/dlib-cluster.cc",
+      "source_location": "L97",
+      "weight": 1.0
+    },
+    {
+      "source": "homlcpp_chapter004_dlib2_dlib_cluster_dographnewmanclustering",
+      "target": "homlcpp_chapter004_dlib2_dlib_cluster_plotclusters",
+      "relation": "calls",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "call",
+      "source_file": "homlcpp/chapter004/dlib2/dlib-cluster.cc",
+      "source_location": "L122",
+      "weight": 1.0
+    },
+    {
+      "source": "homlcpp_chapter004_dlib2_dlib_cluster_dohierarhicalclustering",
+      "target": "homlcpp_chapter004_dlib2_dlib_cluster_plotclusters",
+      "relation": "calls",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "call",
+      "source_file": "homlcpp/chapter004/dlib2/dlib-cluster.cc",
+      "source_location": "L73",
+      "weight": 1.0
+    },
+    {
+      "source": "homlcpp_chapter004_dlib2_dlib_cluster_dokmeansclustering",
+      "target": "homlcpp_chapter004_dlib2_dlib_cluster_plotclusters",
+      "relation": "calls",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "call",
+      "source_file": "homlcpp/chapter004/dlib2/dlib-cluster.cc",
+      "source_location": "L156",
+      "weight": 1.0
+    },
+    {
+      "source": "homlcpp_chapter004_dlib2_dlib_cluster_dospectralclustering",
+      "target": "homlcpp_chapter004_dlib2_dlib_cluster_plotclusters",
+      "relation": "calls",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "call",
+      "source_file": "homlcpp/chapter004/dlib2/dlib-cluster.cc",
+      "source_location": "L208",
+      "weight": 1.0
+    },
+    {
+      "source": "homlcpp_chapter004_dlib2_dlib_cluster_main",
+      "target": "homlcpp_chapter004_dlib2_dlib_cluster_dospectralclustering",
+      "relation": "calls",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "call",
+      "source_file": "homlcpp/chapter004/dlib2/dlib-cluster.cc",
+      "source_location": "L240",
+      "weight": 1.0
+    },
+    {
+      "source": "homlcpp_chapter004_mlpack_mlpack_cluster_dodbscanclustering",
+      "target": "homlcpp_chapter004_mlpack_mlpack_cluster_plotclusters",
+      "relation": "calls",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "call",
+      "source_file": "homlcpp/chapter004/mlpack/mlpack-cluster.cc",
+      "source_location": "L87",
+      "weight": 1.0
+    },
+    {
+      "source": "homlcpp_chapter004_mlpack_mlpack_cluster_dogmmclustering",
+      "target": "homlcpp_chapter004_mlpack_mlpack_cluster_plotclusters",
+      "relation": "calls",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "call",
+      "source_file": "homlcpp/chapter004/mlpack/mlpack-cluster.cc",
+      "source_location": "L130",
+      "weight": 1.0
+    },
+    {
+      "source": "homlcpp_chapter004_mlpack_mlpack_cluster_dokmeansclustering",
+      "target": "homlcpp_chapter004_mlpack_mlpack_cluster_plotclusters",
+      "relation": "calls",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "call",
+      "source_file": "homlcpp/chapter004/mlpack/mlpack-cluster.cc",
+      "source_location": "L68",
+      "weight": 1.0
+    },
+    {
+      "source": "homlcpp_chapter004_mlpack_mlpack_cluster_domeanshiftclustering",
+      "target": "homlcpp_chapter004_mlpack_mlpack_cluster_plotclusters",
+      "relation": "calls",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "call",
+      "source_file": "homlcpp/chapter004/mlpack/mlpack-cluster.cc",
+      "source_location": "L107",
+      "weight": 1.0
+    },
+    {
+      "source": "homlcpp_chapter004_mlpack_mlpack_cluster_main",
+      "target": "homlcpp_chapter004_mlpack_mlpack_cluster_dokmeansclustering",
+      "relation": "calls",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "call",
+      "source_file": "homlcpp/chapter004/mlpack/mlpack-cluster.cc",
+      "source_location": "L163",
+      "weight": 1.0
+    },
+    {
+      "source": "homlcpp_chapter004_mlpack_mlpack_cluster_main",
+      "target": "homlcpp_chapter004_mlpack_mlpack_cluster_dodbscanclustering",
+      "relation": "calls",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "call",
+      "source_file": "homlcpp/chapter004/mlpack/mlpack-cluster.cc",
+      "source_location": "L164",
+      "weight": 1.0
+    },
+    {
+      "source": "homlcpp_chapter004_mlpack_mlpack_cluster_main",
+      "target": "homlcpp_chapter004_mlpack_mlpack_cluster_domeanshiftclustering",
+      "relation": "calls",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "call",
+      "source_file": "homlcpp/chapter004/mlpack/mlpack-cluster.cc",
+      "source_location": "L165",
+      "weight": 1.0
+    },
+    {
+      "source": "homlcpp_chapter004_mlpack_mlpack_cluster_main",
+      "target": "homlcpp_chapter004_mlpack_mlpack_cluster_dogmmclustering",
+      "relation": "calls",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "call",
+      "source_file": "homlcpp/chapter004/mlpack/mlpack-cluster.cc",
+      "source_location": "L166",
       "weight": 1.0
     },
     {
@@ -2905,6 +3807,30 @@
       "weight": 1.0
     },
     {
+      "source": "homlcpp_chapter004_dlib2_dlib_cluster_knn_kernel",
+      "target": "homlcpp_chapter004_dlib2_dlib_cluster_knn_kernel_edges",
+      "relation": "defines",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "field",
+      "source_file": "homlcpp/chapter004/dlib2/dlib-cluster.cc",
+      "source_location": "L181",
+      "weight": 1.0
+    },
+    {
+      "source": "homlcpp_chapter004_dlib2_dlib_cluster_knn_kernel",
+      "target": "homlcpp_chapter004_dlib2_dlib_cluster_knn_kernel_samples",
+      "relation": "defines",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "field",
+      "source_file": "homlcpp/chapter004/dlib2/dlib-cluster.cc",
+      "source_location": "L182",
+      "weight": 1.0
+    },
+    {
       "source": "homlcpp_chapter002_json_reviewsreader_reviewshandler",
       "target": "homlcpp_chapter002_json_reviewsreader_reviewshandler_key",
       "relation": "method",
@@ -3010,6 +3936,18 @@
       "context": "field",
       "source_file": "homlcpp/chapter002/json/reviewsreader.cpp",
       "source_location": "L158",
+      "weight": 1.0
+    },
+    {
+      "source": "homlcpp_chapter004_dlib2_dlib_cluster_knn_kernel",
+      "target": "homlcpp_chapter004_dlib2_dlib_cluster_cc_vector",
+      "relation": "references",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "field",
+      "source_file": "homlcpp/chapter004/dlib2/dlib-cluster.cc",
+      "source_location": "L182",
       "weight": 1.0
     },
     {
@@ -3130,6 +4068,42 @@
       "context": "generic_arg",
       "source_file": "homlcpp/chapter003/mlpack/grid-mlpack.cc",
       "source_location": "L11",
+      "weight": 1.0
+    },
+    {
+      "source": "homlcpp_chapter004_dlib2_dlib_cluster_knn_kernel",
+      "target": "sample_pair",
+      "relation": "references",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "generic_arg",
+      "source_file": "homlcpp/chapter004/dlib2/dlib-cluster.cc",
+      "source_location": "L181",
+      "weight": 1.0
+    },
+    {
+      "source": "homlcpp_chapter004_dlib2_dlib_cluster_knn_kernel",
+      "target": "t",
+      "relation": "references",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "generic_arg",
+      "source_file": "homlcpp/chapter004/dlib2/dlib-cluster.cc",
+      "source_location": "L182",
+      "weight": 1.0
+    },
+    {
+      "source": "homlcpp_chapter004_dlib2_dlib_cluster_knn_kernel_knn_kernel",
+      "target": "t",
+      "relation": "references",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "generic_arg",
+      "source_file": "homlcpp/chapter004/dlib2/dlib-cluster.cc",
+      "source_location": "L161",
       "weight": 1.0
     },
     {
@@ -3314,7 +4288,19 @@
     },
     {
       "source": "homlcpp_chapter003_dlib_grid_dlib",
-      "target": "homlcpp_chapter003_dlib_grid_dlib_cc_matrix",
+      "target": "global_optimization",
+      "relation": "imports",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "import",
+      "source_file": "homlcpp/chapter003/dlib/grid-dlib.cc",
+      "source_location": "L1",
+      "weight": 1.0
+    },
+    {
+      "source": "homlcpp_chapter003_dlib_grid_dlib",
+      "target": "matrix",
       "relation": "imports",
       "_origin": "ast",
       "confidence": "EXTRACTED",
@@ -3326,7 +4312,55 @@
     },
     {
       "source": "homlcpp_chapter003_dlib_grid_dlib",
-      "target": "homlcpp_chapter002_json_paper_h_vector",
+      "target": "svm",
+      "relation": "imports",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "import",
+      "source_file": "homlcpp/chapter003/dlib/grid-dlib.cc",
+      "source_location": "L3",
+      "weight": 1.0
+    },
+    {
+      "source": "homlcpp_chapter003_dlib_grid_dlib",
+      "target": "plot",
+      "relation": "imports",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "import",
+      "source_file": "homlcpp/chapter003/dlib/grid-dlib.cc",
+      "source_location": "L5",
+      "weight": 1.0
+    },
+    {
+      "source": "homlcpp_chapter003_dlib_grid_dlib",
+      "target": "iostream",
+      "relation": "imports",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "import",
+      "source_file": "homlcpp/chapter003/dlib/grid-dlib.cc",
+      "source_location": "L7",
+      "weight": 1.0
+    },
+    {
+      "source": "homlcpp_chapter003_dlib_grid_dlib",
+      "target": "random",
+      "relation": "imports",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "import",
+      "source_file": "homlcpp/chapter003/dlib/grid-dlib.cc",
+      "source_location": "L8",
+      "weight": 1.0
+    },
+    {
+      "source": "homlcpp_chapter003_dlib_grid_dlib",
+      "target": "homlcpp_chapter003_dlib_grid_dlib_cc_vector",
       "relation": "imports",
       "_origin": "ast",
       "confidence": "EXTRACTED",
@@ -3334,6 +4368,78 @@
       "context": "import",
       "source_file": "homlcpp/chapter003/dlib/grid-dlib.cc",
       "source_location": "L9",
+      "weight": 1.0
+    },
+    {
+      "source": "homlcpp_chapter004_dlib2_dlib_cluster",
+      "target": "clustering",
+      "relation": "imports",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "import",
+      "source_file": "homlcpp/chapter004/dlib2/dlib-cluster.cc",
+      "source_location": "L1",
+      "weight": 1.0
+    },
+    {
+      "source": "homlcpp_chapter004_dlib2_dlib_cluster",
+      "target": "matrix",
+      "relation": "imports",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "import",
+      "source_file": "homlcpp/chapter004/dlib2/dlib-cluster.cc",
+      "source_location": "L2",
+      "weight": 1.0
+    },
+    {
+      "source": "homlcpp_chapter004_dlib2_dlib_cluster",
+      "target": "plot",
+      "relation": "imports",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "import",
+      "source_file": "homlcpp/chapter004/dlib2/dlib-cluster.cc",
+      "source_location": "L3",
+      "weight": 1.0
+    },
+    {
+      "source": "homlcpp_chapter004_dlib2_dlib_cluster",
+      "target": "filesystem",
+      "relation": "imports",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "import",
+      "source_file": "homlcpp/chapter004/dlib2/dlib-cluster.cc",
+      "source_location": "L5",
+      "weight": 1.0
+    },
+    {
+      "source": "homlcpp_chapter004_dlib2_dlib_cluster",
+      "target": "iostream",
+      "relation": "imports",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "import",
+      "source_file": "homlcpp/chapter004/dlib2/dlib-cluster.cc",
+      "source_location": "L6",
+      "weight": 1.0
+    },
+    {
+      "source": "homlcpp_chapter004_dlib2_dlib_cluster",
+      "target": "unordered_map",
+      "relation": "imports",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "import",
+      "source_file": "homlcpp/chapter004/dlib2/dlib-cluster.cc",
+      "source_location": "L7",
       "weight": 1.0
     },
     {
@@ -3346,6 +4452,114 @@
       "context": "import",
       "source_file": "homlcpp/chapter004/dlib/cuda_dlib.cc",
       "source_location": "L5",
+      "weight": 1.0
+    },
+    {
+      "source": "homlcpp_chapter004_mlpack_mlpack_cluster",
+      "target": "plot",
+      "relation": "imports",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "import",
+      "source_file": "homlcpp/chapter004/mlpack/mlpack-cluster.cc",
+      "source_location": "L1",
+      "weight": 1.0
+    },
+    {
+      "source": "homlcpp_chapter004_mlpack_mlpack_cluster",
+      "target": "algorithm",
+      "relation": "imports",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "import",
+      "source_file": "homlcpp/chapter004/mlpack/mlpack-cluster.cc",
+      "source_location": "L2",
+      "weight": 1.0
+    },
+    {
+      "source": "homlcpp_chapter004_mlpack_mlpack_cluster",
+      "target": "filesystem",
+      "relation": "imports",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "import",
+      "source_file": "homlcpp/chapter004/mlpack/mlpack-cluster.cc",
+      "source_location": "L3",
+      "weight": 1.0
+    },
+    {
+      "source": "homlcpp_chapter004_mlpack_mlpack_cluster",
+      "target": "iostream",
+      "relation": "imports",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "import",
+      "source_file": "homlcpp/chapter004/mlpack/mlpack-cluster.cc",
+      "source_location": "L4",
+      "weight": 1.0
+    },
+    {
+      "source": "homlcpp_chapter004_mlpack_mlpack_cluster",
+      "target": "core",
+      "relation": "imports",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "import",
+      "source_file": "homlcpp/chapter004/mlpack/mlpack-cluster.cc",
+      "source_location": "L5",
+      "weight": 1.0
+    },
+    {
+      "source": "homlcpp_chapter004_mlpack_mlpack_cluster",
+      "target": "dbscan",
+      "relation": "imports",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "import",
+      "source_file": "homlcpp/chapter004/mlpack/mlpack-cluster.cc",
+      "source_location": "L6",
+      "weight": 1.0
+    },
+    {
+      "source": "homlcpp_chapter004_mlpack_mlpack_cluster",
+      "target": "gmm",
+      "relation": "imports",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "import",
+      "source_file": "homlcpp/chapter004/mlpack/mlpack-cluster.cc",
+      "source_location": "L7",
+      "weight": 1.0
+    },
+    {
+      "source": "homlcpp_chapter004_mlpack_mlpack_cluster",
+      "target": "kmeans",
+      "relation": "imports",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "import",
+      "source_file": "homlcpp/chapter004/mlpack/mlpack-cluster.cc",
+      "source_location": "L8",
+      "weight": 1.0
+    },
+    {
+      "source": "homlcpp_chapter004_mlpack_mlpack_cluster",
+      "target": "mean_shift",
+      "relation": "imports",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "import",
+      "source_file": "homlcpp/chapter004/mlpack/mlpack-cluster.cc",
+      "source_location": "L9",
       "weight": 1.0
     },
     {
@@ -3697,6 +4911,294 @@
       "weight": 1.0
     },
     {
+      "source": "homlcpp_chapter004_dlib2_dlib_cluster_dographclustering",
+      "target": "homlcpp_chapter004_dlib2_dlib_cluster_cc_string",
+      "relation": "references",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "parameter_type",
+      "source_file": "homlcpp/chapter004/dlib2/dlib-cluster.cc",
+      "source_location": "L77",
+      "weight": 1.0
+    },
+    {
+      "source": "homlcpp_chapter004_dlib2_dlib_cluster_dographclustering",
+      "target": "i",
+      "relation": "references",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "parameter_type",
+      "source_file": "homlcpp/chapter004/dlib2/dlib-cluster.cc",
+      "source_location": "L77",
+      "weight": 1.0
+    },
+    {
+      "source": "homlcpp_chapter004_dlib2_dlib_cluster_dographnewmanclustering",
+      "target": "homlcpp_chapter004_dlib2_dlib_cluster_cc_string",
+      "relation": "references",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "parameter_type",
+      "source_file": "homlcpp/chapter004/dlib2/dlib-cluster.cc",
+      "source_location": "L101",
+      "weight": 1.0
+    },
+    {
+      "source": "homlcpp_chapter004_dlib2_dlib_cluster_dographnewmanclustering",
+      "target": "i",
+      "relation": "references",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "parameter_type",
+      "source_file": "homlcpp/chapter004/dlib2/dlib-cluster.cc",
+      "source_location": "L101",
+      "weight": 1.0
+    },
+    {
+      "source": "homlcpp_chapter004_dlib2_dlib_cluster_dohierarhicalclustering",
+      "target": "homlcpp_chapter004_dlib2_dlib_cluster_cc_string",
+      "relation": "references",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "parameter_type",
+      "source_file": "homlcpp/chapter004/dlib2/dlib-cluster.cc",
+      "source_location": "L54",
+      "weight": 1.0
+    },
+    {
+      "source": "homlcpp_chapter004_dlib2_dlib_cluster_dohierarhicalclustering",
+      "target": "i",
+      "relation": "references",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "parameter_type",
+      "source_file": "homlcpp/chapter004/dlib2/dlib-cluster.cc",
+      "source_location": "L54",
+      "weight": 1.0
+    },
+    {
+      "source": "homlcpp_chapter004_dlib2_dlib_cluster_dokmeansclustering",
+      "target": "homlcpp_chapter004_dlib2_dlib_cluster_cc_string",
+      "relation": "references",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "parameter_type",
+      "source_file": "homlcpp/chapter004/dlib2/dlib-cluster.cc",
+      "source_location": "L127",
+      "weight": 1.0
+    },
+    {
+      "source": "homlcpp_chapter004_dlib2_dlib_cluster_dokmeansclustering",
+      "target": "i",
+      "relation": "references",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "parameter_type",
+      "source_file": "homlcpp/chapter004/dlib2/dlib-cluster.cc",
+      "source_location": "L127",
+      "weight": 1.0
+    },
+    {
+      "source": "homlcpp_chapter004_dlib2_dlib_cluster_dospectralclustering",
+      "target": "homlcpp_chapter004_dlib2_dlib_cluster_cc_string",
+      "relation": "references",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "parameter_type",
+      "source_file": "homlcpp/chapter004/dlib2/dlib-cluster.cc",
+      "source_location": "L186",
+      "weight": 1.0
+    },
+    {
+      "source": "homlcpp_chapter004_dlib2_dlib_cluster_dospectralclustering",
+      "target": "i",
+      "relation": "references",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "parameter_type",
+      "source_file": "homlcpp/chapter004/dlib2/dlib-cluster.cc",
+      "source_location": "L186",
+      "weight": 1.0
+    },
+    {
+      "source": "homlcpp_chapter004_dlib2_dlib_cluster_knn_kernel_knn_kernel",
+      "target": "homlcpp_chapter004_dlib2_dlib_cluster_cc_vector",
+      "relation": "references",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "parameter_type",
+      "source_file": "homlcpp/chapter004/dlib2/dlib-cluster.cc",
+      "source_location": "L161",
+      "weight": 1.0
+    },
+    {
+      "source": "homlcpp_chapter004_dlib2_dlib_cluster_knn_kernel_operator",
+      "target": "t",
+      "relation": "references",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "parameter_type",
+      "source_file": "homlcpp/chapter004/dlib2/dlib-cluster.cc",
+      "source_location": "L168",
+      "weight": 1.0
+    },
+    {
+      "source": "homlcpp_chapter004_dlib2_dlib_cluster_plotclusters",
+      "target": "homlcpp_chapter004_dlib2_dlib_cluster_cc_clusters",
+      "relation": "references",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "parameter_type",
+      "source_file": "homlcpp/chapter004/dlib2/dlib-cluster.cc",
+      "source_location": "L26",
+      "weight": 1.0
+    },
+    {
+      "source": "homlcpp_chapter004_dlib2_dlib_cluster_plotclusters",
+      "target": "homlcpp_chapter004_dlib2_dlib_cluster_cc_string",
+      "relation": "references",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "parameter_type",
+      "source_file": "homlcpp/chapter004/dlib2/dlib-cluster.cc",
+      "source_location": "L26",
+      "weight": 1.0
+    },
+    {
+      "source": "homlcpp_chapter004_mlpack_mlpack_cluster_dodbscanclustering",
+      "target": "homlcpp_chapter004_mlpack_mlpack_cluster_cc_string",
+      "relation": "references",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "parameter_type",
+      "source_file": "homlcpp/chapter004/mlpack/mlpack-cluster.cc",
+      "source_location": "L71",
+      "weight": 1.0
+    },
+    {
+      "source": "homlcpp_chapter004_mlpack_mlpack_cluster_dodbscanclustering",
+      "target": "mat",
+      "relation": "references",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "parameter_type",
+      "source_file": "homlcpp/chapter004/mlpack/mlpack-cluster.cc",
+      "source_location": "L71",
+      "weight": 1.0
+    },
+    {
+      "source": "homlcpp_chapter004_mlpack_mlpack_cluster_dogmmclustering",
+      "target": "homlcpp_chapter004_mlpack_mlpack_cluster_cc_string",
+      "relation": "references",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "parameter_type",
+      "source_file": "homlcpp/chapter004/mlpack/mlpack-cluster.cc",
+      "source_location": "L110",
+      "weight": 1.0
+    },
+    {
+      "source": "homlcpp_chapter004_mlpack_mlpack_cluster_dogmmclustering",
+      "target": "mat",
+      "relation": "references",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "parameter_type",
+      "source_file": "homlcpp/chapter004/mlpack/mlpack-cluster.cc",
+      "source_location": "L110",
+      "weight": 1.0
+    },
+    {
+      "source": "homlcpp_chapter004_mlpack_mlpack_cluster_dokmeansclustering",
+      "target": "homlcpp_chapter004_mlpack_mlpack_cluster_cc_string",
+      "relation": "references",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "parameter_type",
+      "source_file": "homlcpp/chapter004/mlpack/mlpack-cluster.cc",
+      "source_location": "L54",
+      "weight": 1.0
+    },
+    {
+      "source": "homlcpp_chapter004_mlpack_mlpack_cluster_dokmeansclustering",
+      "target": "mat",
+      "relation": "references",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "parameter_type",
+      "source_file": "homlcpp/chapter004/mlpack/mlpack-cluster.cc",
+      "source_location": "L54",
+      "weight": 1.0
+    },
+    {
+      "source": "homlcpp_chapter004_mlpack_mlpack_cluster_domeanshiftclustering",
+      "target": "homlcpp_chapter004_mlpack_mlpack_cluster_cc_string",
+      "relation": "references",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "parameter_type",
+      "source_file": "homlcpp/chapter004/mlpack/mlpack-cluster.cc",
+      "source_location": "L90",
+      "weight": 1.0
+    },
+    {
+      "source": "homlcpp_chapter004_mlpack_mlpack_cluster_domeanshiftclustering",
+      "target": "mat",
+      "relation": "references",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "parameter_type",
+      "source_file": "homlcpp/chapter004/mlpack/mlpack-cluster.cc",
+      "source_location": "L90",
+      "weight": 1.0
+    },
+    {
+      "source": "homlcpp_chapter004_mlpack_mlpack_cluster_plotclusters",
+      "target": "homlcpp_chapter004_mlpack_mlpack_cluster_cc_clusters",
+      "relation": "references",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "parameter_type",
+      "source_file": "homlcpp/chapter004/mlpack/mlpack-cluster.cc",
+      "source_location": "L26",
+      "weight": 1.0
+    },
+    {
+      "source": "homlcpp_chapter004_mlpack_mlpack_cluster_plotclusters",
+      "target": "homlcpp_chapter004_mlpack_mlpack_cluster_cc_string",
+      "relation": "references",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "parameter_type",
+      "source_file": "homlcpp/chapter004/mlpack/mlpack-cluster.cc",
+      "source_location": "L26",
+      "weight": 1.0
+    },
+    {
       "source": "homlcpp_chapter001_blaze_linreg_blaze_generatedata",
       "target": "homlcpp_chapter001_blaze_linreg_blaze_cpp_pair",
       "relation": "references",
@@ -3746,7 +5248,7 @@
     },
     {
       "source": "homlcpp_chapter003_dlib_grid_dlib_generatedata",
-      "target": "homlcpp_chapter003_dlib_grid_dlib_cc_pair",
+      "target": "pair",
       "relation": "references",
       "_origin": "ast",
       "confidence": "EXTRACTED",
@@ -3770,7 +5272,7 @@
     },
     {
       "source": "homlcpp_chapter003_dlib_grid_dlib_parallelcrossvalidate",
-      "target": "homlcpp_chapter003_dlib_grid_dlib_cc_matrix",
+      "target": "matrix",
       "relation": "references",
       "_origin": "ast",
       "confidence": "EXTRACTED",
@@ -3802,6 +5304,18 @@
       "context": "return_type",
       "source_file": "homlcpp/chapter003/mlpack/grid-mlpack.cc",
       "source_location": "L11",
+      "weight": 1.0
+    },
+    {
+      "source": "homlcpp_chapter004_dlib2_dlib_cluster_knn_kernel_operator",
+      "target": "datatype",
+      "relation": "references",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "return_type",
+      "source_file": "homlcpp/chapter004/dlib2/dlib-cluster.cc",
+      "source_location": "L168",
       "weight": 1.0
     },
     {
@@ -4575,6 +6089,94 @@
       "weight": 1.0
     },
     {
+      "source": "homlcpp_chapter004_dlib2_dlib_cluster",
+      "target": "homlcpp_chapter004_dlib2_dlib_cluster_dographnewmanclustering",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "homlcpp/chapter004/dlib2/dlib-cluster.cc",
+      "source_location": "L101",
+      "weight": 1.0
+    },
+    {
+      "source": "homlcpp_chapter004_dlib2_dlib_cluster",
+      "target": "homlcpp_chapter004_dlib2_dlib_cluster_dokmeansclustering",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "homlcpp/chapter004/dlib2/dlib-cluster.cc",
+      "source_location": "L127",
+      "weight": 1.0
+    },
+    {
+      "source": "homlcpp_chapter004_dlib2_dlib_cluster",
+      "target": "homlcpp_chapter004_dlib2_dlib_cluster_knn_kernel",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "homlcpp/chapter004/dlib2/dlib-cluster.cc",
+      "source_location": "L160",
+      "weight": 1.0
+    },
+    {
+      "source": "homlcpp_chapter004_dlib2_dlib_cluster",
+      "target": "homlcpp_chapter004_dlib2_dlib_cluster_dospectralclustering",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "homlcpp/chapter004/dlib2/dlib-cluster.cc",
+      "source_location": "L186",
+      "weight": 1.0
+    },
+    {
+      "source": "homlcpp_chapter004_dlib2_dlib_cluster",
+      "target": "homlcpp_chapter004_dlib2_dlib_cluster_main",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "homlcpp/chapter004/dlib2/dlib-cluster.cc",
+      "source_location": "L211",
+      "weight": 1.0
+    },
+    {
+      "source": "homlcpp_chapter004_dlib2_dlib_cluster",
+      "target": "homlcpp_chapter004_dlib2_dlib_cluster_plotclusters",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "homlcpp/chapter004/dlib2/dlib-cluster.cc",
+      "source_location": "L26",
+      "weight": 1.0
+    },
+    {
+      "source": "homlcpp_chapter004_dlib2_dlib_cluster",
+      "target": "homlcpp_chapter004_dlib2_dlib_cluster_dohierarhicalclustering",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "homlcpp/chapter004/dlib2/dlib-cluster.cc",
+      "source_location": "L54",
+      "weight": 1.0
+    },
+    {
+      "source": "homlcpp_chapter004_dlib2_dlib_cluster",
+      "target": "homlcpp_chapter004_dlib2_dlib_cluster_dographclustering",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "homlcpp/chapter004/dlib2/dlib-cluster.cc",
+      "source_location": "L77",
+      "weight": 1.0
+    },
+    {
       "source": "homlcpp_chapter004_dlib_cuda_dlib",
       "target": "homlcpp_chapter004_dlib_cuda_dlib_main",
       "relation": "contains",
@@ -4583,6 +6185,72 @@
       "confidence_score": 1.0,
       "source_file": "homlcpp/chapter004/dlib/cuda_dlib.cc",
       "source_location": "L18",
+      "weight": 1.0
+    },
+    {
+      "source": "homlcpp_chapter004_mlpack_mlpack_cluster",
+      "target": "homlcpp_chapter004_mlpack_mlpack_cluster_dogmmclustering",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "homlcpp/chapter004/mlpack/mlpack-cluster.cc",
+      "source_location": "L110",
+      "weight": 1.0
+    },
+    {
+      "source": "homlcpp_chapter004_mlpack_mlpack_cluster",
+      "target": "homlcpp_chapter004_mlpack_mlpack_cluster_main",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "homlcpp/chapter004/mlpack/mlpack-cluster.cc",
+      "source_location": "L133",
+      "weight": 1.0
+    },
+    {
+      "source": "homlcpp_chapter004_mlpack_mlpack_cluster",
+      "target": "homlcpp_chapter004_mlpack_mlpack_cluster_plotclusters",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "homlcpp/chapter004/mlpack/mlpack-cluster.cc",
+      "source_location": "L26",
+      "weight": 1.0
+    },
+    {
+      "source": "homlcpp_chapter004_mlpack_mlpack_cluster",
+      "target": "homlcpp_chapter004_mlpack_mlpack_cluster_dokmeansclustering",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "homlcpp/chapter004/mlpack/mlpack-cluster.cc",
+      "source_location": "L54",
+      "weight": 1.0
+    },
+    {
+      "source": "homlcpp_chapter004_mlpack_mlpack_cluster",
+      "target": "homlcpp_chapter004_mlpack_mlpack_cluster_dodbscanclustering",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "homlcpp/chapter004/mlpack/mlpack-cluster.cc",
+      "source_location": "L71",
+      "weight": 1.0
+    },
+    {
+      "source": "homlcpp_chapter004_mlpack_mlpack_cluster",
+      "target": "homlcpp_chapter004_mlpack_mlpack_cluster_domeanshiftclustering",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "homlcpp/chapter004/mlpack/mlpack-cluster.cc",
+      "source_location": "L90",
       "weight": 1.0
     },
     {
@@ -4927,6 +6595,28 @@
       "weight": 1.0
     },
     {
+      "source": "homlcpp_chapter004_dlib2_dlib_cluster_knn_kernel",
+      "target": "homlcpp_chapter004_dlib2_dlib_cluster_knn_kernel_knn_kernel",
+      "relation": "method",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "homlcpp/chapter004/dlib2/dlib-cluster.cc",
+      "source_location": "L161",
+      "weight": 1.0
+    },
+    {
+      "source": "homlcpp_chapter004_dlib2_dlib_cluster_knn_kernel",
+      "target": "homlcpp_chapter004_dlib2_dlib_cluster_knn_kernel_operator",
+      "relation": "method",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "homlcpp/chapter004/dlib2/dlib-cluster.cc",
+      "source_location": "L168",
+      "weight": 1.0
+    },
+    {
       "source": "homlcpp_chapter002_hdf5_hdf5_main",
       "target": "homlcpp_chapter002_json_reviewsreader_readpapersreviews",
       "relation": "calls",
@@ -4949,8 +6639,20 @@
       "source_file": "homlcpp/chapter002/json/json.cc",
       "source_location": "L18",
       "weight": 1.0
+    },
+    {
+      "source": "homlcpp_chapter003_dlib_readme_performance",
+      "target": "homlcpp_chapter003_dlib_grid_dlib_parallelcrossvalidate",
+      "relation": "references",
+      "_origin": "ast",
+      "confidence": "INFERRED",
+      "confidence_score": 0.95,
+      "context": "ParallelCrossValidate()",
+      "source_file": "homlcpp/chapter003/dlib/README.md",
+      "source_location": "L24",
+      "weight": 1.0
     }
   ],
   "hyperedges": [],
-  "built_at_commit": "8d25b38241d154a822beb4d83c519e2bbb90d2b2"
+  "built_at_commit": "e91dd4cb1f007e75bc8982aadf3329593fc55f13"
 }

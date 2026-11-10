@@ -137,9 +137,9 @@ int main(int argc, char** argv) {
       auto dataset_full_name = base_dir / dataset_name;
       if (fs::exists(dataset_full_name)) {
         arma::mat dataset;
-        mlpack::data::DatasetInfo info;
+        mlpack::DatasetInfo info;
         // by default dataset will be loaded trasposed
-        data::Load(dataset_full_name, dataset, info, /*fail with error*/ true);
+        Load(dataset_full_name, dataset, info, /*fail with error*/ true);
 
         arma::Row<size_t> labels;
         labels = arma::conv_to<arma::Row<size_t>>::from(dataset.row(dataset.n_rows - 1));

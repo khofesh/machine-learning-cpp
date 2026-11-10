@@ -21,11 +21,11 @@ int main() {
   arma::mat scaled_x;
   arma::mat scaled_y;
 
-  data::MinMaxScaler x_scaler;
+  MinMaxScaler x_scaler;
   x_scaler.Fit(x);
   x_scaler.Transform(x, scaled_x);
 
-  data::MinMaxScaler y_scaler;
+  MinMaxScaler y_scaler;
   y_scaler.Fit(y);
   y_scaler.Transform(y, scaled_y);
 

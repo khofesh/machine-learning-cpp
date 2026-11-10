@@ -3,6 +3,7 @@ project(mlpack-classify)
 
 set(CMAKE_MODULE_PATH ${CMAKE_MODULE_PATH} "${CMAKE_CURRENT_SOURCE_DIR}/cmake")
 find_package(mlpack 4.0.1 REQUIRED)
+find_package(Armadillo CONFIG REQUIRED)
 
 set(PLOTCPP_PATH "" CACHE PATH "path to poltcpp install dir")
 

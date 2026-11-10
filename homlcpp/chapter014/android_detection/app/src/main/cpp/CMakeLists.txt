@@ -44,9 +44,9 @@ set(SOURCES
     yolo.cpp
 )
 
-add_library(${CMAKE_PROJECT_NAME} SHARED ${SOURCES})
+add_library(${PROJECT_NAME} SHARED ${SOURCES})
 
-target_link_libraries(${CMAKE_PROJECT_NAME}
+target_link_libraries(${PROJECT_NAME}
         android
         m
         log

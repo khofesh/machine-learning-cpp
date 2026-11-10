@@ -34,4 +34,5 @@ class MLFlow {
   httplib::Client http_client_;
   std::string experiment_id_;
   std::string run_id_;
+  bool enabled_{true};
 };

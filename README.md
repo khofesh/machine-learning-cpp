@@ -271,6 +271,67 @@ cd ~/vcpkg
 
 ```
 
+## building and running the samples
+
+All samples under `homlcpp/` belong to the root CMake project (chapters 001-013; chapter 014 is the Android app and is not configured here).
+
+```shell
+cmake -B build -S . -DCMAKE_BUILD_TYPE=Debug
+cmake --build build --parallel
+```
+
+Most examples take a dataset directory as the first argument:
+
+| sample | command |
+| --- | --- |
+| `chapter001/*` | run with no arguments |
+| `chapter002/csv/*`, `json_sample` | `data/iris.csv`, `data/reviews.json` |
+| `chapter002/hdf5` | `data/reviews.json` (writes `reviews.h5`) |
+| `chapter002/img/*` | an image path; interactive GUI (`img-dlib`, `img-opencv`) |
+| `chapter003/*` | no arguments (writes `plot.png`) |
+| `chapter004/dlib2`, `chapter004/mlpack` | `homlcpp/chapter004/data` |
+| `chapter005/*` | `homlcpp/chapter005/data` |
+| `chapter006/*` | `homlcpp/chapter006/data` |
+| `chapter007/*` | `homlcpp/chapter007/data` (generated sample data) |
+| `chapter008/eigen`, `chapter008/mlpack` | MovieLens folder with `movies.csv` and `ratings.csv` |
+| `chapter009/dlib` | no arguments |
+| `chapter009/mlpack` | `homlcpp/chapter009/data/adult.csv` |
+| `chapter010/dlib`, `chapter010/flashlight`, `chapter010/mlpack` | no arguments (synthetic data, `chapter010/data`) |
+| `chapter010/pytorch` | folder with raw MNIST `*-idx1-ubyte` / `*-idx3-ubyte` files |
+| `chapter012/*` (except onnx) | no arguments |
+| `chapter012/onnxruntime` | `<resnet50.onnx> <synset.txt> <image>` |
+| `chapter013/flashlight` | no arguments; set up an MLflow server to log metrics, otherwise it warns and continues |
+
+Datasets used by the runs above but not committed:
+
+- MovieLens: https://files.grouplens.org/datasets/movielens/ml-latest-small.zip
+- MNIST: https://storage.googleapis.com/cvdf-datasets/mnist/
+- ResNet-50 ONNX: https://github.com/onnx/models (`validated/vision/classification/resnet/model/resnet50-v1-7.onnx`) plus `synset.txt`
+
+`chapter008/eigen` is heavy in a `Debug` build (`-O0`); build with `-DCMAKE_BUILD_TYPE=Release` if it seems to hang.
+
+### sentiment-pytorch (chapter 011)
+
+`sentiment-pytorch` needs two external assets that are not in the repository:
+
+1. A TorchScript BERT model, exported with `transformers` (writes `homlcpp/chapter011/pytorch/bert_model.pt`, ~430 MB):
+
+```shell
+python3 -m venv .venv
+. .venv/bin/activate
+pip install torch transformers tqdm
+cd homlcpp/chapter011/pytorch
+python export.py
+```
+
+2. IMDB reviews in torchtext layout, i.e. `<dataset>/train/pos/*.txt` and `<dataset>/train/neg/*.txt` from https://ai.stanford.edu/~amaas/data/sentiment/aclImdb_v1.tar.gz (the `aclImdb` folder).
+
+`vocab.txt` (BERT cased vocabulary) is already in the repo. Run:
+
+```shell
+sentiment-pytorch /path/to/aclImdb homlcpp/chapter011/pytorch/vocab.txt homlcpp/chapter011/pytorch/bert_model.pt
+```
+
 ## folder structure
 
 ```shell

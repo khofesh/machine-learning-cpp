@@ -2,6 +2,7 @@ cmake_minimum_required(VERSION 3.10)
 project(fl_track)
 
 find_package(flashlight 0.4.0 REQUIRED)
+find_package(nlohmann_json CONFIG REQUIRED)
 
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 set(CMAKE_CXX_STANDARD 20)
@@ -28,4 +29,4 @@ set(SOURCES
 )
 
 add_executable(fl_track ${SOURCES})
-target_link_libraries(fl_track flashlight::flashlight)
+target_link_libraries(fl_track flashlight::flashlight nlohmann_json::nlohmann_json)

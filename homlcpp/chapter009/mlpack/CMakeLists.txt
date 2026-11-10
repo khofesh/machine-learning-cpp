@@ -3,6 +3,7 @@ project(mlpack-ensemble)
 
 set(CMAKE_MODULE_PATH ${CMAKE_MODULE_PATH} "${CMAKE_CURRENT_SOURCE_DIR}/cmake")
 find_package(mlpack 4.0.1 REQUIRED)
+find_package(Armadillo CONFIG REQUIRED)
 
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 set(CMAKE_CXX_STANDARD 20)

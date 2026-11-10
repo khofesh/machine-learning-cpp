@@ -1,6 +1,7 @@
 #include "mlflow.h"
 
 #include <chrono>
+#include <iostream>
 #include <nlohmann/json.hpp>
 
 namespace {
@@ -31,6 +32,13 @@ MLFlow::MLFlow(const std::string& host, size_t port)
 
 void MLFlow::set_experiment(const std::string& name) {
   auto res = http_client_.Get("/api/2.0/mlflow/experiments/get-by-name?experiment_name=" + name);
+  if (!res) {
+    // No tracking server available: keep running, just skip logging.
+    std::cerr << "MLflow server is not reachable (" << httplib::to_string(res.error())
+              << "); metrics will not be logged" << std::endl;
+    enabled_ = false;
+    return;
+  }
   if (check_result(res, 404)) {
     // create new one
     nlohmann::json request;
@@ -50,6 +58,7 @@ void MLFlow::set_experiment(const std::string& name) {
 }
 
 void MLFlow::start_run() {
+  if (!enabled_) return;
   nlohmann::json request;
   request["experiment_id"] = experiment_id_;
   request["start_time"] = duration_cast<std::chrono::milliseconds>(std::chrono::system_clock::now().time_since_epoch()).count();
@@ -60,6 +69,7 @@ void MLFlow::start_run() {
 }
 
 void MLFlow::end_run() {
+  if (!enabled_) return;
   nlohmann::json request;
   request["run_id"] = run_id_;
   request["status"] = "FINISHED";
@@ -70,6 +80,7 @@ void MLFlow::end_run() {
 }
 
 void MLFlow::log_metric(const std::string& name, float value, size_t epoch) {
+  if (!enabled_) return;
   nlohmann::json request;
   request["run_id"] = run_id_;
   request["key"] = name;
@@ -83,6 +94,7 @@ void MLFlow::log_metric(const std::string& name, float value, size_t epoch) {
 }
 
 void MLFlow::log_param(const std::string& name, const std::string& value) {
+  if (!enabled_) return;
   nlohmann::json request;
   request["run_id"] = run_id_;
   request["key"] = name;

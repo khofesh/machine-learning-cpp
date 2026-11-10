@@ -29,6 +29,6 @@ set(SOURCE_FILES main.cpp
                  model.h
                  model.cpp)
 
-add_executable("${CMAKE_PROJECT_NAME}" ${SOURCE_FILES})
-target_link_libraries("${CMAKE_PROJECT_NAME}" ${TORCH_LIBRARIES} ${OpenCV_LIBS})
+add_executable(${PROJECT_NAME} ${SOURCE_FILES})
+target_link_libraries(${PROJECT_NAME} ${TORCH_LIBRARIES} ${OpenCV_LIBS})
 

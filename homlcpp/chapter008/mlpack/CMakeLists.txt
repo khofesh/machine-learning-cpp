@@ -3,6 +3,7 @@ project(mlpack-recommender)
 
 set(CMAKE_MODULE_PATH ${CMAKE_MODULE_PATH} "${CMAKE_CURRENT_SOURCE_DIR}/cmake")
 find_package(mlpack 4.0.1 REQUIRED)
+find_package(Armadillo CONFIG REQUIRED)
 
 find_package(Boost REQUIRED serialization)
 

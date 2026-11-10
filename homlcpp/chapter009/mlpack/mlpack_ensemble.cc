@@ -112,8 +112,8 @@ int main(int argc, char** argv) {
     if (fs::exists(dataset_name)) {
       dataset_name = ConvertToCSV(dataset_name);
       arma::mat data;
-      mlpack::data::DatasetInfo info;
-      data::Load(dataset_name, data, info, /*fail with error*/ true);
+      mlpack::DatasetInfo info;
+      Load(dataset_name, data, info, /*fail with error*/ true);
 
       arma::Row<size_t> labels;
       labels = arma::conv_to<arma::Row<size_t>>::from(data.row(0));

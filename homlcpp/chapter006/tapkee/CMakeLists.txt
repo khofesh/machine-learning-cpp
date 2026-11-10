@@ -40,3 +40,7 @@ include_directories(${TAPKEE_PATH})
 
 add_executable(tapkee-dr tapkee-dr.cc util.cc)
 target_link_libraries (tapkee-dr Eigen3::Eigen OpenMP::OpenMP_CXX fmt::fmt)
+
+# tapkee 1.4 headers assume fmt::format/assert are pulled in transitively;
+# newer libstdc++/fmt no longer do that.
+target_compile_options(tapkee-dr PRIVATE "SHELL:-include fmt/format.h" "SHELL:-include cassert")

@@ -59,7 +59,7 @@ void StackingClassification(size_t num_classes,
   ShuffleData(raw_train_input, raw_train_labels, train_input, train_labels);
 
   // Normalize data
-  data::StandardScaler sample_scaler;
+  StandardScaler sample_scaler;
   sample_scaler.Fit(train_input);
   arma::mat scaled_train_input(train_input.n_rows, train_input.n_cols);
   sample_scaler.Transform(train_input, scaled_train_input);

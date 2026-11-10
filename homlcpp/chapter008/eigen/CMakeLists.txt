@@ -12,7 +12,7 @@ set(CMAKE_VERBOSE_MAKEFILE ON)
 add_compile_options(
        -Wall -Wextra -msse3 -fopenmp
        $<$<CONFIG:RELEASE>:-Ofast>
-       $<$<CONFIG:DEBUG>:-O0>
+       $<$<CONFIG:DEBUG>:-Og>
        $<$<CONFIG:DEBUG>:-ggdb3>
 )
 

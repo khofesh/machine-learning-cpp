@@ -25,7 +25,8 @@ using Clusters = std::unordered_map<size_t, PointCoords>;
 
 void PlotClusters(const Clusters& clusters,
                   const std::string& name,
-                  const std::string& file_name) {
+                  const std::string& file_name,
+                  const PointCoords& noise = {}) {
   plotcpp::Plot plt;
   plt.SetTerminal("png");
   plt.SetOutput(file_name);
@@ -36,7 +37,10 @@ void PlotClusters(const Clusters& clusters,
   plt.GnuplotCommand("set grid");
 
   auto draw_state = plt.StartDraw2D<Coords::const_iterator>();
+  bool has_points = false;
   for (auto& cluster : clusters) {
+    if (cluster.second.first.empty())
+      continue;
     std::stringstream params;
     auto color_index = cluster.first % colors.size();
     params << "lc rgb '" << colors[color_index] << "' pt 7";
@@ -45,6 +49,22 @@ void PlotClusters(const Clusters& clusters,
                        cluster.second.first.begin(), cluster.second.first.end(),
                        cluster.second.second.begin(),
                        std::to_string(color_index) + " cls", params.str()));
+    has_points = true;
+  }
+
+  if (!noise.first.empty()) {
+    // noise is drawn last so that it never hides the actual clusters
+    plt.AddDrawing(draw_state,
+                   plotcpp::Points(noise.first.begin(), noise.first.end(),
+                                   noise.second.begin(), "noise",
+                                   "lc rgb 'gray' pt 7 ps 0.4"));
+    has_points = true;
+  }
+
+  if (!has_points) {
+    std::cout << name << ": nothing to plot, skipping " << file_name
+              << std::endl;
+    return;
   }
 
   plt.EndDraw2D(draw_state);
@@ -76,15 +96,19 @@ void DoDBScanClustering(const arma::mat& inputs,
   dbscan.Cluster(inputs, assignments);
 
   Clusters plot_clusters;
+  PointCoords noise;
   for (size_t i = 0; i != inputs.n_cols; ++i) {
     auto cluser_idx = assignments[i];
     if (cluser_idx != SIZE_MAX) {
       plot_clusters[cluser_idx].first.push_back(inputs.at(0, i));
       plot_clusters[cluser_idx].second.push_back(inputs.at(1, i));
+    } else {
+      noise.first.push_back(inputs.at(0, i));
+      noise.second.push_back(inputs.at(1, i));
     }
   }
 
-  PlotClusters(plot_clusters, "DBDScan", name + "-dbscan.png");
+  PlotClusters(plot_clusters, "DBDScan", name + "-dbscan.png", noise);
 }
 
 void DoMeanShiftClustering(const arma::mat& inputs,

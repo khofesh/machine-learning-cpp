@@ -249,7 +249,24 @@ Datasets used by the runs above but not committed:
 - MNIST: https://storage.googleapis.com/cvdf-datasets/mnist/
 - ResNet-50 ONNX: https://github.com/onnx/models (`validated/vision/classification/resnet/model/resnet50-v1-7.onnx`) plus `synset.txt`
 
-`chapter006/*` and `chapter008/eigen` are heavy in a `Debug` build (`-O0`); build with `-DCMAKE_BUILD_TYPE=Release` if it seems to hang.
+`chapter006/*` and `chapter008/eigen` are heavy; their `Debug` builds use `-Og` so a plain `Debug` run stays usable (`-DCMAKE_BUILD_TYPE=Release` is still faster for long runs).
+
+### onnx-load (chapter 012)
+
+`onnx-load` needs the ResNet-50 ONNX model and the ImageNet labels. They are not committed (`.gitignore`) but can be placed in `homlcpp/chapter012/onnxruntime/model/`:
+
+```shell
+cd homlcpp/chapter012/onnxruntime/model
+curl -fL -O https://github.com/onnx/models/raw/main/validated/vision/classification/resnet/model/resnet50-v1-7.onnx
+curl -fL -O https://raw.githubusercontent.com/onnx/models/main/validated/vision/classification/synset.txt
+```
+
+Run:
+
+```shell
+onnx-load homlcpp/chapter012/onnxruntime/model/resnet50-v1-7.onnx \
+          homlcpp/chapter012/onnxruntime/model/synset.txt <image>
+```
 
 ### sentiment-pytorch (chapter 011)
 

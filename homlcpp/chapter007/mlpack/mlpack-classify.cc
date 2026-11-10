@@ -146,8 +146,7 @@ int main(int argc, char** argv) {
       auto dataset_name = base_dir / dataset;
       if (fs::exists(dataset_name)) {
         arma::mat data;
-        mlpack::DatasetInfo info;
-        Load(dataset_name, data, info, /*fail with error*/ true);
+        Load(dataset_name, data, mlpack::Fatal + mlpack::Categorical);
 
         arma::Row<size_t> labels;
         labels = arma::conv_to<arma::Row<size_t>>::from(data.row(data.n_rows - 1));

@@ -280,6 +280,8 @@ cmake -B build -S . -DCMAKE_BUILD_TYPE=Debug
 cmake --build build --parallel
 ```
 
+Eigen comes from `development/libs` (`homlcpp/CMakeLists.txt` sets `Eigen3_DIR` and turns off the CMake user package registry, because the onnxruntime build registers its bundled Eigen in `~/.cmake/packages`). If an old `build/` still points at that Eigen, reconfigure with `-UEigen3_DIR`.
+
 Most examples take a dataset directory as the first argument:
 
 | sample | command |
@@ -295,7 +297,7 @@ Most examples take a dataset directory as the first argument:
 | `chapter007/*` | `homlcpp/chapter007/data` (generated sample data) |
 | `chapter008/eigen`, `chapter008/mlpack` | MovieLens folder with `movies.csv` and `ratings.csv` |
 | `chapter009/dlib` | no arguments |
-| `chapter009/mlpack` | `homlcpp/chapter009/data/adult.csv` |
+| `chapter009/mlpack` | `homlcpp/chapter009/data/wdbc.data` (UCI Breast Cancer Wisconsin) |
 | `chapter010/dlib`, `chapter010/flashlight`, `chapter010/mlpack` | no arguments (synthetic data, `chapter010/data`) |
 | `chapter010/pytorch` | folder with raw MNIST `*-idx1-ubyte` / `*-idx3-ubyte` files |
 | `chapter012/*` (except onnx) | no arguments |
@@ -339,6 +341,13 @@ If the Stanford host is unreachable, the script falls back to the HuggingFace pa
 ```shell
 sentiment-pytorch /path/to/aclImdb homlcpp/chapter011/pytorch/vocab.txt homlcpp/chapter011/pytorch/bert_model.pt
 ```
+
+### known open issues
+
+- `chapter004/mlpack` (`mlpack-cluster`): one of the cluster plots comes out empty, and gnuplot prints `plot` / `function to plot expected`. Probably DBSCAN (`epsilon 0.1`, `min_points 15`) marks every point of one dataset as noise, so nothing gets plotted. Not yet confirmed which dataset or plot it is.
+- `chapter011/pytorch` (`sentiment-pytorch`) and `chapter012/onnxruntime` (`onnx-load`) are built but have not been run against the updated libs, because the BERT TorchScript model and the ResNet-50 ONNX model are not in the repo (see above).
+- `chapter006/*` and `chapter008/eigen` take minutes in a `Debug` build; use `Release` for quick runs.
+- The installed Eigen in `development/libs` is still 3.4.0, while `env_scripts/install_env.sh` pins 5.0.1. The CMake files accept either version (no version in `find_package(Eigen3)`), but the samples have only been built against 3.4.0.
 
 ## folder structure
 

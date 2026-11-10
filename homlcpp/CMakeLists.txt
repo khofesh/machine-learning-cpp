@@ -12,6 +12,13 @@ if(NOT MLPACK_INCLUDE_DIR)
   find_path(MLPACK_INCLUDE_DIR NAMES mlpack/core.hpp)
 endif()
 
+# Eigen is installed under development/libs; ignore ~/.cmake/packages entries
+# (e.g. onnxruntime's bundled Eigen registers itself there)
+set(CMAKE_FIND_USE_PACKAGE_REGISTRY OFF)
+if(EXISTS ${LIBS_DIR}/share/eigen3/cmake/Eigen3Config.cmake)
+  set(Eigen3_DIR ${LIBS_DIR}/share/eigen3/cmake CACHE PATH "Eigen3 config dir" FORCE)
+endif()
+
 # onnxruntime is installed under development/libs; make its config discoverable
 if(NOT onnxruntime_DIR AND EXISTS ${LIBS_DIR}/lib64/cmake/onnxruntime/onnxruntimeConfig.cmake)
   set(onnxruntime_DIR ${LIBS_DIR}/lib64/cmake/onnxruntime CACHE PATH "onnxruntime config dir")

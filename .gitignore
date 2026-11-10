@@ -73,3 +73,6 @@ graphify-out/[0-9][0-9][0-9][0-9]-[0-9][0-9]-[0-9][0-9]/
 
 
 .gradle/
+
+# chapter009 mlpack converts its input to <name>.csv next to it
+homlcpp/chapter009/data/*.csv

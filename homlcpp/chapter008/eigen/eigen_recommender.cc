@@ -89,7 +89,9 @@ void PrintRecommendations(const Matrix& ratings_matrix,
 
 int main(int argc, char** argv) {
   if (argc == 2) {
-    Eigen::initParallel();
+#if !EIGEN_VERSION_AT_LEAST(3, 4, 90)
+    Eigen::initParallel();  // no-op and deprecated since Eigen 5
+#endif
     auto root_path = fs::path(argv[1]);
     if (fs::exists(root_path)) {
       SparseMatrix ratings_matrix;  // user-item ratings

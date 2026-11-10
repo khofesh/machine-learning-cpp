@@ -2,7 +2,7 @@ cmake_minimum_required(VERSION 3.10)
 project(tapkee-dr)
 
 find_package(OpenMP)
-find_package(Eigen3 3.4.0 REQUIRED)
+find_package(Eigen3 REQUIRED)  # 3.4 or 5.x
 find_package(fmt)
 
 set(TAPKEE_PATH "" CACHE PATH "path to tapkee install dir")

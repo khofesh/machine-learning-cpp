@@ -163,9 +163,8 @@ using Dataset = std::pair<arma::mat, arma::mat>;
 
 Dataset LoadDataset(const fs::path& file_path) {
   arma::mat dataset;
-  mlpack::DatasetInfo info;
   // by default dataset will be loaded trasposed
-  Load(file_path, dataset, info, /*fail with error*/ true);
+  Load(file_path, dataset, mlpack::Fatal + mlpack::Categorical);
 
   // split the data assuming that columns are samples and rows are features
   long n_normal = 50;

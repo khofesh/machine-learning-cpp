@@ -2,7 +2,7 @@ cmake_minimum_required(VERSION 3.22)
 project(json_sample)
 
 find_package(nlohmann_json CONFIG REQUIRED)
-find_package(Eigen3 3.4.0 REQUIRED)
+find_package(Eigen3 REQUIRED)  # 3.4 or 5.x
 
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 set(CMAKE_CXX_STANDARD 20)

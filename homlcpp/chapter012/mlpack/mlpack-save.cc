@@ -34,10 +34,10 @@ int main() {
 
   model.Train(x, y, optimizer, ens::ProgressBar());
 
-  Save("model.bin", model.Parameters(), true);
+  Save("model.bin", model.Parameters(), Fatal + ArmaBin);
 
   auto new_model = make_model();
-  Load("model.bin", new_model.Parameters(), true);
+  Load("model.bin", new_model.Parameters(), Fatal + ArmaBin);
 
   arma::mat predictions;
   new_model.Predict(x, predictions);

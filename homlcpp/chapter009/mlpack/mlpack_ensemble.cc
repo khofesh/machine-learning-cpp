@@ -57,12 +57,10 @@ void ABClassification(size_t num_classes,
                       const arma::mat& test_input,
                       const arma::Row<size_t>& test_labels) {
   using namespace mlpack;
-  Perceptron<> p;
   AdaBoost<Perceptron<>> ab;
   ab.Train(train_input,
            train_labels,
            num_classes,
-           p,
            /*iterations*/ 1000,
            /*tolerance*/ 1e-10);
 
@@ -112,8 +110,7 @@ int main(int argc, char** argv) {
     if (fs::exists(dataset_name)) {
       dataset_name = ConvertToCSV(dataset_name);
       arma::mat data;
-      mlpack::DatasetInfo info;
-      Load(dataset_name, data, info, /*fail with error*/ true);
+      Load(dataset_name, data, mlpack::Fatal + mlpack::Categorical);
 
       arma::Row<size_t> labels;
       labels = arma::conv_to<arma::Row<size_t>>::from(data.row(0));

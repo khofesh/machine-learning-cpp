@@ -124,13 +124,26 @@
       "source_location": "L11"
     },
     {
+      "id": "homlcpp_chapter006_tapkee_tapkee_dr_gaussian_kernel_callback",
+      "label": "gaussian_kernel_callback",
+      "_callable": true,
+      "_callable_class": true,
+      "_origin": "ast",
+      "community": 35,
+      "community_name": "eigen_recommender.cc",
+      "file_type": "code",
+      "norm_label": "gaussian_kernel_callback",
+      "source_file": "homlcpp/chapter006/tapkee/tapkee-dr.cc",
+      "source_location": "L92"
+    },
+    {
       "id": "homlcpp_chapter005_dlib_isolation_forest_datasetrange",
       "label": "DatasetRange",
       "_callable": true,
       "_callable_class": true,
       "_origin": "ast",
       "community": 36,
-      "community_name": "dlib-anomaly.cc",
+      "community_name": "isolation-forest.h",
       "file_type": "code",
       "norm_label": "datasetrange",
       "source_file": "homlcpp/chapter005/dlib/isolation-forest.h",
@@ -143,7 +156,7 @@
       "_callable_class": true,
       "_origin": "ast",
       "community": 36,
-      "community_name": "dlib-anomaly.cc",
+      "community_name": "isolation-forest.h",
       "file_type": "code",
       "norm_label": "isolationforest",
       "source_file": "homlcpp/chapter005/dlib/isolation-forest.h",
@@ -156,7 +169,7 @@
       "_callable_class": true,
       "_origin": "ast",
       "community": 36,
-      "community_name": "dlib-anomaly.cc",
+      "community_name": "isolation-forest.h",
       "file_type": "code",
       "norm_label": "isolationtree",
       "source_file": "homlcpp/chapter005/dlib/isolation-forest.h",
@@ -169,7 +182,7 @@
       "_callable_class": true,
       "_origin": "ast",
       "community": 36,
-      "community_name": "dlib-anomaly.cc",
+      "community_name": "isolation-forest.h",
       "file_type": "code",
       "norm_label": "node",
       "source_file": "homlcpp/chapter005/dlib/isolation-forest.h",
@@ -228,19 +241,6 @@
       "source_location": "L11"
     },
     {
-      "id": "homlcpp_chapter006_tapkee_tapkee_dr_gaussian_kernel_callback",
-      "label": "gaussian_kernel_callback",
-      "_callable": true,
-      "_callable_class": true,
-      "_origin": "ast",
-      "community": 42,
-      "community_name": "tapkee-dr.cc",
-      "file_type": "code",
-      "norm_label": "gaussian_kernel_callback",
-      "source_file": "homlcpp/chapter006/tapkee/tapkee-dr.cc",
-      "source_location": "L92"
-    },
-    {
       "id": "homlcpp_chapter014_android_detection_app_src_main_java_com_example_objectdetection_mainactivity_mainactivity",
       "label": "MainActivity",
       "_callable": true,
@@ -254,17 +254,17 @@
       "source_location": "L15"
     },
     {
-      "id": "homlcpp_chapter011_pytorch_main_stack",
-      "label": "Stack",
+      "id": "homlcpp_chapter010_pytorch_lenet5_lenet5impl",
+      "label": "LeNet5Impl",
       "_callable": true,
       "_callable_class": true,
       "_origin": "ast",
       "community": 46,
       "community_name": "ModelImpl",
       "file_type": "code",
-      "norm_label": "stack",
-      "source_file": "homlcpp/chapter011/pytorch/main.cpp",
-      "source_location": "L9"
+      "norm_label": "lenet5impl",
+      "source_file": "homlcpp/chapter010/pytorch/lenet5.h",
+      "source_location": "L6"
     },
     {
       "id": "homlcpp_chapter011_pytorch_model_modelimpl",
@@ -293,19 +293,6 @@
       "source_location": "L10"
     },
     {
-      "id": "homlcpp_chapter011_pytorch_imdbdataset_imdbdataset",
-      "label": "ImdbDataset",
-      "_callable": true,
-      "_callable_class": true,
-      "_origin": "ast",
-      "community": 51,
-      "community_name": "ImdbDataset",
-      "file_type": "code",
-      "norm_label": "imdbdataset",
-      "source_file": "homlcpp/chapter011/pytorch/imdbdataset.h",
-      "source_location": "L14"
-    },
-    {
       "id": "homlcpp_chapter002_json_review_review",
       "label": "Review",
       "_callable": true,
@@ -319,30 +306,43 @@
       "source_location": "L7"
     },
     {
+      "id": "homlcpp_chapter011_pytorch_imdbdataset_imdbdataset",
+      "label": "ImdbDataset",
+      "_callable": true,
+      "_callable_class": true,
+      "_origin": "ast",
+      "community": 8,
+      "community_name": "dlib-cluster.cc",
+      "file_type": "code",
+      "norm_label": "imdbdataset",
+      "source_file": "homlcpp/chapter011/pytorch/imdbdataset.h",
+      "source_location": "L14"
+    },
+    {
+      "id": "homlcpp_chapter011_pytorch_main_stack",
+      "label": "Stack",
+      "_callable": true,
+      "_callable_class": true,
+      "_origin": "ast",
+      "community": 8,
+      "community_name": "dlib-cluster.cc",
+      "file_type": "code",
+      "norm_label": "stack",
+      "source_file": "homlcpp/chapter011/pytorch/main.cpp",
+      "source_location": "L9"
+    },
+    {
       "id": "homlcpp_chapter011_pytorch_tokenizer_tokenizer",
       "label": "Tokenizer",
       "_callable": true,
       "_callable_class": true,
       "_origin": "ast",
-      "community": 53,
-      "community_name": "Tokenizer",
+      "community": 8,
+      "community_name": "dlib-cluster.cc",
       "file_type": "code",
       "norm_label": "tokenizer",
       "source_file": "homlcpp/chapter011/pytorch/tokenizer.h",
       "source_location": "L9"
-    },
-    {
-      "id": "homlcpp_chapter010_pytorch_lenet5_lenet5impl",
-      "label": "LeNet5Impl",
-      "_callable": true,
-      "_callable_class": true,
-      "_origin": "ast",
-      "community": 54,
-      "community_name": "LeNet5Impl",
-      "file_type": "code",
-      "norm_label": "lenet5impl",
-      "source_file": "homlcpp/chapter010/pytorch/lenet5.h",
-      "source_location": "L6"
     },
     {
       "id": "homlcpp_chapter002_json_reviewsreader_reviewshandler_binary",
@@ -381,18 +381,6 @@
       "source_location": "L142"
     },
     {
-      "id": "homlcpp_chapter002_json_reviewsreader_reviewshandler_key",
-      "label": ".key()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 0,
-      "community_name": "ReviewsHandler",
-      "file_type": "code",
-      "norm_label": ".key()",
-      "source_file": "homlcpp/chapter002/json/reviewsreader.cpp",
-      "source_location": "L95"
-    },
-    {
       "id": "homlcpp_chapter002_json_reviewsreader_reviewshandler_null",
       "label": ".null()",
       "_callable": true,
@@ -403,18 +391,6 @@
       "norm_label": ".null()",
       "source_file": "homlcpp/chapter002/json/reviewsreader.cpp",
       "source_location": "L23"
-    },
-    {
-      "id": "homlcpp_chapter002_json_reviewsreader_reviewshandler_number_float",
-      "label": ".number_float()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 0,
-      "community_name": "ReviewsHandler",
-      "file_type": "code",
-      "norm_label": ".number_float()",
-      "source_file": "homlcpp/chapter002/json/reviewsreader.cpp",
-      "source_location": "L35"
     },
     {
       "id": "homlcpp_chapter002_json_reviewsreader_reviewshandler_number_integer",
@@ -451,18 +427,6 @@
       "norm_label": ".reviewshandler()",
       "source_file": "homlcpp/chapter002/json/reviewsreader.cpp",
       "source_location": "L20"
-    },
-    {
-      "id": "homlcpp_chapter002_json_reviewsreader_reviewshandler_string",
-      "label": ".string()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 0,
-      "community_name": "ReviewsHandler",
-      "file_type": "code",
-      "norm_label": ".string()",
-      "source_file": "homlcpp/chapter002/json/reviewsreader.cpp",
-      "source_location": "L66"
     },
     {
       "id": "homlcpp_chapter002_csv_eigen_csv_fill_values",
@@ -929,88 +893,6 @@
       "source_location": "L11"
     },
     {
-      "id": "homlcpp_chapter012_dlib_dlib_save_func",
-      "label": "func()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 11,
-      "community_name": "grid-dlib.cc",
-      "file_type": "code",
-      "norm_label": "func()",
-      "source_file": "homlcpp/chapter012/dlib/dlib-save.cc",
-      "source_location": "L13"
-    },
-    {
-      "id": "homlcpp_chapter012_dlib_dlib_save_loadandpredictkrr",
-      "label": "LoadAndPredictKRR()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 11,
-      "community_name": "grid-dlib.cc",
-      "file_type": "code",
-      "norm_label": "loadandpredictkrr()",
-      "source_file": "homlcpp/chapter012/dlib/dlib-save.cc",
-      "source_location": "L25"
-    },
-    {
-      "id": "homlcpp_chapter012_dlib_dlib_save_loadandpredictnetwork",
-      "label": "LoadAndPredictNetwork()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 11,
-      "community_name": "grid-dlib.cc",
-      "file_type": "code",
-      "norm_label": "loadandpredictnetwork()",
-      "source_file": "homlcpp/chapter012/dlib/dlib-save.cc",
-      "source_location": "L55"
-    },
-    {
-      "id": "homlcpp_chapter012_dlib_dlib_save_main",
-      "label": "main()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 11,
-      "community_name": "grid-dlib.cc",
-      "file_type": "code",
-      "norm_label": "main()",
-      "source_file": "homlcpp/chapter012/dlib/dlib-save.cc",
-      "source_location": "L69"
-    },
-    {
-      "id": "homlcpp_chapter012_dlib_dlib_save_trainandsavekrr",
-      "label": "TrainAndSaveKRR()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 11,
-      "community_name": "grid-dlib.cc",
-      "file_type": "code",
-      "norm_label": "trainandsavekrr()",
-      "source_file": "homlcpp/chapter012/dlib/dlib-save.cc",
-      "source_location": "L17"
-    },
-    {
-      "id": "homlcpp_chapter012_dlib_dlib_save_trainandsavenetwork",
-      "label": "TrainAndSaveNetwork()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 11,
-      "community_name": "grid-dlib.cc",
-      "file_type": "code",
-      "metadata": {
-        "unresolved_calls": [
-          {
-            "callee": "clean",
-            "receiver_type": "NetworkType",
-            "lang": "cpp",
-            "line": "L49"
-          }
-        ]
-      },
-      "norm_label": "trainandsavenetwork()",
-      "source_file": "homlcpp/chapter012/dlib/dlib-save.cc",
-      "source_location": "L39"
-    },
-    {
       "id": "check_torch_example_main",
       "label": "main()",
       "_callable": true,
@@ -1095,28 +977,198 @@
       "source_location": "L10"
     },
     {
-      "id": "homlcpp_chapter001_blaze_linreg_blaze_generatedata",
-      "label": "GenerateData()",
+      "id": "homlcpp_chapter005_dlib_dlib_anomaly_combinedatasets",
+      "label": "CombineDatasets()",
       "_callable": true,
       "_origin": "ast",
       "community": 2,
-      "community_name": "GenerateData",
+      "community_name": "dlib-anomaly.cc",
       "file_type": "code",
-      "norm_label": "generatedata()",
-      "source_file": "homlcpp/chapter001/blaze/linreg_blaze.cpp",
-      "source_location": "L11"
+      "metadata": {
+        "unresolved_calls": [
+          {
+            "callee": "nr",
+            "receiver_type": "Matrix",
+            "lang": "cpp",
+            "line": "L214"
+          }
+        ]
+      },
+      "norm_label": "combinedatasets()",
+      "source_file": "homlcpp/chapter005/dlib/dlib-anomaly.cc",
+      "source_location": "L210"
     },
     {
-      "id": "homlcpp_chapter001_blaze_linreg_blaze_main",
+      "id": "homlcpp_chapter005_dlib_dlib_anomaly_isolationforest",
+      "label": "IsolationForest()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 2,
+      "community_name": "dlib-anomaly.cc",
+      "file_type": "code",
+      "metadata": {
+        "unresolved_calls": [
+          {
+            "callee": "push_back",
+            "receiver_type": "Dataset<2>",
+            "lang": "cpp",
+            "line": "L163"
+          }
+        ]
+      },
+      "norm_label": "isolationforest()",
+      "source_file": "homlcpp/chapter005/dlib/dlib-anomaly.cc",
+      "source_location": "L153"
+    },
+    {
+      "id": "homlcpp_chapter005_dlib_dlib_anomaly_loaddataset",
+      "label": "LoadDataset()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 2,
+      "community_name": "dlib-anomaly.cc",
+      "file_type": "code",
+      "norm_label": "loaddataset()",
+      "source_file": "homlcpp/chapter005/dlib/dlib-anomaly.cc",
+      "source_location": "L192"
+    },
+    {
+      "id": "homlcpp_chapter005_dlib_dlib_anomaly_main",
       "label": "main()",
       "_callable": true,
       "_origin": "ast",
       "community": 2,
-      "community_name": "GenerateData",
+      "community_name": "dlib-anomaly.cc",
       "file_type": "code",
       "norm_label": "main()",
-      "source_file": "homlcpp/chapter001/blaze/linreg_blaze.cpp",
-      "source_location": "L41"
+      "source_file": "homlcpp/chapter005/dlib/dlib-anomaly.cc",
+      "source_location": "L226"
+    },
+    {
+      "id": "homlcpp_chapter005_dlib_dlib_anomaly_multivariategaussiandist",
+      "label": "MultivariateGaussianDist()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 2,
+      "community_name": "dlib-anomaly.cc",
+      "file_type": "code",
+      "metadata": {
+        "unresolved_calls": [
+          {
+            "callee": "nc",
+            "receiver_type": "Matrix",
+            "lang": "cpp",
+            "line": "L58"
+          },
+          {
+            "callee": "nr",
+            "receiver_type": "Matrix",
+            "lang": "cpp",
+            "line": "L69"
+          }
+        ]
+      },
+      "norm_label": "multivariategaussiandist()",
+      "source_file": "homlcpp/chapter005/dlib/dlib-anomaly.cc",
+      "source_location": "L52"
+    },
+    {
+      "id": "homlcpp_chapter005_dlib_dlib_anomaly_oneclasssvm",
+      "label": "OneClassSvm()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 2,
+      "community_name": "dlib-anomaly.cc",
+      "file_type": "code",
+      "metadata": {
+        "unresolved_calls": [
+          {
+            "callee": "nr",
+            "receiver_type": "Matrix",
+            "lang": "cpp",
+            "line": "L124"
+          }
+        ]
+      },
+      "norm_label": "oneclasssvm()",
+      "source_file": "homlcpp/chapter005/dlib/dlib-anomaly.cc",
+      "source_location": "L115"
+    },
+    {
+      "id": "homlcpp_chapter005_dlib_dlib_anomaly_plotclusters",
+      "label": "PlotClusters()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 2,
+      "community_name": "dlib-anomaly.cc",
+      "file_type": "code",
+      "metadata": {
+        "unresolved_calls": [
+          {
+            "callee": "SetTerminal",
+            "receiver_type": "Plot",
+            "lang": "cpp",
+            "line": "L28"
+          },
+          {
+            "callee": "SetOutput",
+            "receiver_type": "Plot",
+            "lang": "cpp",
+            "line": "L29"
+          },
+          {
+            "callee": "SetTitle",
+            "receiver_type": "Plot",
+            "lang": "cpp",
+            "line": "L30"
+          },
+          {
+            "callee": "SetXLabel",
+            "receiver_type": "Plot",
+            "lang": "cpp",
+            "line": "L31"
+          },
+          {
+            "callee": "SetYLabel",
+            "receiver_type": "Plot",
+            "lang": "cpp",
+            "line": "L32"
+          },
+          {
+            "callee": "GnuplotCommand",
+            "receiver_type": "Plot",
+            "lang": "cpp",
+            "line": "L34"
+          },
+          {
+            "callee": "StartDraw2D<Coords::const_iterator>",
+            "receiver_type": "Plot",
+            "lang": "cpp",
+            "line": "L37"
+          },
+          {
+            "callee": "AddDrawing",
+            "receiver_type": "Plot",
+            "lang": "cpp",
+            "line": "L41"
+          },
+          {
+            "callee": "EndDraw2D",
+            "receiver_type": "Plot",
+            "lang": "cpp",
+            "line": "L48"
+          },
+          {
+            "callee": "Flush",
+            "receiver_type": "Plot",
+            "lang": "cpp",
+            "line": "L49"
+          }
+        ]
+      },
+      "norm_label": "plotclusters()",
+      "source_file": "homlcpp/chapter005/dlib/dlib-anomaly.cc",
+      "source_location": "L23"
     },
     {
       "id": "homlcpp_chapter003_flashlight_grid_fl_generate_data",
@@ -1619,6 +1671,30 @@
       "source_location": "L50"
     },
     {
+      "id": "homlcpp_chapter001_blaze_linreg_blaze_generatedata",
+      "label": "GenerateData()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 33,
+      "community_name": "vector",
+      "file_type": "code",
+      "norm_label": "generatedata()",
+      "source_file": "homlcpp/chapter001/blaze/linreg_blaze.cpp",
+      "source_location": "L11"
+    },
+    {
+      "id": "homlcpp_chapter001_blaze_linreg_blaze_main",
+      "label": "main()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 33,
+      "community_name": "vector",
+      "file_type": "code",
+      "norm_label": "main()",
+      "source_file": "homlcpp/chapter001/blaze/linreg_blaze.cpp",
+      "source_location": "L41"
+    },
+    {
       "id": "homlcpp_chapter001_eigen_linreg_eigen_generatedata",
       "label": "GenerateData()",
       "_callable": true,
@@ -1665,6 +1741,262 @@
       "norm_label": "main()",
       "source_file": "homlcpp/chapter004/dlib/cuda_dlib.cc",
       "source_location": "L18"
+    },
+    {
+      "id": "homlcpp_chapter006_tapkee_tapkee_dr_gaussian_kernel_callback_gaussian_kernel_callback",
+      "label": ".gaussian_kernel_callback()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 35,
+      "community_name": "eigen_recommender.cc",
+      "file_type": "code",
+      "norm_label": ".gaussian_kernel_callback()",
+      "source_file": "homlcpp/chapter006/tapkee/tapkee-dr.cc",
+      "source_location": "L93"
+    },
+    {
+      "id": "homlcpp_chapter006_tapkee_tapkee_dr_gaussian_kernel_callback_kernel",
+      "label": ".kernel()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 35,
+      "community_name": "eigen_recommender.cc",
+      "file_type": "code",
+      "norm_label": ".kernel()",
+      "source_file": "homlcpp/chapter006/tapkee/tapkee-dr.cc",
+      "source_location": "L95"
+    },
+    {
+      "id": "homlcpp_chapter006_tapkee_tapkee_dr_gaussian_kernel_callback_operator",
+      "label": ".operator()()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 35,
+      "community_name": "eigen_recommender.cc",
+      "file_type": "code",
+      "norm_label": ".operator()()",
+      "source_file": "homlcpp/chapter006/tapkee/tapkee-dr.cc",
+      "source_location": "L99"
+    },
+    {
+      "id": "homlcpp_chapter006_tapkee_tapkee_dr_main",
+      "label": "main()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 35,
+      "community_name": "eigen_recommender.cc",
+      "file_type": "code",
+      "metadata": {
+        "unresolved_calls": [
+          {
+            "callee": "size",
+            "receiver_type": "DenseMatrix",
+            "lang": "cpp",
+            "line": "L148"
+          },
+          {
+            "callee": "transposeInPlace",
+            "receiver_type": "DenseMatrix",
+            "lang": "cpp",
+            "line": "L158"
+          }
+        ]
+      },
+      "norm_label": "main()",
+      "source_file": "homlcpp/chapter006/tapkee/tapkee-dr.cc",
+      "source_location": "L140"
+    },
+    {
+      "id": "homlcpp_chapter006_tapkee_tapkee_dr_plot3ddata",
+      "label": "Plot3DData()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 35,
+      "community_name": "eigen_recommender.cc",
+      "file_type": "code",
+      "metadata": {
+        "unresolved_calls": [
+          {
+            "callee": "SetTerminal",
+            "receiver_type": "Plot",
+            "lang": "cpp",
+            "line": "L67"
+          },
+          {
+            "callee": "SetOutput",
+            "receiver_type": "Plot",
+            "lang": "cpp",
+            "line": "L68"
+          },
+          {
+            "callee": "SetTitle",
+            "receiver_type": "Plot",
+            "lang": "cpp",
+            "line": "L69"
+          },
+          {
+            "callee": "SetXLabel",
+            "receiver_type": "Plot",
+            "lang": "cpp",
+            "line": "L70"
+          },
+          {
+            "callee": "SetYLabel",
+            "receiver_type": "Plot",
+            "lang": "cpp",
+            "line": "L71"
+          },
+          {
+            "callee": "GnuplotCommand",
+            "receiver_type": "Plot",
+            "lang": "cpp",
+            "line": "L72"
+          },
+          {
+            "callee": "StartDraw3D<Coords::const_iterator>",
+            "receiver_type": "Plot",
+            "lang": "cpp",
+            "line": "L75"
+          },
+          {
+            "callee": "AddDrawing",
+            "receiver_type": "Plot",
+            "lang": "cpp",
+            "line": "L79"
+          },
+          {
+            "callee": "EndDraw3D",
+            "receiver_type": "Plot",
+            "lang": "cpp",
+            "line": "L88"
+          },
+          {
+            "callee": "Flush",
+            "receiver_type": "Plot",
+            "lang": "cpp",
+            "line": "L89"
+          }
+        ]
+      },
+      "norm_label": "plot3ddata()",
+      "source_file": "homlcpp/chapter006/tapkee/tapkee-dr.cc",
+      "source_location": "L54"
+    },
+    {
+      "id": "homlcpp_chapter006_tapkee_tapkee_dr_plotclusters",
+      "label": "PlotClusters()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 35,
+      "community_name": "eigen_recommender.cc",
+      "file_type": "code",
+      "metadata": {
+        "unresolved_calls": [
+          {
+            "callee": "SetTerminal",
+            "receiver_type": "Plot",
+            "lang": "cpp",
+            "line": "L31"
+          },
+          {
+            "callee": "SetOutput",
+            "receiver_type": "Plot",
+            "lang": "cpp",
+            "line": "L32"
+          },
+          {
+            "callee": "SetTitle",
+            "receiver_type": "Plot",
+            "lang": "cpp",
+            "line": "L33"
+          },
+          {
+            "callee": "SetXLabel",
+            "receiver_type": "Plot",
+            "lang": "cpp",
+            "line": "L34"
+          },
+          {
+            "callee": "SetYLabel",
+            "receiver_type": "Plot",
+            "lang": "cpp",
+            "line": "L35"
+          },
+          {
+            "callee": "GnuplotCommand",
+            "receiver_type": "Plot",
+            "lang": "cpp",
+            "line": "L36"
+          },
+          {
+            "callee": "StartDraw2D<Coords::const_iterator>",
+            "receiver_type": "Plot",
+            "lang": "cpp",
+            "line": "L39"
+          },
+          {
+            "callee": "AddDrawing",
+            "receiver_type": "Plot",
+            "lang": "cpp",
+            "line": "L43"
+          },
+          {
+            "callee": "EndDraw2D",
+            "receiver_type": "Plot",
+            "lang": "cpp",
+            "line": "L50"
+          },
+          {
+            "callee": "Flush",
+            "receiver_type": "Plot",
+            "lang": "cpp",
+            "line": "L51"
+          }
+        ]
+      },
+      "norm_label": "plotclusters()",
+      "source_file": "homlcpp/chapter006/tapkee/tapkee-dr.cc",
+      "source_location": "L27"
+    },
+    {
+      "id": "homlcpp_chapter006_tapkee_tapkee_dr_reduction",
+      "label": "Reduction()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 35,
+      "community_name": "eigen_recommender.cc",
+      "file_type": "code",
+      "norm_label": "reduction()",
+      "source_file": "homlcpp/chapter006/tapkee/tapkee-dr.cc",
+      "source_location": "L106"
+    },
+    {
+      "id": "homlcpp_chapter006_tapkee_util_read_data",
+      "label": "read_data()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 35,
+      "community_name": "eigen_recommender.cc",
+      "file_type": "code",
+      "metadata": {
+        "unresolved_calls": [
+          {
+            "callee": "rows",
+            "receiver_type": "DenseMatrix",
+            "lang": "cpp",
+            "line": "L32"
+          },
+          {
+            "callee": "cols",
+            "receiver_type": "DenseMatrix",
+            "lang": "cpp",
+            "line": "L33"
+          }
+        ]
+      },
+      "norm_label": "read_data()",
+      "source_file": "homlcpp/chapter006/tapkee/util.cc",
+      "source_location": "L6"
     },
     {
       "id": "homlcpp_chapter007_dlib_dlib_classify_krrclassification",
@@ -2057,354 +2389,12 @@
       "source_location": "L14"
     },
     {
-      "id": "homlcpp_chapter012_onnxruntime_main_main",
-      "label": "main()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 35,
-      "community_name": "eigen_recommender.cc",
-      "file_type": "code",
-      "metadata": {
-        "unresolved_calls": [
-          {
-            "callee": "MemoryInfo::CreateCpu",
-            "receiver_type": "Ort",
-            "lang": "cpp",
-            "line": "L150"
-          },
-          {
-            "callee": "Value::CreateTensor<float>",
-            "receiver_type": "Ort",
-            "lang": "cpp",
-            "line": "L152"
-          },
-          {
-            "callee": "Run",
-            "receiver_type": "Session",
-            "lang": "cpp",
-            "line": "L164"
-          }
-        ]
-      },
-      "norm_label": "main()",
-      "source_file": "homlcpp/chapter012/onnxruntime/main.cc",
-      "source_location": "L135"
-    },
-    {
-      "id": "homlcpp_chapter012_onnxruntime_main_read_classes",
-      "label": "read_classes()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 35,
-      "community_name": "eigen_recommender.cc",
-      "file_type": "code",
-      "metadata": {
-        "unresolved_calls": [
-          {
-            "callee": "insert",
-            "receiver_type": "Classes",
-            "lang": "cpp",
-            "line": "L34"
-          }
-        ]
-      },
-      "norm_label": "read_classes()",
-      "source_file": "homlcpp/chapter012/onnxruntime/main.cc",
-      "source_location": "L10"
-    },
-    {
-      "id": "homlcpp_chapter012_onnxruntime_main_read_image",
-      "label": "read_image()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 35,
-      "community_name": "eigen_recommender.cc",
-      "file_type": "code",
-      "norm_label": "read_image()",
-      "source_file": "homlcpp/chapter012/onnxruntime/main.cc",
-      "source_location": "L89"
-    },
-    {
-      "id": "homlcpp_chapter012_onnxruntime_main_show_model_info",
-      "label": "show_model_info()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 35,
-      "community_name": "eigen_recommender.cc",
-      "file_type": "code",
-      "metadata": {
-        "unresolved_calls": [
-          {
-            "callee": "GetInputCount",
-            "receiver_type": "Session",
-            "lang": "cpp",
-            "line": "L44"
-          },
-          {
-            "callee": "GetInputNameAllocated",
-            "receiver_type": "Session",
-            "lang": "cpp",
-            "line": "L46"
-          },
-          {
-            "callee": "GetInputTypeInfo",
-            "receiver_type": "Session",
-            "lang": "cpp",
-            "line": "L48"
-          },
-          {
-            "callee": "GetTensorTypeAndShapeInfo",
-            "receiver_type": "TypeInfo",
-            "lang": "cpp",
-            "line": "L49"
-          },
-          {
-            "callee": "GetOutputCount",
-            "receiver_type": "Session",
-            "lang": "cpp",
-            "line": "L57"
-          },
-          {
-            "callee": "GetOutputNameAllocated",
-            "receiver_type": "Session",
-            "lang": "cpp",
-            "line": "L59"
-          },
-          {
-            "callee": "GetOutputTypeInfo",
-            "receiver_type": "Session",
-            "lang": "cpp",
-            "line": "L61"
-          }
-        ]
-      },
-      "norm_label": "show_model_info()",
-      "source_file": "homlcpp/chapter012/onnxruntime/main.cc",
-      "source_location": "L41"
-    },
-    {
-      "id": "homlcpp_chapter012_onnxruntime_main_show_output",
-      "label": "show_output()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 35,
-      "community_name": "eigen_recommender.cc",
-      "file_type": "code",
-      "metadata": {
-        "unresolved_calls": [
-          {
-            "callee": "at",
-            "receiver_type": "Classes",
-            "lang": "cpp",
-            "line": "L84"
-          }
-        ]
-      },
-      "norm_label": "show_output()",
-      "source_file": "homlcpp/chapter012/onnxruntime/main.cc",
-      "source_location": "L71"
-    },
-    {
-      "id": "homlcpp_chapter005_dlib_dlib_anomaly_combinedatasets",
-      "label": "CombineDatasets()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 36,
-      "community_name": "dlib-anomaly.cc",
-      "file_type": "code",
-      "metadata": {
-        "unresolved_calls": [
-          {
-            "callee": "nr",
-            "receiver_type": "Matrix",
-            "lang": "cpp",
-            "line": "L214"
-          }
-        ]
-      },
-      "norm_label": "combinedatasets()",
-      "source_file": "homlcpp/chapter005/dlib/dlib-anomaly.cc",
-      "source_location": "L210"
-    },
-    {
-      "id": "homlcpp_chapter005_dlib_dlib_anomaly_isolationforest",
-      "label": "IsolationForest()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 36,
-      "community_name": "dlib-anomaly.cc",
-      "file_type": "code",
-      "metadata": {
-        "unresolved_calls": [
-          {
-            "callee": "push_back",
-            "receiver_type": "Dataset<2>",
-            "lang": "cpp",
-            "line": "L163"
-          }
-        ]
-      },
-      "norm_label": "isolationforest()",
-      "source_file": "homlcpp/chapter005/dlib/dlib-anomaly.cc",
-      "source_location": "L153"
-    },
-    {
-      "id": "homlcpp_chapter005_dlib_dlib_anomaly_loaddataset",
-      "label": "LoadDataset()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 36,
-      "community_name": "dlib-anomaly.cc",
-      "file_type": "code",
-      "norm_label": "loaddataset()",
-      "source_file": "homlcpp/chapter005/dlib/dlib-anomaly.cc",
-      "source_location": "L192"
-    },
-    {
-      "id": "homlcpp_chapter005_dlib_dlib_anomaly_main",
-      "label": "main()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 36,
-      "community_name": "dlib-anomaly.cc",
-      "file_type": "code",
-      "norm_label": "main()",
-      "source_file": "homlcpp/chapter005/dlib/dlib-anomaly.cc",
-      "source_location": "L226"
-    },
-    {
-      "id": "homlcpp_chapter005_dlib_dlib_anomaly_multivariategaussiandist",
-      "label": "MultivariateGaussianDist()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 36,
-      "community_name": "dlib-anomaly.cc",
-      "file_type": "code",
-      "metadata": {
-        "unresolved_calls": [
-          {
-            "callee": "nc",
-            "receiver_type": "Matrix",
-            "lang": "cpp",
-            "line": "L58"
-          },
-          {
-            "callee": "nr",
-            "receiver_type": "Matrix",
-            "lang": "cpp",
-            "line": "L69"
-          }
-        ]
-      },
-      "norm_label": "multivariategaussiandist()",
-      "source_file": "homlcpp/chapter005/dlib/dlib-anomaly.cc",
-      "source_location": "L52"
-    },
-    {
-      "id": "homlcpp_chapter005_dlib_dlib_anomaly_oneclasssvm",
-      "label": "OneClassSvm()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 36,
-      "community_name": "dlib-anomaly.cc",
-      "file_type": "code",
-      "metadata": {
-        "unresolved_calls": [
-          {
-            "callee": "nr",
-            "receiver_type": "Matrix",
-            "lang": "cpp",
-            "line": "L124"
-          }
-        ]
-      },
-      "norm_label": "oneclasssvm()",
-      "source_file": "homlcpp/chapter005/dlib/dlib-anomaly.cc",
-      "source_location": "L115"
-    },
-    {
-      "id": "homlcpp_chapter005_dlib_dlib_anomaly_plotclusters",
-      "label": "PlotClusters()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 36,
-      "community_name": "dlib-anomaly.cc",
-      "file_type": "code",
-      "metadata": {
-        "unresolved_calls": [
-          {
-            "callee": "SetTerminal",
-            "receiver_type": "Plot",
-            "lang": "cpp",
-            "line": "L28"
-          },
-          {
-            "callee": "SetOutput",
-            "receiver_type": "Plot",
-            "lang": "cpp",
-            "line": "L29"
-          },
-          {
-            "callee": "SetTitle",
-            "receiver_type": "Plot",
-            "lang": "cpp",
-            "line": "L30"
-          },
-          {
-            "callee": "SetXLabel",
-            "receiver_type": "Plot",
-            "lang": "cpp",
-            "line": "L31"
-          },
-          {
-            "callee": "SetYLabel",
-            "receiver_type": "Plot",
-            "lang": "cpp",
-            "line": "L32"
-          },
-          {
-            "callee": "GnuplotCommand",
-            "receiver_type": "Plot",
-            "lang": "cpp",
-            "line": "L34"
-          },
-          {
-            "callee": "StartDraw2D<Coords::const_iterator>",
-            "receiver_type": "Plot",
-            "lang": "cpp",
-            "line": "L37"
-          },
-          {
-            "callee": "AddDrawing",
-            "receiver_type": "Plot",
-            "lang": "cpp",
-            "line": "L41"
-          },
-          {
-            "callee": "EndDraw2D",
-            "receiver_type": "Plot",
-            "lang": "cpp",
-            "line": "L48"
-          },
-          {
-            "callee": "Flush",
-            "receiver_type": "Plot",
-            "lang": "cpp",
-            "line": "L49"
-          }
-        ]
-      },
-      "norm_label": "plotclusters()",
-      "source_file": "homlcpp/chapter005/dlib/dlib-anomaly.cc",
-      "source_location": "L23"
-    },
-    {
       "id": "homlcpp_chapter005_dlib_isolation_forest_calcc",
       "label": "CalcC()",
       "_callable": true,
       "_origin": "ast",
       "community": 36,
-      "community_name": "dlib-anomaly.cc",
+      "community_name": "isolation-forest.h",
       "file_type": "code",
       "norm_label": "calcc()",
       "source_file": "homlcpp/chapter005/dlib/isolation-forest.h",
@@ -2416,7 +2406,7 @@
       "_callable": true,
       "_origin": "ast",
       "community": 36,
-      "community_name": "dlib-anomaly.cc",
+      "community_name": "isolation-forest.h",
       "file_type": "code",
       "norm_label": ".at()",
       "source_file": "homlcpp/chapter005/dlib/isolation-forest.h",
@@ -2428,7 +2418,7 @@
       "_callable": true,
       "_origin": "ast",
       "community": 36,
-      "community_name": "dlib-anomaly.cc",
+      "community_name": "isolation-forest.h",
       "file_type": "code",
       "norm_label": ".datasetrange()",
       "source_file": "homlcpp/chapter005/dlib/isolation-forest.h",
@@ -2440,7 +2430,7 @@
       "_callable": true,
       "_origin": "ast",
       "community": 36,
-      "community_name": "dlib-anomaly.cc",
+      "community_name": "isolation-forest.h",
       "file_type": "code",
       "norm_label": ".size()",
       "source_file": "homlcpp/chapter005/dlib/isolation-forest.h",
@@ -2452,7 +2442,7 @@
       "_callable": true,
       "_origin": "ast",
       "community": 36,
-      "community_name": "dlib-anomaly.cc",
+      "community_name": "isolation-forest.h",
       "file_type": "code",
       "norm_label": ".anomalyscore()",
       "source_file": "homlcpp/chapter005/dlib/isolation-forest.h",
@@ -2464,7 +2454,7 @@
       "_callable": true,
       "_origin": "ast",
       "community": 36,
-      "community_name": "dlib-anomaly.cc",
+      "community_name": "isolation-forest.h",
       "file_type": "code",
       "norm_label": ".isolationforest()",
       "source_file": "homlcpp/chapter005/dlib/isolation-forest.h",
@@ -2476,7 +2466,7 @@
       "_callable": true,
       "_origin": "ast",
       "community": 36,
-      "community_name": "dlib-anomaly.cc",
+      "community_name": "isolation-forest.h",
       "file_type": "code",
       "norm_label": ".isolationtree()",
       "source_file": "homlcpp/chapter005/dlib/isolation-forest.h",
@@ -2488,7 +2478,7 @@
       "_callable": true,
       "_origin": "ast",
       "community": 36,
-      "community_name": "dlib-anomaly.cc",
+      "community_name": "isolation-forest.h",
       "file_type": "code",
       "norm_label": ".makeisolationtree()",
       "source_file": "homlcpp/chapter005/dlib/isolation-forest.h",
@@ -2500,7 +2490,7 @@
       "_callable": true,
       "_origin": "ast",
       "community": 36,
-      "community_name": "dlib-anomaly.cc",
+      "community_name": "isolation-forest.h",
       "file_type": "code",
       "norm_label": ".pathlength()",
       "source_file": "homlcpp/chapter005/dlib/isolation-forest.h",
@@ -2512,7 +2502,7 @@
       "_callable": true,
       "_origin": "ast",
       "community": 36,
-      "community_name": "dlib-anomaly.cc",
+      "community_name": "isolation-forest.h",
       "file_type": "code",
       "norm_label": ".node()",
       "source_file": "homlcpp/chapter005/dlib/isolation-forest.h",
@@ -2533,6 +2523,34 @@
       "source_location": "L20"
     },
     {
+      "id": "homlcpp_chapter010_pytorch_mnistdataset_mnistdataset_readlabels",
+      "label": ".ReadLabels()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 37,
+      "community_name": "MNISTDataset",
+      "definition_file": "homlcpp/chapter010/pytorch/mnistdataset.cpp",
+      "definition_location": "L37",
+      "file_type": "code",
+      "norm_label": ".readlabels()",
+      "source_file": "homlcpp/chapter010/pytorch/mnistdataset.h",
+      "source_location": "L23"
+    },
+    {
+      "id": "homlcpp_chapter010_pytorch_mnistdataset_mnistdataset_readimages",
+      "label": ".ReadImages()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 37,
+      "community_name": "MNISTDataset",
+      "definition_file": "homlcpp/chapter010/pytorch/mnistdataset.cpp",
+      "definition_location": "L52",
+      "file_type": "code",
+      "norm_label": ".readimages()",
+      "source_file": "homlcpp/chapter010/pytorch/mnistdataset.h",
+      "source_location": "L24"
+    },
+    {
       "id": "homlcpp_chapter010_pytorch_mnistdataset_mnistdataset_showitem",
       "label": ".ShowItem()",
       "_callable": true,
@@ -2545,6 +2563,20 @@
       "norm_label": ".showitem()",
       "source_file": "homlcpp/chapter010/pytorch/mnistdataset.h",
       "source_location": "L16"
+    },
+    {
+      "id": "homlcpp_chapter010_pytorch_mnistdataset_mnistdataset_get",
+      "label": ".get()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 37,
+      "community_name": "MNISTDataset",
+      "definition_file": "homlcpp/chapter010/pytorch/mnistdataset.cpp",
+      "definition_location": "L95",
+      "file_type": "code",
+      "norm_label": ".get()",
+      "source_file": "homlcpp/chapter010/pytorch/mnistdataset.h",
+      "source_location": "L19"
     },
     {
       "id": "homlcpp_chapter010_pytorch_main_main",
@@ -2639,6 +2671,52 @@
       "norm_label": "show_pytorch_version()",
       "source_file": "homlcpp/chapter010/pytorch/main.cpp",
       "source_location": "L9"
+    },
+    {
+      "id": "homlcpp_chapter010_pytorch_mnistdataset_cvimagetotensor",
+      "label": "CvImageToTensor()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 37,
+      "community_name": "MNISTDataset",
+      "file_type": "code",
+      "metadata": {
+        "unresolved_calls": [
+          {
+            "callee": "to",
+            "receiver_type": "Tensor",
+            "lang": "cpp",
+            "line": "L32"
+          }
+        ]
+      },
+      "norm_label": "cvimagetotensor()",
+      "source_file": "homlcpp/chapter010/pytorch/mnistdataset.cpp",
+      "source_location": "L20"
+    },
+    {
+      "id": "homlcpp_chapter010_pytorch_mnistdataset_mnistdataset_mnistdataset",
+      "label": "MNISTDataset::MNISTDataset()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 37,
+      "community_name": "MNISTDataset",
+      "file_type": "code",
+      "norm_label": "mnistdataset::mnistdataset()",
+      "source_file": "homlcpp/chapter010/pytorch/mnistdataset.cpp",
+      "source_location": "L81"
+    },
+    {
+      "id": "homlcpp_chapter010_pytorch_mnistdataset_read_header",
+      "label": "read_header()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 37,
+      "community_name": "MNISTDataset",
+      "file_type": "code",
+      "norm_label": "read_header()",
+      "source_file": "homlcpp/chapter010/pytorch/mnistdataset.cpp",
+      "source_location": "L7"
     },
     {
       "id": "homlcpp_chapter014_android_detection_app_src_main_cpp_detector_objectdetector_objectdetector",
@@ -3027,92 +3105,152 @@
       "source_location": "L47"
     },
     {
-      "id": "homlcpp_chapter010_pytorch_mnistdataset_mnistdataset_readlabels",
-      "label": ".ReadLabels()",
+      "id": "homlcpp_chapter012_onnxruntime_main_main",
+      "label": "main()",
       "_callable": true,
       "_origin": "ast",
       "community": 40,
-      "community_name": "mnistdataset.cpp",
-      "definition_file": "homlcpp/chapter010/pytorch/mnistdataset.cpp",
-      "definition_location": "L37",
-      "file_type": "code",
-      "norm_label": ".readlabels()",
-      "source_file": "homlcpp/chapter010/pytorch/mnistdataset.h",
-      "source_location": "L23"
-    },
-    {
-      "id": "homlcpp_chapter010_pytorch_mnistdataset_mnistdataset_readimages",
-      "label": ".ReadImages()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 40,
-      "community_name": "mnistdataset.cpp",
-      "definition_file": "homlcpp/chapter010/pytorch/mnistdataset.cpp",
-      "definition_location": "L52",
-      "file_type": "code",
-      "norm_label": ".readimages()",
-      "source_file": "homlcpp/chapter010/pytorch/mnistdataset.h",
-      "source_location": "L24"
-    },
-    {
-      "id": "homlcpp_chapter010_pytorch_mnistdataset_mnistdataset_get",
-      "label": ".get()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 40,
-      "community_name": "mnistdataset.cpp",
-      "definition_file": "homlcpp/chapter010/pytorch/mnistdataset.cpp",
-      "definition_location": "L95",
-      "file_type": "code",
-      "norm_label": ".get()",
-      "source_file": "homlcpp/chapter010/pytorch/mnistdataset.h",
-      "source_location": "L19"
-    },
-    {
-      "id": "homlcpp_chapter010_pytorch_mnistdataset_cvimagetotensor",
-      "label": "CvImageToTensor()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 40,
-      "community_name": "mnistdataset.cpp",
+      "community_name": "onnxruntime/main.cc",
       "file_type": "code",
       "metadata": {
         "unresolved_calls": [
           {
-            "callee": "to",
-            "receiver_type": "Tensor",
+            "callee": "MemoryInfo::CreateCpu",
+            "receiver_type": "Ort",
             "lang": "cpp",
-            "line": "L32"
+            "line": "L150"
+          },
+          {
+            "callee": "Value::CreateTensor<float>",
+            "receiver_type": "Ort",
+            "lang": "cpp",
+            "line": "L152"
+          },
+          {
+            "callee": "Run",
+            "receiver_type": "Session",
+            "lang": "cpp",
+            "line": "L164"
           }
         ]
       },
-      "norm_label": "cvimagetotensor()",
-      "source_file": "homlcpp/chapter010/pytorch/mnistdataset.cpp",
-      "source_location": "L20"
+      "norm_label": "main()",
+      "source_file": "homlcpp/chapter012/onnxruntime/main.cc",
+      "source_location": "L135"
     },
     {
-      "id": "homlcpp_chapter010_pytorch_mnistdataset_mnistdataset_mnistdataset",
-      "label": "MNISTDataset::MNISTDataset()",
+      "id": "homlcpp_chapter012_onnxruntime_main_read_classes",
+      "label": "read_classes()",
       "_callable": true,
       "_origin": "ast",
       "community": 40,
-      "community_name": "mnistdataset.cpp",
+      "community_name": "onnxruntime/main.cc",
       "file_type": "code",
-      "norm_label": "mnistdataset::mnistdataset()",
-      "source_file": "homlcpp/chapter010/pytorch/mnistdataset.cpp",
-      "source_location": "L81"
+      "metadata": {
+        "unresolved_calls": [
+          {
+            "callee": "insert",
+            "receiver_type": "Classes",
+            "lang": "cpp",
+            "line": "L34"
+          }
+        ]
+      },
+      "norm_label": "read_classes()",
+      "source_file": "homlcpp/chapter012/onnxruntime/main.cc",
+      "source_location": "L10"
     },
     {
-      "id": "homlcpp_chapter010_pytorch_mnistdataset_read_header",
-      "label": "read_header()",
+      "id": "homlcpp_chapter012_onnxruntime_main_read_image",
+      "label": "read_image()",
       "_callable": true,
       "_origin": "ast",
       "community": 40,
-      "community_name": "mnistdataset.cpp",
+      "community_name": "onnxruntime/main.cc",
       "file_type": "code",
-      "norm_label": "read_header()",
-      "source_file": "homlcpp/chapter010/pytorch/mnistdataset.cpp",
-      "source_location": "L7"
+      "norm_label": "read_image()",
+      "source_file": "homlcpp/chapter012/onnxruntime/main.cc",
+      "source_location": "L89"
+    },
+    {
+      "id": "homlcpp_chapter012_onnxruntime_main_show_model_info",
+      "label": "show_model_info()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 40,
+      "community_name": "onnxruntime/main.cc",
+      "file_type": "code",
+      "metadata": {
+        "unresolved_calls": [
+          {
+            "callee": "GetInputCount",
+            "receiver_type": "Session",
+            "lang": "cpp",
+            "line": "L44"
+          },
+          {
+            "callee": "GetInputNameAllocated",
+            "receiver_type": "Session",
+            "lang": "cpp",
+            "line": "L46"
+          },
+          {
+            "callee": "GetInputTypeInfo",
+            "receiver_type": "Session",
+            "lang": "cpp",
+            "line": "L48"
+          },
+          {
+            "callee": "GetTensorTypeAndShapeInfo",
+            "receiver_type": "TypeInfo",
+            "lang": "cpp",
+            "line": "L49"
+          },
+          {
+            "callee": "GetOutputCount",
+            "receiver_type": "Session",
+            "lang": "cpp",
+            "line": "L57"
+          },
+          {
+            "callee": "GetOutputNameAllocated",
+            "receiver_type": "Session",
+            "lang": "cpp",
+            "line": "L59"
+          },
+          {
+            "callee": "GetOutputTypeInfo",
+            "receiver_type": "Session",
+            "lang": "cpp",
+            "line": "L61"
+          }
+        ]
+      },
+      "norm_label": "show_model_info()",
+      "source_file": "homlcpp/chapter012/onnxruntime/main.cc",
+      "source_location": "L41"
+    },
+    {
+      "id": "homlcpp_chapter012_onnxruntime_main_show_output",
+      "label": "show_output()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 40,
+      "community_name": "onnxruntime/main.cc",
+      "file_type": "code",
+      "metadata": {
+        "unresolved_calls": [
+          {
+            "callee": "at",
+            "receiver_type": "Classes",
+            "lang": "cpp",
+            "line": "L84"
+          }
+        ]
+      },
+      "norm_label": "show_output()",
+      "source_file": "homlcpp/chapter012/onnxruntime/main.cc",
+      "source_location": "L71"
     },
     {
       "id": "homlcpp_chapter013_flashlight_mlflow_mlflow_mlflow",
@@ -3363,260 +3501,86 @@
       "source_location": "L29"
     },
     {
-      "id": "homlcpp_chapter006_tapkee_tapkee_dr_gaussian_kernel_callback_gaussian_kernel_callback",
-      "label": ".gaussian_kernel_callback()",
+      "id": "homlcpp_chapter012_dlib_dlib_save_func",
+      "label": "func()",
       "_callable": true,
       "_origin": "ast",
       "community": 42,
-      "community_name": "tapkee-dr.cc",
+      "community_name": "dlib-save.cc",
       "file_type": "code",
-      "norm_label": ".gaussian_kernel_callback()",
-      "source_file": "homlcpp/chapter006/tapkee/tapkee-dr.cc",
-      "source_location": "L93"
+      "norm_label": "func()",
+      "source_file": "homlcpp/chapter012/dlib/dlib-save.cc",
+      "source_location": "L13"
     },
     {
-      "id": "homlcpp_chapter006_tapkee_tapkee_dr_gaussian_kernel_callback_kernel",
-      "label": ".kernel()",
+      "id": "homlcpp_chapter012_dlib_dlib_save_loadandpredictkrr",
+      "label": "LoadAndPredictKRR()",
       "_callable": true,
       "_origin": "ast",
       "community": 42,
-      "community_name": "tapkee-dr.cc",
+      "community_name": "dlib-save.cc",
       "file_type": "code",
-      "norm_label": ".kernel()",
-      "source_file": "homlcpp/chapter006/tapkee/tapkee-dr.cc",
-      "source_location": "L95"
+      "norm_label": "loadandpredictkrr()",
+      "source_file": "homlcpp/chapter012/dlib/dlib-save.cc",
+      "source_location": "L25"
     },
     {
-      "id": "homlcpp_chapter006_tapkee_tapkee_dr_gaussian_kernel_callback_operator",
-      "label": ".operator()()",
+      "id": "homlcpp_chapter012_dlib_dlib_save_loadandpredictnetwork",
+      "label": "LoadAndPredictNetwork()",
       "_callable": true,
       "_origin": "ast",
       "community": 42,
-      "community_name": "tapkee-dr.cc",
+      "community_name": "dlib-save.cc",
       "file_type": "code",
-      "norm_label": ".operator()()",
-      "source_file": "homlcpp/chapter006/tapkee/tapkee-dr.cc",
-      "source_location": "L99"
+      "norm_label": "loadandpredictnetwork()",
+      "source_file": "homlcpp/chapter012/dlib/dlib-save.cc",
+      "source_location": "L55"
     },
     {
-      "id": "homlcpp_chapter006_tapkee_tapkee_dr_main",
+      "id": "homlcpp_chapter012_dlib_dlib_save_main",
       "label": "main()",
       "_callable": true,
       "_origin": "ast",
       "community": 42,
-      "community_name": "tapkee-dr.cc",
+      "community_name": "dlib-save.cc",
       "file_type": "code",
-      "metadata": {
-        "unresolved_calls": [
-          {
-            "callee": "size",
-            "receiver_type": "DenseMatrix",
-            "lang": "cpp",
-            "line": "L148"
-          },
-          {
-            "callee": "transposeInPlace",
-            "receiver_type": "DenseMatrix",
-            "lang": "cpp",
-            "line": "L158"
-          }
-        ]
-      },
       "norm_label": "main()",
-      "source_file": "homlcpp/chapter006/tapkee/tapkee-dr.cc",
-      "source_location": "L140"
+      "source_file": "homlcpp/chapter012/dlib/dlib-save.cc",
+      "source_location": "L69"
     },
     {
-      "id": "homlcpp_chapter006_tapkee_tapkee_dr_plot3ddata",
-      "label": "Plot3DData()",
+      "id": "homlcpp_chapter012_dlib_dlib_save_trainandsavekrr",
+      "label": "TrainAndSaveKRR()",
       "_callable": true,
       "_origin": "ast",
       "community": 42,
-      "community_name": "tapkee-dr.cc",
+      "community_name": "dlib-save.cc",
+      "file_type": "code",
+      "norm_label": "trainandsavekrr()",
+      "source_file": "homlcpp/chapter012/dlib/dlib-save.cc",
+      "source_location": "L17"
+    },
+    {
+      "id": "homlcpp_chapter012_dlib_dlib_save_trainandsavenetwork",
+      "label": "TrainAndSaveNetwork()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 42,
+      "community_name": "dlib-save.cc",
       "file_type": "code",
       "metadata": {
         "unresolved_calls": [
           {
-            "callee": "SetTerminal",
-            "receiver_type": "Plot",
+            "callee": "clean",
+            "receiver_type": "NetworkType",
             "lang": "cpp",
-            "line": "L67"
-          },
-          {
-            "callee": "SetOutput",
-            "receiver_type": "Plot",
-            "lang": "cpp",
-            "line": "L68"
-          },
-          {
-            "callee": "SetTitle",
-            "receiver_type": "Plot",
-            "lang": "cpp",
-            "line": "L69"
-          },
-          {
-            "callee": "SetXLabel",
-            "receiver_type": "Plot",
-            "lang": "cpp",
-            "line": "L70"
-          },
-          {
-            "callee": "SetYLabel",
-            "receiver_type": "Plot",
-            "lang": "cpp",
-            "line": "L71"
-          },
-          {
-            "callee": "GnuplotCommand",
-            "receiver_type": "Plot",
-            "lang": "cpp",
-            "line": "L72"
-          },
-          {
-            "callee": "StartDraw3D<Coords::const_iterator>",
-            "receiver_type": "Plot",
-            "lang": "cpp",
-            "line": "L75"
-          },
-          {
-            "callee": "AddDrawing",
-            "receiver_type": "Plot",
-            "lang": "cpp",
-            "line": "L79"
-          },
-          {
-            "callee": "EndDraw3D",
-            "receiver_type": "Plot",
-            "lang": "cpp",
-            "line": "L88"
-          },
-          {
-            "callee": "Flush",
-            "receiver_type": "Plot",
-            "lang": "cpp",
-            "line": "L89"
+            "line": "L49"
           }
         ]
       },
-      "norm_label": "plot3ddata()",
-      "source_file": "homlcpp/chapter006/tapkee/tapkee-dr.cc",
-      "source_location": "L54"
-    },
-    {
-      "id": "homlcpp_chapter006_tapkee_tapkee_dr_plotclusters",
-      "label": "PlotClusters()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 42,
-      "community_name": "tapkee-dr.cc",
-      "file_type": "code",
-      "metadata": {
-        "unresolved_calls": [
-          {
-            "callee": "SetTerminal",
-            "receiver_type": "Plot",
-            "lang": "cpp",
-            "line": "L31"
-          },
-          {
-            "callee": "SetOutput",
-            "receiver_type": "Plot",
-            "lang": "cpp",
-            "line": "L32"
-          },
-          {
-            "callee": "SetTitle",
-            "receiver_type": "Plot",
-            "lang": "cpp",
-            "line": "L33"
-          },
-          {
-            "callee": "SetXLabel",
-            "receiver_type": "Plot",
-            "lang": "cpp",
-            "line": "L34"
-          },
-          {
-            "callee": "SetYLabel",
-            "receiver_type": "Plot",
-            "lang": "cpp",
-            "line": "L35"
-          },
-          {
-            "callee": "GnuplotCommand",
-            "receiver_type": "Plot",
-            "lang": "cpp",
-            "line": "L36"
-          },
-          {
-            "callee": "StartDraw2D<Coords::const_iterator>",
-            "receiver_type": "Plot",
-            "lang": "cpp",
-            "line": "L39"
-          },
-          {
-            "callee": "AddDrawing",
-            "receiver_type": "Plot",
-            "lang": "cpp",
-            "line": "L43"
-          },
-          {
-            "callee": "EndDraw2D",
-            "receiver_type": "Plot",
-            "lang": "cpp",
-            "line": "L50"
-          },
-          {
-            "callee": "Flush",
-            "receiver_type": "Plot",
-            "lang": "cpp",
-            "line": "L51"
-          }
-        ]
-      },
-      "norm_label": "plotclusters()",
-      "source_file": "homlcpp/chapter006/tapkee/tapkee-dr.cc",
-      "source_location": "L27"
-    },
-    {
-      "id": "homlcpp_chapter006_tapkee_tapkee_dr_reduction",
-      "label": "Reduction()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 42,
-      "community_name": "tapkee-dr.cc",
-      "file_type": "code",
-      "norm_label": "reduction()",
-      "source_file": "homlcpp/chapter006/tapkee/tapkee-dr.cc",
-      "source_location": "L106"
-    },
-    {
-      "id": "homlcpp_chapter006_tapkee_util_read_data",
-      "label": "read_data()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 42,
-      "community_name": "tapkee-dr.cc",
-      "file_type": "code",
-      "metadata": {
-        "unresolved_calls": [
-          {
-            "callee": "rows",
-            "receiver_type": "DenseMatrix",
-            "lang": "cpp",
-            "line": "L32"
-          },
-          {
-            "callee": "cols",
-            "receiver_type": "DenseMatrix",
-            "lang": "cpp",
-            "line": "L33"
-          }
-        ]
-      },
-      "norm_label": "read_data()",
-      "source_file": "homlcpp/chapter006/tapkee/util.cc",
-      "source_location": "L6"
+      "norm_label": "trainandsavenetwork()",
+      "source_file": "homlcpp/chapter012/dlib/dlib-save.cc",
+      "source_location": "L39"
     },
     {
       "id": "homlcpp_chapter014_android_detection_app_src_main_java_com_example_objectdetection_mainactivity_mainactivity_getcamerabackcameraid",
@@ -3915,6 +3879,20 @@
       "source_location": "L38"
     },
     {
+      "id": "homlcpp_chapter010_pytorch_lenet5_lenet5impl_forward",
+      "label": ".forward()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 46,
+      "community_name": "ModelImpl",
+      "definition_file": "homlcpp/chapter010/pytorch/lenet5.cpp",
+      "definition_location": "L38",
+      "file_type": "code",
+      "norm_label": ".forward()",
+      "source_file": "homlcpp/chapter010/pytorch/lenet5.h",
+      "source_location": "L10"
+    },
+    {
       "id": "homlcpp_chapter011_pytorch_model_modelimpl_forward",
       "label": ".forward()",
       "_callable": true,
@@ -3943,72 +3921,52 @@
       "source_location": "L8"
     },
     {
-      "id": "homlcpp_chapter011_pytorch_main_main",
-      "label": "main()",
+      "id": "homlcpp_chapter010_pytorch_lenet5_lenet5impl_lenet5impl",
+      "label": "LeNet5Impl::LeNet5Impl()",
       "_callable": true,
       "_origin": "ast",
       "community": 46,
       "community_name": "ModelImpl",
       "file_type": "code",
-      "metadata": {
-        "unresolved_calls": [
-          {
-            "callee": "zero_grad",
-            "receiver_type": "AdamW",
-            "lang": "cpp",
-            "line": "L65"
-          },
-          {
-            "callee": "backward",
-            "receiver_type": "Tensor",
-            "lang": "cpp",
-            "line": "L76"
-          },
-          {
-            "callee": "step",
-            "receiver_type": "AdamW",
-            "lang": "cpp",
-            "line": "L78"
-          },
-          {
-            "callee": "item<float>",
-            "receiver_type": "Tensor",
-            "lang": "cpp",
-            "line": "L86"
-          }
-        ]
-      },
-      "norm_label": "main()",
-      "source_file": "homlcpp/chapter011/pytorch/main.cpp",
-      "source_location": "L26"
+      "norm_label": "lenet5impl::lenet5impl()",
+      "source_file": "homlcpp/chapter010/pytorch/lenet5.cpp",
+      "source_location": "L7"
     },
     {
-      "id": "homlcpp_chapter011_pytorch_main_stack_apply_batch",
-      "label": ".apply_batch()",
+      "id": "homlcpp_chapter011_pytorch_export_export_model",
+      "label": "export_model()",
       "_callable": true,
       "_origin": "ast",
       "community": 46,
       "community_name": "ModelImpl",
       "file_type": "code",
-      "metadata": {
-        "unresolved_calls": [
-          {
-            "callee": "reserve",
-            "receiver_type": "Tensor>",
-            "lang": "cpp",
-            "line": "L14"
-          },
-          {
-            "callee": "push_back",
-            "receiver_type": "Tensor>",
-            "lang": "cpp",
-            "line": "L18"
-          }
-        ]
-      },
-      "norm_label": ".apply_batch()",
-      "source_file": "homlcpp/chapter011/pytorch/main.cpp",
-      "source_location": "L10"
+      "norm_label": "export_model()",
+      "source_file": "homlcpp/chapter011/pytorch/export.py",
+      "source_location": "L33"
+    },
+    {
+      "id": "homlcpp_chapter011_pytorch_export_save_vocab",
+      "label": "save_vocab()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 46,
+      "community_name": "ModelImpl",
+      "file_type": "code",
+      "norm_label": "save_vocab()",
+      "source_file": "homlcpp/chapter011/pytorch/export.py",
+      "source_location": "L11"
+    },
+    {
+      "id": "homlcpp_chapter011_pytorch_export_tokenize",
+      "label": "tokenize()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 46,
+      "community_name": "ModelImpl",
+      "file_type": "code",
+      "norm_label": "tokenize()",
+      "source_file": "homlcpp/chapter011/pytorch/export.py",
+      "source_location": "L18"
     },
     {
       "id": "homlcpp_chapter006_dlib_dlib_dr_ldareduction",
@@ -4725,116 +4683,40 @@
       "source_location": "L84"
     },
     {
-      "id": "homlcpp_chapter011_pytorch_imdbdataset_imdbdataset_size",
-      "label": ".size()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 51,
-      "community_name": "ImdbDataset",
-      "definition_file": "homlcpp/chapter011/pytorch/imdbdataset.cc",
-      "definition_location": "L25",
-      "file_type": "code",
-      "norm_label": ".size()",
-      "source_file": "homlcpp/chapter011/pytorch/imdbdataset.h",
-      "source_location": "L21"
-    },
-    {
-      "id": "homlcpp_chapter011_pytorch_imdbdataset_imdbdataset_get",
-      "label": ".get()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 51,
-      "community_name": "ImdbDataset",
-      "definition_file": "homlcpp/chapter011/pytorch/imdbdataset.cc",
-      "definition_location": "L9",
-      "file_type": "code",
-      "metadata": {
-        "unresolved_calls": [
-          {
-            "callee": "squeeze",
-            "receiver_type": "Tensor",
-            "lang": "cpp",
-            "line": "L22"
-          }
-        ]
-      },
-      "norm_label": ".get()",
-      "source_file": "homlcpp/chapter011/pytorch/imdbdataset.h",
-      "source_location": "L20"
-    },
-    {
-      "id": "homlcpp_chapter011_pytorch_imdbdataset_imdbdataset_imdbdataset",
-      "label": "ImdbDataset::ImdbDataset()",
+      "id": "homlcpp_chapter002_json_reviewsreader_reviewshandler_key",
+      "label": ".key()",
       "_callable": true,
       "_origin": "ast",
       "community": 53,
-      "community_name": "Tokenizer",
+      "community_name": ".number_float",
       "file_type": "code",
-      "norm_label": "imdbdataset::imdbdataset()",
-      "source_file": "homlcpp/chapter011/pytorch/imdbdataset.cc",
-      "source_location": "L5"
+      "norm_label": ".key()",
+      "source_file": "homlcpp/chapter002/json/reviewsreader.cpp",
+      "source_location": "L95"
     },
     {
-      "id": "homlcpp_chapter010_pytorch_lenet5_lenet5impl_forward",
-      "label": ".forward()",
+      "id": "homlcpp_chapter002_json_reviewsreader_reviewshandler_number_float",
+      "label": ".number_float()",
       "_callable": true,
       "_origin": "ast",
-      "community": 54,
-      "community_name": "LeNet5Impl",
-      "definition_file": "homlcpp/chapter010/pytorch/lenet5.cpp",
-      "definition_location": "L38",
+      "community": 53,
+      "community_name": ".number_float",
       "file_type": "code",
-      "norm_label": ".forward()",
-      "source_file": "homlcpp/chapter010/pytorch/lenet5.h",
-      "source_location": "L10"
+      "norm_label": ".number_float()",
+      "source_file": "homlcpp/chapter002/json/reviewsreader.cpp",
+      "source_location": "L35"
     },
     {
-      "id": "homlcpp_chapter010_pytorch_lenet5_lenet5impl_lenet5impl",
-      "label": "LeNet5Impl::LeNet5Impl()",
+      "id": "homlcpp_chapter002_json_reviewsreader_reviewshandler_string",
+      "label": ".string()",
       "_callable": true,
       "_origin": "ast",
-      "community": 54,
-      "community_name": "LeNet5Impl",
+      "community": 53,
+      "community_name": ".number_float",
       "file_type": "code",
-      "norm_label": "lenet5impl::lenet5impl()",
-      "source_file": "homlcpp/chapter010/pytorch/lenet5.cpp",
-      "source_location": "L7"
-    },
-    {
-      "id": "homlcpp_chapter011_pytorch_export_export_model",
-      "label": "export_model()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 55,
-      "community_name": "export.py",
-      "file_type": "code",
-      "norm_label": "export_model()",
-      "source_file": "homlcpp/chapter011/pytorch/export.py",
-      "source_location": "L33"
-    },
-    {
-      "id": "homlcpp_chapter011_pytorch_export_save_vocab",
-      "label": "save_vocab()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 55,
-      "community_name": "export.py",
-      "file_type": "code",
-      "norm_label": "save_vocab()",
-      "source_file": "homlcpp/chapter011/pytorch/export.py",
-      "source_location": "L11"
-    },
-    {
-      "id": "homlcpp_chapter011_pytorch_export_tokenize",
-      "label": "tokenize()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 55,
-      "community_name": "export.py",
-      "file_type": "code",
-      "norm_label": "tokenize()",
-      "source_file": "homlcpp/chapter011/pytorch/export.py",
-      "source_location": "L18"
+      "norm_label": ".string()",
+      "source_file": "homlcpp/chapter002/json/reviewsreader.cpp",
+      "source_location": "L66"
     },
     {
       "id": "homlcpp_chapter002_hdf5_hdf5_main",
@@ -4985,30 +4867,56 @@
       "source_location": "L17"
     },
     {
+      "id": "homlcpp_chapter011_pytorch_imdbdataset_imdbdataset_size",
+      "label": ".size()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 8,
+      "community_name": "dlib-cluster.cc",
+      "definition_file": "homlcpp/chapter011/pytorch/imdbdataset.cc",
+      "definition_location": "L25",
+      "file_type": "code",
+      "norm_label": ".size()",
+      "source_file": "homlcpp/chapter011/pytorch/imdbdataset.h",
+      "source_location": "L21"
+    },
+    {
+      "id": "homlcpp_chapter011_pytorch_imdbdataset_imdbdataset_get",
+      "label": ".get()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 8,
+      "community_name": "dlib-cluster.cc",
+      "definition_file": "homlcpp/chapter011/pytorch/imdbdataset.cc",
+      "definition_location": "L9",
+      "file_type": "code",
+      "metadata": {
+        "unresolved_calls": [
+          {
+            "callee": "squeeze",
+            "receiver_type": "Tensor",
+            "lang": "cpp",
+            "line": "L22"
+          }
+        ]
+      },
+      "norm_label": ".get()",
+      "source_file": "homlcpp/chapter011/pytorch/imdbdataset.h",
+      "source_location": "L20"
+    },
+    {
       "id": "homlcpp_chapter011_pytorch_tokenizer_tokenizer_tokenize",
       "label": ".tokenize()",
       "_callable": true,
       "_origin": "ast",
-      "community": 68,
-      "community_name": ".tokenize",
+      "community": 8,
+      "community_name": "dlib-cluster.cc",
       "definition_file": "homlcpp/chapter011/pytorch/tokenizer.cc",
       "definition_location": "L17",
       "file_type": "code",
       "norm_label": ".tokenize()",
       "source_file": "homlcpp/chapter011/pytorch/tokenizer.h",
       "source_location": "L13"
-    },
-    {
-      "id": "homlcpp_chapter011_pytorch_tokenizer_tokenizer_tokenizer",
-      "label": "Tokenizer::Tokenizer()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 68,
-      "community_name": ".tokenize",
-      "file_type": "code",
-      "norm_label": "tokenizer::tokenizer()",
-      "source_file": "homlcpp/chapter011/pytorch/tokenizer.cc",
-      "source_location": "L5"
     },
     {
       "id": "homlcpp_chapter004_dlib2_dlib_cluster_dographclustering",
@@ -5165,6 +5073,98 @@
       "source_location": "L26"
     },
     {
+      "id": "homlcpp_chapter011_pytorch_imdbdataset_imdbdataset_imdbdataset",
+      "label": "ImdbDataset::ImdbDataset()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 8,
+      "community_name": "dlib-cluster.cc",
+      "file_type": "code",
+      "norm_label": "imdbdataset::imdbdataset()",
+      "source_file": "homlcpp/chapter011/pytorch/imdbdataset.cc",
+      "source_location": "L5"
+    },
+    {
+      "id": "homlcpp_chapter011_pytorch_main_main",
+      "label": "main()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 8,
+      "community_name": "dlib-cluster.cc",
+      "file_type": "code",
+      "metadata": {
+        "unresolved_calls": [
+          {
+            "callee": "zero_grad",
+            "receiver_type": "AdamW",
+            "lang": "cpp",
+            "line": "L65"
+          },
+          {
+            "callee": "backward",
+            "receiver_type": "Tensor",
+            "lang": "cpp",
+            "line": "L76"
+          },
+          {
+            "callee": "step",
+            "receiver_type": "AdamW",
+            "lang": "cpp",
+            "line": "L78"
+          },
+          {
+            "callee": "item<float>",
+            "receiver_type": "Tensor",
+            "lang": "cpp",
+            "line": "L86"
+          }
+        ]
+      },
+      "norm_label": "main()",
+      "source_file": "homlcpp/chapter011/pytorch/main.cpp",
+      "source_location": "L26"
+    },
+    {
+      "id": "homlcpp_chapter011_pytorch_main_stack_apply_batch",
+      "label": ".apply_batch()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 8,
+      "community_name": "dlib-cluster.cc",
+      "file_type": "code",
+      "metadata": {
+        "unresolved_calls": [
+          {
+            "callee": "reserve",
+            "receiver_type": "Tensor>",
+            "lang": "cpp",
+            "line": "L14"
+          },
+          {
+            "callee": "push_back",
+            "receiver_type": "Tensor>",
+            "lang": "cpp",
+            "line": "L18"
+          }
+        ]
+      },
+      "norm_label": ".apply_batch()",
+      "source_file": "homlcpp/chapter011/pytorch/main.cpp",
+      "source_location": "L10"
+    },
+    {
+      "id": "homlcpp_chapter011_pytorch_tokenizer_tokenizer_tokenizer",
+      "label": "Tokenizer::Tokenizer()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 8,
+      "community_name": "dlib-cluster.cc",
+      "file_type": "code",
+      "norm_label": "tokenizer::tokenizer()",
+      "source_file": "homlcpp/chapter011/pytorch/tokenizer.cc",
+      "source_location": "L5"
+    },
+    {
       "id": "binary_t",
       "label": "binary_t",
       "_origin": "ast",
@@ -5253,17 +5253,6 @@
       "source_location": ""
     },
     {
-      "id": "number_float_t",
-      "label": "number_float_t",
-      "_origin": "ast",
-      "community": 0,
-      "community_name": "ReviewsHandler",
-      "file_type": "code",
-      "norm_label": "number_float_t",
-      "source_file": "",
-      "source_location": ""
-    },
-    {
       "id": "number_integer_t",
       "label": "number_integer_t",
       "_origin": "ast",
@@ -5293,17 +5282,6 @@
       "community_name": "ReviewsHandler",
       "file_type": "code",
       "norm_label": "papers",
-      "source_file": "",
-      "source_location": ""
-    },
-    {
-      "id": "string_t",
-      "label": "string_t",
-      "_origin": "ast",
-      "community": 0,
-      "community_name": "ReviewsHandler",
-      "file_type": "code",
-      "norm_label": "string_t",
       "source_file": "",
       "source_location": ""
     },
@@ -5757,39 +5735,6 @@
       "source_location": "L1"
     },
     {
-      "id": "homlcpp_chapter012_dlib_dlib_save",
-      "label": "dlib-save.cc",
-      "_origin": "ast",
-      "community": 11,
-      "community_name": "grid-dlib.cc",
-      "file_type": "code",
-      "norm_label": "dlib-save.cc",
-      "source_file": "homlcpp/chapter012/dlib/dlib-save.cc",
-      "source_location": "L1"
-    },
-    {
-      "id": "homlcpp_chapter012_dlib_dlib_save_cc_matrix",
-      "label": "matrix",
-      "_origin": "ast",
-      "community": 11,
-      "community_name": "grid-dlib.cc",
-      "file_type": "code",
-      "norm_label": "matrix",
-      "source_file": "",
-      "source_location": ""
-    },
-    {
-      "id": "homlcpp_chapter012_dlib_dlib_save_cc_vector",
-      "label": "vector",
-      "_origin": "ast",
-      "community": 11,
-      "community_name": "grid-dlib.cc",
-      "file_type": "code",
-      "norm_label": "vector",
-      "source_file": "",
-      "source_location": ""
-    },
-    {
       "id": "labels",
       "label": "Labels",
       "_origin": "ast",
@@ -6012,46 +5957,68 @@
       "source_location": "L1"
     },
     {
-      "id": "homlcpp_chapter001_blaze_linreg_blaze",
-      "label": "linreg_blaze.cpp",
+      "id": "homlcpp_chapter005_dlib_dlib_anomaly",
+      "label": "dlib-anomaly.cc",
       "_origin": "ast",
       "community": 2,
-      "community_name": "GenerateData",
+      "community_name": "dlib-anomaly.cc",
       "file_type": "code",
-      "norm_label": "linreg_blaze.cpp",
-      "source_file": "homlcpp/chapter001/blaze/linreg_blaze.cpp",
+      "norm_label": "dlib-anomaly.cc",
+      "source_file": "homlcpp/chapter005/dlib/dlib-anomaly.cc",
       "source_location": "L1"
     },
     {
-      "id": "homlcpp_chapter001_blaze_linreg_blaze_cpp_matrix",
+      "id": "homlcpp_chapter005_dlib_dlib_anomaly_cc_clusters",
+      "label": "Clusters",
+      "_origin": "ast",
+      "community": 2,
+      "community_name": "dlib-anomaly.cc",
+      "file_type": "code",
+      "norm_label": "clusters",
+      "source_file": "",
+      "source_location": ""
+    },
+    {
+      "id": "homlcpp_chapter005_dlib_dlib_anomaly_cc_dataset",
+      "label": "Dataset",
+      "_origin": "ast",
+      "community": 2,
+      "community_name": "dlib-anomaly.cc",
+      "file_type": "code",
+      "norm_label": "dataset",
+      "source_file": "",
+      "source_location": ""
+    },
+    {
+      "id": "homlcpp_chapter005_dlib_dlib_anomaly_cc_matrix",
       "label": "Matrix",
       "_origin": "ast",
       "community": 2,
-      "community_name": "GenerateData",
+      "community_name": "dlib-anomaly.cc",
       "file_type": "code",
       "norm_label": "matrix",
       "source_file": "",
       "source_location": ""
     },
     {
-      "id": "homlcpp_chapter001_blaze_linreg_blaze_cpp_pair",
-      "label": "pair",
+      "id": "homlcpp_chapter005_dlib_dlib_anomaly_cc_path",
+      "label": "path",
       "_origin": "ast",
       "community": 2,
-      "community_name": "GenerateData",
+      "community_name": "dlib-anomaly.cc",
       "file_type": "code",
-      "norm_label": "pair",
+      "norm_label": "path",
       "source_file": "",
       "source_location": ""
     },
     {
-      "id": "homlcpp_chapter001_blaze_linreg_blaze_cpp_vector",
-      "label": "Vector",
+      "id": "homlcpp_chapter005_dlib_dlib_anomaly_cc_string",
+      "label": "string",
       "_origin": "ast",
       "community": 2,
-      "community_name": "GenerateData",
+      "community_name": "dlib-anomaly.cc",
       "file_type": "code",
-      "norm_label": "vector",
+      "norm_label": "string",
       "source_file": "",
       "source_location": ""
     },
@@ -6649,17 +6616,6 @@
       "source_location": ""
     },
     {
-      "id": "homlcpp_chapter014_android_detection_app_src_main_cpp_log",
-      "label": "log.h",
-      "_origin": "ast",
-      "community": 32,
-      "community_name": "YOLO",
-      "file_type": "code",
-      "norm_label": "log.h",
-      "source_file": "homlcpp/chapter014/android_detection/app/src/main/cpp/log.h",
-      "source_location": "L1"
-    },
-    {
       "id": "homlcpp_chapter014_android_detection_app_src_main_cpp_yolo_cpp_homlcpp_chapter014_android_detection_app_src_main_cpp_yolo",
       "label": "yolo.cpp",
       "_origin": "ast",
@@ -6935,6 +6891,50 @@
       "source_location": ""
     },
     {
+      "id": "homlcpp_chapter001_blaze_linreg_blaze",
+      "label": "linreg_blaze.cpp",
+      "_origin": "ast",
+      "community": 33,
+      "community_name": "vector",
+      "file_type": "code",
+      "norm_label": "linreg_blaze.cpp",
+      "source_file": "homlcpp/chapter001/blaze/linreg_blaze.cpp",
+      "source_location": "L1"
+    },
+    {
+      "id": "homlcpp_chapter001_blaze_linreg_blaze_cpp_matrix",
+      "label": "Matrix",
+      "_origin": "ast",
+      "community": 33,
+      "community_name": "vector",
+      "file_type": "code",
+      "norm_label": "matrix",
+      "source_file": "",
+      "source_location": ""
+    },
+    {
+      "id": "homlcpp_chapter001_blaze_linreg_blaze_cpp_pair",
+      "label": "pair",
+      "_origin": "ast",
+      "community": 33,
+      "community_name": "vector",
+      "file_type": "code",
+      "norm_label": "pair",
+      "source_file": "",
+      "source_location": ""
+    },
+    {
+      "id": "homlcpp_chapter001_blaze_linreg_blaze_cpp_vector",
+      "label": "Vector",
+      "_origin": "ast",
+      "community": 33,
+      "community_name": "vector",
+      "file_type": "code",
+      "norm_label": "vector",
+      "source_file": "",
+      "source_location": ""
+    },
+    {
       "id": "homlcpp_chapter001_eigen_linreg_eigen",
       "label": "linreg_eigen.cpp",
       "_origin": "ast",
@@ -7012,6 +7012,105 @@
       "source_location": ""
     },
     {
+      "id": "homlcpp_chapter006_tapkee_tapkee_dr",
+      "label": "tapkee-dr.cc",
+      "_origin": "ast",
+      "community": 35,
+      "community_name": "eigen_recommender.cc",
+      "file_type": "code",
+      "norm_label": "tapkee-dr.cc",
+      "source_file": "homlcpp/chapter006/tapkee/tapkee-dr.cc",
+      "source_location": "L1"
+    },
+    {
+      "id": "homlcpp_chapter006_tapkee_tapkee_dr_cc_clusters",
+      "label": "Clusters",
+      "_origin": "ast",
+      "community": 35,
+      "community_name": "eigen_recommender.cc",
+      "file_type": "code",
+      "norm_label": "clusters",
+      "source_file": "",
+      "source_location": ""
+    },
+    {
+      "id": "homlcpp_chapter006_tapkee_tapkee_dr_cc_densematrix",
+      "label": "DenseMatrix",
+      "_origin": "ast",
+      "community": 35,
+      "community_name": "eigen_recommender.cc",
+      "file_type": "code",
+      "norm_label": "densematrix",
+      "source_file": "",
+      "source_location": ""
+    },
+    {
+      "id": "homlcpp_chapter006_tapkee_tapkee_dr_cc_string",
+      "label": "string",
+      "_origin": "ast",
+      "community": 35,
+      "community_name": "eigen_recommender.cc",
+      "file_type": "code",
+      "norm_label": "string",
+      "source_file": "",
+      "source_location": ""
+    },
+    {
+      "id": "homlcpp_chapter006_tapkee_tapkee_dr_gaussian_kernel_callback_gamma",
+      "label": "gamma",
+      "_origin": "ast",
+      "community": 35,
+      "community_name": "eigen_recommender.cc",
+      "file_type": "code",
+      "norm_label": "gamma",
+      "source_file": "homlcpp/chapter006/tapkee/tapkee-dr.cc",
+      "source_location": "L103"
+    },
+    {
+      "id": "homlcpp_chapter006_tapkee_util_cc_densematrix",
+      "label": "DenseMatrix",
+      "_origin": "ast",
+      "community": 35,
+      "community_name": "eigen_recommender.cc",
+      "file_type": "code",
+      "norm_label": "densematrix",
+      "source_file": "",
+      "source_location": ""
+    },
+    {
+      "id": "homlcpp_chapter006_tapkee_util_cc_homlcpp_chapter006_tapkee_util",
+      "label": "util.cc",
+      "_origin": "ast",
+      "community": 35,
+      "community_name": "eigen_recommender.cc",
+      "file_type": "code",
+      "norm_label": "util.cc",
+      "source_file": "homlcpp/chapter006/tapkee/util.cc",
+      "source_location": "L1"
+    },
+    {
+      "id": "homlcpp_chapter006_tapkee_util_cc_string",
+      "label": "string",
+      "_origin": "ast",
+      "community": 35,
+      "community_name": "eigen_recommender.cc",
+      "file_type": "code",
+      "norm_label": "string",
+      "source_file": "",
+      "source_location": ""
+    },
+    {
+      "id": "homlcpp_chapter006_tapkee_util_h_homlcpp_chapter006_tapkee_util",
+      "label": "util.h",
+      "_origin": "ast",
+      "community": 35,
+      "community_name": "eigen_recommender.cc",
+      "file_type": "code",
+      "norm_label": "util.h",
+      "source_file": "homlcpp/chapter006/tapkee/util.h",
+      "source_location": "L1"
+    },
+    {
       "id": "homlcpp_chapter007_dlib_dlib_classify",
       "label": "dlib-classify.cc",
       "_origin": "ast",
@@ -7076,6 +7175,17 @@
       "norm_label": "data_loader.h",
       "source_file": "homlcpp/chapter008/eigen/data_loader.h",
       "source_location": "L1"
+    },
+    {
+      "id": "homlcpp_chapter008_eigen_data_loader_h_string",
+      "label": "string",
+      "_origin": "ast",
+      "community": 35,
+      "community_name": "eigen_recommender.cc",
+      "file_type": "code",
+      "norm_label": "string",
+      "source_file": "",
+      "source_location": ""
     },
     {
       "id": "homlcpp_chapter008_eigen_eigen_recommender",
@@ -7144,46 +7254,13 @@
       "source_location": "L1"
     },
     {
-      "id": "homlcpp_chapter012_onnxruntime_main",
-      "label": "onnxruntime/main.cc",
+      "id": "indextype",
+      "label": "IndexType",
       "_origin": "ast",
       "community": 35,
       "community_name": "eigen_recommender.cc",
       "file_type": "code",
-      "norm_label": "onnxruntime/main.cc",
-      "source_file": "homlcpp/chapter012/onnxruntime/main.cc",
-      "source_location": "L1"
-    },
-    {
-      "id": "homlcpp_chapter012_onnxruntime_main_cc_classes",
-      "label": "Classes",
-      "_origin": "ast",
-      "community": 35,
-      "community_name": "eigen_recommender.cc",
-      "file_type": "code",
-      "norm_label": "classes",
-      "source_file": "",
-      "source_location": ""
-    },
-    {
-      "id": "homlcpp_chapter012_onnxruntime_main_cc_string",
-      "label": "string",
-      "_origin": "ast",
-      "community": 35,
-      "community_name": "eigen_recommender.cc",
-      "file_type": "code",
-      "norm_label": "string",
-      "source_file": "",
-      "source_location": ""
-    },
-    {
-      "id": "homlcpp_chapter012_onnxruntime_main_cc_vector",
-      "label": "vector",
-      "_origin": "ast",
-      "community": 35,
-      "community_name": "eigen_recommender.cc",
-      "file_type": "code",
-      "norm_label": "vector",
+      "norm_label": "indextype",
       "source_file": "",
       "source_location": ""
     },
@@ -7199,6 +7276,17 @@
       "source_location": ""
     },
     {
+      "id": "parametersset",
+      "label": "ParametersSet",
+      "_origin": "ast",
+      "community": 35,
+      "community_name": "eigen_recommender.cc",
+      "file_type": "code",
+      "norm_label": "parametersset",
+      "source_file": "",
+      "source_location": ""
+    },
+    {
       "id": "ratings",
       "label": "Ratings",
       "_origin": "ast",
@@ -7210,13 +7298,13 @@
       "source_location": ""
     },
     {
-      "id": "session",
-      "label": "Session",
+      "id": "scalartype",
+      "label": "ScalarType",
       "_origin": "ast",
       "community": 35,
       "community_name": "eigen_recommender.cc",
       "file_type": "code",
-      "norm_label": "session",
+      "norm_label": "scalartype",
       "source_file": "",
       "source_location": ""
     },
@@ -7232,22 +7320,11 @@
       "source_location": ""
     },
     {
-      "id": "unordered_map",
-      "label": "unordered_map",
-      "_origin": "ast",
-      "community": 35,
-      "community_name": "eigen_recommender.cc",
-      "file_type": "code",
-      "norm_label": "unordered_map",
-      "source_file": "",
-      "source_location": ""
-    },
-    {
       "id": "cols",
       "label": "Cols",
       "_origin": "ast",
       "community": 36,
-      "community_name": "dlib-anomaly.cc",
+      "community_name": "isolation-forest.h",
       "file_type": "code",
       "norm_label": "cols",
       "source_file": "",
@@ -7258,75 +7335,9 @@
       "label": "Data",
       "_origin": "ast",
       "community": 36,
-      "community_name": "dlib-anomaly.cc",
+      "community_name": "isolation-forest.h",
       "file_type": "code",
       "norm_label": "data",
-      "source_file": "",
-      "source_location": ""
-    },
-    {
-      "id": "homlcpp_chapter005_dlib_dlib_anomaly",
-      "label": "dlib-anomaly.cc",
-      "_origin": "ast",
-      "community": 36,
-      "community_name": "dlib-anomaly.cc",
-      "file_type": "code",
-      "norm_label": "dlib-anomaly.cc",
-      "source_file": "homlcpp/chapter005/dlib/dlib-anomaly.cc",
-      "source_location": "L1"
-    },
-    {
-      "id": "homlcpp_chapter005_dlib_dlib_anomaly_cc_clusters",
-      "label": "Clusters",
-      "_origin": "ast",
-      "community": 36,
-      "community_name": "dlib-anomaly.cc",
-      "file_type": "code",
-      "norm_label": "clusters",
-      "source_file": "",
-      "source_location": ""
-    },
-    {
-      "id": "homlcpp_chapter005_dlib_dlib_anomaly_cc_dataset",
-      "label": "Dataset",
-      "_origin": "ast",
-      "community": 36,
-      "community_name": "dlib-anomaly.cc",
-      "file_type": "code",
-      "norm_label": "dataset",
-      "source_file": "",
-      "source_location": ""
-    },
-    {
-      "id": "homlcpp_chapter005_dlib_dlib_anomaly_cc_matrix",
-      "label": "Matrix",
-      "_origin": "ast",
-      "community": 36,
-      "community_name": "dlib-anomaly.cc",
-      "file_type": "code",
-      "norm_label": "matrix",
-      "source_file": "",
-      "source_location": ""
-    },
-    {
-      "id": "homlcpp_chapter005_dlib_dlib_anomaly_cc_path",
-      "label": "path",
-      "_origin": "ast",
-      "community": 36,
-      "community_name": "dlib-anomaly.cc",
-      "file_type": "code",
-      "norm_label": "path",
-      "source_file": "",
-      "source_location": ""
-    },
-    {
-      "id": "homlcpp_chapter005_dlib_dlib_anomaly_cc_string",
-      "label": "string",
-      "_origin": "ast",
-      "community": 36,
-      "community_name": "dlib-anomaly.cc",
-      "file_type": "code",
-      "norm_label": "string",
       "source_file": "",
       "source_location": ""
     },
@@ -7335,7 +7346,7 @@
       "label": "isolation-forest.h",
       "_origin": "ast",
       "community": 36,
-      "community_name": "dlib-anomaly.cc",
+      "community_name": "isolation-forest.h",
       "file_type": "code",
       "norm_label": "isolation-forest.h",
       "source_file": "homlcpp/chapter005/dlib/isolation-forest.h",
@@ -7346,7 +7357,7 @@
       "label": "dataset",
       "_origin": "ast",
       "community": 36,
-      "community_name": "dlib-anomaly.cc",
+      "community_name": "isolation-forest.h",
       "file_type": "code",
       "norm_label": "dataset",
       "source_file": "homlcpp/chapter005/dlib/isolation-forest.h",
@@ -7357,7 +7368,7 @@
       "label": "indices",
       "_origin": "ast",
       "community": 36,
-      "community_name": "dlib-anomaly.cc",
+      "community_name": "isolation-forest.h",
       "file_type": "code",
       "norm_label": "indices",
       "source_file": "homlcpp/chapter005/dlib/isolation-forest.h",
@@ -7368,7 +7379,7 @@
       "label": "Dataset",
       "_origin": "ast",
       "community": 36,
-      "community_name": "dlib-anomaly.cc",
+      "community_name": "isolation-forest.h",
       "file_type": "code",
       "norm_label": "dataset",
       "source_file": "",
@@ -7379,7 +7390,7 @@
       "label": "DataType",
       "_origin": "ast",
       "community": 36,
-      "community_name": "dlib-anomaly.cc",
+      "community_name": "isolation-forest.h",
       "file_type": "code",
       "norm_label": "datatype",
       "source_file": "",
@@ -7390,7 +7401,7 @@
       "label": "vector",
       "_origin": "ast",
       "community": 36,
-      "community_name": "dlib-anomaly.cc",
+      "community_name": "isolation-forest.h",
       "file_type": "code",
       "norm_label": "vector",
       "source_file": "",
@@ -7401,7 +7412,7 @@
       "label": "c",
       "_origin": "ast",
       "community": 36,
-      "community_name": "dlib-anomaly.cc",
+      "community_name": "isolation-forest.h",
       "file_type": "code",
       "norm_label": "c",
       "source_file": "homlcpp/chapter005/dlib/isolation-forest.h",
@@ -7412,7 +7423,7 @@
       "label": "rand_engine",
       "_origin": "ast",
       "community": 36,
-      "community_name": "dlib-anomaly.cc",
+      "community_name": "isolation-forest.h",
       "file_type": "code",
       "norm_label": "rand_engine",
       "source_file": "homlcpp/chapter005/dlib/isolation-forest.h",
@@ -7423,7 +7434,7 @@
       "label": "trees",
       "_origin": "ast",
       "community": 36,
-      "community_name": "dlib-anomaly.cc",
+      "community_name": "isolation-forest.h",
       "file_type": "code",
       "norm_label": "trees",
       "source_file": "homlcpp/chapter005/dlib/isolation-forest.h",
@@ -7434,7 +7445,7 @@
       "label": "rand_engine",
       "_origin": "ast",
       "community": 36,
-      "community_name": "dlib-anomaly.cc",
+      "community_name": "isolation-forest.h",
       "file_type": "code",
       "norm_label": "rand_engine",
       "source_file": "homlcpp/chapter005/dlib/isolation-forest.h",
@@ -7445,7 +7456,7 @@
       "label": "root",
       "_origin": "ast",
       "community": 36,
-      "community_name": "dlib-anomaly.cc",
+      "community_name": "isolation-forest.h",
       "file_type": "code",
       "norm_label": "root",
       "source_file": "homlcpp/chapter005/dlib/isolation-forest.h",
@@ -7456,7 +7467,7 @@
       "label": "is_external",
       "_origin": "ast",
       "community": 36,
-      "community_name": "dlib-anomaly.cc",
+      "community_name": "isolation-forest.h",
       "file_type": "code",
       "norm_label": "is_external",
       "source_file": "homlcpp/chapter005/dlib/isolation-forest.h",
@@ -7467,7 +7478,7 @@
       "label": "left",
       "_origin": "ast",
       "community": 36,
-      "community_name": "dlib-anomaly.cc",
+      "community_name": "isolation-forest.h",
       "file_type": "code",
       "norm_label": "left",
       "source_file": "homlcpp/chapter005/dlib/isolation-forest.h",
@@ -7478,7 +7489,7 @@
       "label": "right",
       "_origin": "ast",
       "community": 36,
-      "community_name": "dlib-anomaly.cc",
+      "community_name": "isolation-forest.h",
       "file_type": "code",
       "norm_label": "right",
       "source_file": "homlcpp/chapter005/dlib/isolation-forest.h",
@@ -7489,7 +7500,7 @@
       "label": "size",
       "_origin": "ast",
       "community": 36,
-      "community_name": "dlib-anomaly.cc",
+      "community_name": "isolation-forest.h",
       "file_type": "code",
       "norm_label": "size",
       "source_file": "homlcpp/chapter005/dlib/isolation-forest.h",
@@ -7500,7 +7511,7 @@
       "label": "split_col",
       "_origin": "ast",
       "community": 36,
-      "community_name": "dlib-anomaly.cc",
+      "community_name": "isolation-forest.h",
       "file_type": "code",
       "norm_label": "split_col",
       "source_file": "homlcpp/chapter005/dlib/isolation-forest.h",
@@ -7511,18 +7522,29 @@
       "label": "split_value",
       "_origin": "ast",
       "community": 36,
-      "community_name": "dlib-anomaly.cc",
+      "community_name": "isolation-forest.h",
       "file_type": "code",
       "norm_label": "split_value",
       "source_file": "homlcpp/chapter005/dlib/isolation-forest.h",
       "source_location": "L58"
     },
     {
+      "id": "homlcpp_chapter011_pytorch_imdbreader_h_homlcpp_chapter011_pytorch_imdbreader",
+      "label": "imdbreader.h",
+      "_origin": "ast",
+      "community": 36,
+      "community_name": "isolation-forest.h",
+      "file_type": "code",
+      "norm_label": "imdbreader.h",
+      "source_file": "homlcpp/chapter011/pytorch/imdbreader.h",
+      "source_location": "L1"
+    },
+    {
       "id": "mt19937",
       "label": "mt19937",
       "_origin": "ast",
       "community": 36,
-      "community_name": "dlib-anomaly.cc",
+      "community_name": "isolation-forest.h",
       "file_type": "code",
       "norm_label": "mt19937",
       "source_file": "",
@@ -7533,7 +7555,7 @@
       "label": "Sample",
       "_origin": "ast",
       "community": 36,
-      "community_name": "dlib-anomaly.cc",
+      "community_name": "isolation-forest.h",
       "file_type": "code",
       "norm_label": "sample",
       "source_file": "",
@@ -7544,7 +7566,7 @@
       "label": "unique_ptr",
       "_origin": "ast",
       "community": 36,
-      "community_name": "dlib-anomaly.cc",
+      "community_name": "isolation-forest.h",
       "file_type": "code",
       "norm_label": "unique_ptr",
       "source_file": "",
@@ -7562,6 +7584,17 @@
       "source_location": ""
     },
     {
+      "id": "example",
+      "label": "Example",
+      "_origin": "ast",
+      "community": 37,
+      "community_name": "MNISTDataset",
+      "file_type": "code",
+      "norm_label": "example",
+      "source_file": "",
+      "source_location": ""
+    },
+    {
       "id": "homlcpp_chapter010_pytorch_main",
       "label": "chapter010/pytorch/main.cpp",
       "_origin": "ast",
@@ -7571,6 +7604,50 @@
       "norm_label": "chapter010/pytorch/main.cpp",
       "source_file": "homlcpp/chapter010/pytorch/main.cpp",
       "source_location": "L1"
+    },
+    {
+      "id": "homlcpp_chapter010_pytorch_mnistdataset_cpp_devicetype",
+      "label": "DeviceType",
+      "_origin": "ast",
+      "community": 37,
+      "community_name": "MNISTDataset",
+      "file_type": "code",
+      "norm_label": "devicetype",
+      "source_file": "",
+      "source_location": ""
+    },
+    {
+      "id": "homlcpp_chapter010_pytorch_mnistdataset_cpp_homlcpp_chapter010_pytorch_mnistdataset",
+      "label": "mnistdataset.cpp",
+      "_origin": "ast",
+      "community": 37,
+      "community_name": "MNISTDataset",
+      "file_type": "code",
+      "norm_label": "mnistdataset.cpp",
+      "source_file": "homlcpp/chapter010/pytorch/mnistdataset.cpp",
+      "source_location": "L1"
+    },
+    {
+      "id": "homlcpp_chapter010_pytorch_mnistdataset_cpp_istream",
+      "label": "istream",
+      "_origin": "ast",
+      "community": 37,
+      "community_name": "MNISTDataset",
+      "file_type": "code",
+      "norm_label": "istream",
+      "source_file": "",
+      "source_location": ""
+    },
+    {
+      "id": "homlcpp_chapter010_pytorch_mnistdataset_cpp_mat",
+      "label": "Mat",
+      "_origin": "ast",
+      "community": 37,
+      "community_name": "MNISTDataset",
+      "file_type": "code",
+      "norm_label": "mat",
+      "source_file": "",
+      "source_location": ""
     },
     {
       "id": "homlcpp_chapter010_pytorch_mnistdataset_cpp_optional",
@@ -7584,6 +7661,39 @@
       "source_location": ""
     },
     {
+      "id": "homlcpp_chapter010_pytorch_mnistdataset_cpp_string",
+      "label": "string",
+      "_origin": "ast",
+      "community": 37,
+      "community_name": "MNISTDataset",
+      "file_type": "code",
+      "norm_label": "string",
+      "source_file": "",
+      "source_location": ""
+    },
+    {
+      "id": "homlcpp_chapter010_pytorch_mnistdataset_cpp_t",
+      "label": "T",
+      "_origin": "ast",
+      "community": 37,
+      "community_name": "MNISTDataset",
+      "file_type": "code",
+      "norm_label": "t",
+      "source_file": "",
+      "source_location": ""
+    },
+    {
+      "id": "homlcpp_chapter010_pytorch_mnistdataset_cpp_tensor",
+      "label": "Tensor",
+      "_origin": "ast",
+      "community": 37,
+      "community_name": "MNISTDataset",
+      "file_type": "code",
+      "norm_label": "tensor",
+      "source_file": "",
+      "source_location": ""
+    },
+    {
       "id": "homlcpp_chapter010_pytorch_mnistdataset_h_devicetype",
       "label": "DeviceType",
       "_origin": "ast",
@@ -7593,6 +7703,17 @@
       "norm_label": "devicetype",
       "source_file": "",
       "source_location": ""
+    },
+    {
+      "id": "homlcpp_chapter010_pytorch_mnistdataset_h_homlcpp_chapter010_pytorch_mnistdataset",
+      "label": "mnistdataset.h",
+      "_origin": "ast",
+      "community": 37,
+      "community_name": "MNISTDataset",
+      "file_type": "code",
+      "norm_label": "mnistdataset.h",
+      "source_file": "homlcpp/chapter010/pytorch/mnistdataset.h",
+      "source_location": "L1"
     },
     {
       "id": "homlcpp_chapter010_pytorch_mnistdataset_h_mat",
@@ -8112,17 +8233,6 @@
       "source_location": "L40"
     },
     {
-      "id": "homlcpp_chapter009_mlpack_stacking_kfolddataset_labels",
-      "label": "labels",
-      "_origin": "ast",
-      "community": 39,
-      "community_name": "mlpack_ensemble.cc",
-      "file_type": "code",
-      "norm_label": "labels",
-      "source_file": "homlcpp/chapter009/mlpack/stacking.cc",
-      "source_location": "L44"
-    },
-    {
       "id": "homlcpp_chapter009_mlpack_stacking_kfolddataset_last_fold_size",
       "label": "last_fold_size",
       "_origin": "ast",
@@ -8261,7 +8371,7 @@
       "node_kind": "heading",
       "norm_label": "folder structure",
       "source_file": "README.md",
-      "source_location": "L335"
+      "source_location": "L342"
     },
     {
       "id": "readme_hands_on_machine_learning_with_c_2nd_edition",
@@ -8321,7 +8431,7 @@
       "node_kind": "heading",
       "norm_label": "references",
       "source_file": "README.md",
-      "source_location": "L341"
+      "source_location": "L348"
     },
     {
       "id": "readme_sentiment_pytorch_chapter_011",
@@ -8348,90 +8458,57 @@
       "source_location": "L179"
     },
     {
-      "id": "example",
-      "label": "Example",
+      "id": "homlcpp_chapter012_onnxruntime_main",
+      "label": "onnxruntime/main.cc",
       "_origin": "ast",
       "community": 40,
-      "community_name": "mnistdataset.cpp",
+      "community_name": "onnxruntime/main.cc",
       "file_type": "code",
-      "norm_label": "example",
-      "source_file": "",
-      "source_location": ""
-    },
-    {
-      "id": "homlcpp_chapter010_pytorch_mnistdataset_cpp_devicetype",
-      "label": "DeviceType",
-      "_origin": "ast",
-      "community": 40,
-      "community_name": "mnistdataset.cpp",
-      "file_type": "code",
-      "norm_label": "devicetype",
-      "source_file": "",
-      "source_location": ""
-    },
-    {
-      "id": "homlcpp_chapter010_pytorch_mnistdataset_cpp_homlcpp_chapter010_pytorch_mnistdataset",
-      "label": "mnistdataset.cpp",
-      "_origin": "ast",
-      "community": 40,
-      "community_name": "mnistdataset.cpp",
-      "file_type": "code",
-      "norm_label": "mnistdataset.cpp",
-      "source_file": "homlcpp/chapter010/pytorch/mnistdataset.cpp",
+      "norm_label": "onnxruntime/main.cc",
+      "source_file": "homlcpp/chapter012/onnxruntime/main.cc",
       "source_location": "L1"
     },
     {
-      "id": "homlcpp_chapter010_pytorch_mnistdataset_cpp_istream",
-      "label": "istream",
+      "id": "homlcpp_chapter012_onnxruntime_main_cc_classes",
+      "label": "Classes",
       "_origin": "ast",
       "community": 40,
-      "community_name": "mnistdataset.cpp",
+      "community_name": "onnxruntime/main.cc",
       "file_type": "code",
-      "norm_label": "istream",
+      "norm_label": "classes",
       "source_file": "",
       "source_location": ""
     },
     {
-      "id": "homlcpp_chapter010_pytorch_mnistdataset_cpp_mat",
-      "label": "Mat",
-      "_origin": "ast",
-      "community": 40,
-      "community_name": "mnistdataset.cpp",
-      "file_type": "code",
-      "norm_label": "mat",
-      "source_file": "",
-      "source_location": ""
-    },
-    {
-      "id": "homlcpp_chapter010_pytorch_mnistdataset_cpp_string",
+      "id": "homlcpp_chapter012_onnxruntime_main_cc_string",
       "label": "string",
       "_origin": "ast",
       "community": 40,
-      "community_name": "mnistdataset.cpp",
+      "community_name": "onnxruntime/main.cc",
       "file_type": "code",
       "norm_label": "string",
       "source_file": "",
       "source_location": ""
     },
     {
-      "id": "homlcpp_chapter010_pytorch_mnistdataset_cpp_t",
-      "label": "T",
+      "id": "homlcpp_chapter012_onnxruntime_main_cc_vector",
+      "label": "vector",
       "_origin": "ast",
       "community": 40,
-      "community_name": "mnistdataset.cpp",
+      "community_name": "onnxruntime/main.cc",
       "file_type": "code",
-      "norm_label": "t",
+      "norm_label": "vector",
       "source_file": "",
       "source_location": ""
     },
     {
-      "id": "homlcpp_chapter010_pytorch_mnistdataset_cpp_tensor",
-      "label": "Tensor",
+      "id": "session",
+      "label": "Session",
       "_origin": "ast",
       "community": 40,
-      "community_name": "mnistdataset.cpp",
+      "community_name": "onnxruntime/main.cc",
       "file_type": "code",
-      "norm_label": "tensor",
+      "norm_label": "session",
       "source_file": "",
       "source_location": ""
     },
@@ -8612,134 +8689,35 @@
       "source_location": ""
     },
     {
-      "id": "homlcpp_chapter006_tapkee_tapkee_dr",
-      "label": "tapkee-dr.cc",
+      "id": "homlcpp_chapter012_dlib_dlib_save",
+      "label": "dlib-save.cc",
       "_origin": "ast",
       "community": 42,
-      "community_name": "tapkee-dr.cc",
+      "community_name": "dlib-save.cc",
       "file_type": "code",
-      "norm_label": "tapkee-dr.cc",
-      "source_file": "homlcpp/chapter006/tapkee/tapkee-dr.cc",
+      "norm_label": "dlib-save.cc",
+      "source_file": "homlcpp/chapter012/dlib/dlib-save.cc",
       "source_location": "L1"
     },
     {
-      "id": "homlcpp_chapter006_tapkee_tapkee_dr_cc_clusters",
-      "label": "Clusters",
+      "id": "homlcpp_chapter012_dlib_dlib_save_cc_matrix",
+      "label": "matrix",
       "_origin": "ast",
       "community": 42,
-      "community_name": "tapkee-dr.cc",
+      "community_name": "dlib-save.cc",
       "file_type": "code",
-      "norm_label": "clusters",
+      "norm_label": "matrix",
       "source_file": "",
       "source_location": ""
     },
     {
-      "id": "homlcpp_chapter006_tapkee_tapkee_dr_cc_densematrix",
-      "label": "DenseMatrix",
+      "id": "homlcpp_chapter012_dlib_dlib_save_cc_vector",
+      "label": "vector",
       "_origin": "ast",
       "community": 42,
-      "community_name": "tapkee-dr.cc",
+      "community_name": "dlib-save.cc",
       "file_type": "code",
-      "norm_label": "densematrix",
-      "source_file": "",
-      "source_location": ""
-    },
-    {
-      "id": "homlcpp_chapter006_tapkee_tapkee_dr_cc_string",
-      "label": "string",
-      "_origin": "ast",
-      "community": 42,
-      "community_name": "tapkee-dr.cc",
-      "file_type": "code",
-      "norm_label": "string",
-      "source_file": "",
-      "source_location": ""
-    },
-    {
-      "id": "homlcpp_chapter006_tapkee_tapkee_dr_gaussian_kernel_callback_gamma",
-      "label": "gamma",
-      "_origin": "ast",
-      "community": 42,
-      "community_name": "tapkee-dr.cc",
-      "file_type": "code",
-      "norm_label": "gamma",
-      "source_file": "homlcpp/chapter006/tapkee/tapkee-dr.cc",
-      "source_location": "L103"
-    },
-    {
-      "id": "homlcpp_chapter006_tapkee_util_cc_densematrix",
-      "label": "DenseMatrix",
-      "_origin": "ast",
-      "community": 42,
-      "community_name": "tapkee-dr.cc",
-      "file_type": "code",
-      "norm_label": "densematrix",
-      "source_file": "",
-      "source_location": ""
-    },
-    {
-      "id": "homlcpp_chapter006_tapkee_util_cc_homlcpp_chapter006_tapkee_util",
-      "label": "util.cc",
-      "_origin": "ast",
-      "community": 42,
-      "community_name": "tapkee-dr.cc",
-      "file_type": "code",
-      "norm_label": "util.cc",
-      "source_file": "homlcpp/chapter006/tapkee/util.cc",
-      "source_location": "L1"
-    },
-    {
-      "id": "homlcpp_chapter006_tapkee_util_cc_string",
-      "label": "string",
-      "_origin": "ast",
-      "community": 42,
-      "community_name": "tapkee-dr.cc",
-      "file_type": "code",
-      "norm_label": "string",
-      "source_file": "",
-      "source_location": ""
-    },
-    {
-      "id": "homlcpp_chapter006_tapkee_util_h_homlcpp_chapter006_tapkee_util",
-      "label": "util.h",
-      "_origin": "ast",
-      "community": 42,
-      "community_name": "tapkee-dr.cc",
-      "file_type": "code",
-      "norm_label": "util.h",
-      "source_file": "homlcpp/chapter006/tapkee/util.h",
-      "source_location": "L1"
-    },
-    {
-      "id": "indextype",
-      "label": "IndexType",
-      "_origin": "ast",
-      "community": 42,
-      "community_name": "tapkee-dr.cc",
-      "file_type": "code",
-      "norm_label": "indextype",
-      "source_file": "",
-      "source_location": ""
-    },
-    {
-      "id": "parametersset",
-      "label": "ParametersSet",
-      "_origin": "ast",
-      "community": 42,
-      "community_name": "tapkee-dr.cc",
-      "file_type": "code",
-      "norm_label": "parametersset",
-      "source_file": "",
-      "source_location": ""
-    },
-    {
-      "id": "scalartype",
-      "label": "ScalarType",
-      "_origin": "ast",
-      "community": 42,
-      "community_name": "tapkee-dr.cc",
-      "file_type": "code",
-      "norm_label": "scalartype",
+      "norm_label": "vector",
       "source_file": "",
       "source_location": ""
     },
@@ -8832,6 +8810,17 @@
       "source_location": "L1"
     },
     {
+      "id": "homlcpp_chapter014_android_detection_app_src_main_cpp_log",
+      "label": "log.h",
+      "_origin": "ast",
+      "community": 45,
+      "community_name": "native-lib.cpp",
+      "file_type": "code",
+      "norm_label": "log.h",
+      "source_file": "homlcpp/chapter014/android_detection/app/src/main/cpp/log.h",
+      "source_location": "L1"
+    },
+    {
       "id": "homlcpp_chapter014_android_detection_app_src_main_cpp_native_lib",
       "label": "native-lib.cpp",
       "_origin": "ast",
@@ -8854,17 +8843,6 @@
       "source_location": ""
     },
     {
-      "id": "data_transforms_collation_imdbexample",
-      "label": "data::transforms::Collation<ImdbExample>",
-      "_origin": "ast",
-      "community": 46,
-      "community_name": "ModelImpl",
-      "file_type": "code",
-      "norm_label": "data::transforms::collation<imdbexample>",
-      "source_file": "",
-      "source_location": ""
-    },
-    {
       "id": "dropout",
       "label": "Dropout",
       "_origin": "ast",
@@ -8876,37 +8854,81 @@
       "source_location": ""
     },
     {
-      "id": "homlcpp_chapter011_pytorch_main",
-      "label": "chapter011/pytorch/main.cpp",
+      "id": "homlcpp_chapter010_pytorch_lenet5_cpp_homlcpp_chapter010_pytorch_lenet5",
+      "label": "lenet5.cpp",
       "_origin": "ast",
       "community": 46,
       "community_name": "ModelImpl",
       "file_type": "code",
-      "norm_label": "chapter011/pytorch/main.cpp",
-      "source_file": "homlcpp/chapter011/pytorch/main.cpp",
+      "norm_label": "lenet5.cpp",
+      "source_file": "homlcpp/chapter010/pytorch/lenet5.cpp",
       "source_location": "L1"
     },
     {
-      "id": "homlcpp_chapter011_pytorch_main_cpp_imdbexample",
-      "label": "ImdbExample",
+      "id": "homlcpp_chapter010_pytorch_lenet5_cpp_tensor",
+      "label": "Tensor",
       "_origin": "ast",
       "community": 46,
       "community_name": "ModelImpl",
       "file_type": "code",
-      "norm_label": "imdbexample",
+      "norm_label": "tensor",
       "source_file": "",
       "source_location": ""
     },
     {
-      "id": "homlcpp_chapter011_pytorch_main_cpp_vector",
-      "label": "vector",
+      "id": "homlcpp_chapter010_pytorch_lenet5_h_homlcpp_chapter010_pytorch_lenet5",
+      "label": "lenet5.h",
       "_origin": "ast",
       "community": 46,
       "community_name": "ModelImpl",
       "file_type": "code",
-      "norm_label": "vector",
+      "norm_label": "lenet5.h",
+      "source_file": "homlcpp/chapter010/pytorch/lenet5.h",
+      "source_location": "L1"
+    },
+    {
+      "id": "homlcpp_chapter010_pytorch_lenet5_h_nn_module",
+      "label": "nn::Module",
+      "_origin": "ast",
+      "community": 46,
+      "community_name": "ModelImpl",
+      "file_type": "code",
+      "norm_label": "nn::module",
       "source_file": "",
       "source_location": ""
+    },
+    {
+      "id": "homlcpp_chapter010_pytorch_lenet5_lenet5impl_conv",
+      "label": "conv_",
+      "_origin": "ast",
+      "community": 46,
+      "community_name": "ModelImpl",
+      "file_type": "code",
+      "norm_label": "conv_",
+      "source_file": "homlcpp/chapter010/pytorch/lenet5.h",
+      "source_location": "L13"
+    },
+    {
+      "id": "homlcpp_chapter010_pytorch_lenet5_lenet5impl_full",
+      "label": "full_",
+      "_origin": "ast",
+      "community": 46,
+      "community_name": "ModelImpl",
+      "file_type": "code",
+      "norm_label": "full_",
+      "source_file": "homlcpp/chapter010/pytorch/lenet5.h",
+      "source_location": "L14"
+    },
+    {
+      "id": "homlcpp_chapter011_pytorch_export",
+      "label": "export.py",
+      "_origin": "ast",
+      "community": 46,
+      "community_name": "ModelImpl",
+      "file_type": "code",
+      "norm_label": "export.py",
+      "source_file": "homlcpp/chapter011/pytorch/export.py",
+      "source_location": "L1"
     },
     {
       "id": "homlcpp_chapter011_pytorch_model_cpp_homlcpp_chapter011_pytorch_model",
@@ -9030,6 +9052,17 @@
       "source_location": "L17"
     },
     {
+      "id": "sequential",
+      "label": "Sequential",
+      "_origin": "ast",
+      "community": 46,
+      "community_name": "ModelImpl",
+      "file_type": "code",
+      "norm_label": "sequential",
+      "source_file": "",
+      "source_location": ""
+    },
+    {
       "id": "homlcpp_chapter006_dlib_dlib_dr",
       "label": "dlib-dr.cc",
       "_origin": "ast",
@@ -9083,6 +9116,17 @@
       "norm_label": "vector",
       "source_file": "",
       "source_location": ""
+    },
+    {
+      "id": "homlcpp_chapter009_mlpack_stacking_kfolddataset_labels",
+      "label": "labels",
+      "_origin": "ast",
+      "community": 47,
+      "community_name": "dlib-dr.cc",
+      "file_type": "code",
+      "norm_label": "labels",
+      "source_file": "homlcpp/chapter009/mlpack/stacking.cc",
+      "source_location": "L44"
     },
     {
       "id": "homlcpp_chapter005_mlpack_mlpack_anomaly_cc_dataset",
@@ -9349,81 +9393,94 @@
       "source_location": ""
     },
     {
-      "id": "data_dataset_imdbdataset_imdbexample",
-      "label": "data::Dataset<ImdbDataset, ImdbExample>",
+      "id": "env_scripts_download_sentiment_data",
+      "label": "download_sentiment_data.sh",
       "_origin": "ast",
       "community": 51,
-      "community_name": "ImdbDataset",
+      "community_name": "download_sentiment_data.sh",
       "file_type": "code",
-      "norm_label": "data::dataset<imdbdataset, imdbexample>",
-      "source_file": "",
-      "source_location": ""
-    },
-    {
-      "id": "homlcpp_chapter011_pytorch_imdbdataset_cc_homlcpp_chapter011_pytorch_imdbdataset",
-      "label": "imdbdataset.cc",
-      "_origin": "ast",
-      "community": 51,
-      "community_name": "ImdbDataset",
-      "file_type": "code",
-      "norm_label": "imdbdataset.cc",
-      "source_file": "homlcpp/chapter011/pytorch/imdbdataset.cc",
+      "metadata": {
+        "language": "bash",
+        "kind": "file"
+      },
+      "norm_label": "download_sentiment_data.sh",
+      "source_file": "env_scripts/download_sentiment_data.sh",
       "source_location": "L1"
     },
     {
-      "id": "homlcpp_chapter011_pytorch_imdbdataset_cc_imdbexample",
-      "label": "ImdbExample",
+      "id": "env_scripts_download_sentiment_data_download",
+      "label": "download()",
       "_origin": "ast",
       "community": 51,
-      "community_name": "ImdbDataset",
+      "community_name": "download_sentiment_data.sh",
       "file_type": "code",
-      "norm_label": "imdbexample",
-      "source_file": "",
-      "source_location": ""
+      "metadata": {
+        "language": "bash",
+        "kind": "bash_function"
+      },
+      "norm_label": "download()",
+      "source_file": "env_scripts/download_sentiment_data.sh",
+      "source_location": "L46"
     },
     {
-      "id": "homlcpp_chapter011_pytorch_imdbdataset_cc_optional",
-      "label": "optional",
+      "id": "env_scripts_download_sentiment_data_download_archive",
+      "label": "download_archive()",
       "_origin": "ast",
       "community": 51,
-      "community_name": "ImdbDataset",
+      "community_name": "download_sentiment_data.sh",
       "file_type": "code",
-      "norm_label": "optional",
-      "source_file": "",
-      "source_location": ""
+      "metadata": {
+        "language": "bash",
+        "kind": "bash_function"
+      },
+      "norm_label": "download_archive()",
+      "source_file": "env_scripts/download_sentiment_data.sh",
+      "source_location": "L55"
     },
     {
-      "id": "homlcpp_chapter011_pytorch_imdbdataset_h_shared_ptr",
-      "label": "shared_ptr",
+      "id": "env_scripts_download_sentiment_data_download_huggingface",
+      "label": "download_huggingface()",
       "_origin": "ast",
       "community": 51,
-      "community_name": "ImdbDataset",
+      "community_name": "download_sentiment_data.sh",
       "file_type": "code",
-      "norm_label": "shared_ptr",
-      "source_file": "",
-      "source_location": ""
+      "metadata": {
+        "language": "bash",
+        "kind": "bash_function"
+      },
+      "norm_label": "download_huggingface()",
+      "source_file": "env_scripts/download_sentiment_data.sh",
+      "source_location": "L66"
     },
     {
-      "id": "homlcpp_chapter011_pytorch_imdbdataset_imdbdataset_reader",
-      "label": "reader_",
+      "id": "env_scripts_download_sentiment_data_sh__entry",
+      "label": "download_sentiment_data.sh script",
       "_origin": "ast",
       "community": 51,
-      "community_name": "ImdbDataset",
+      "community_name": "download_sentiment_data.sh",
       "file_type": "code",
-      "norm_label": "reader_",
-      "source_file": "homlcpp/chapter011/pytorch/imdbdataset.h",
-      "source_location": "L24"
+      "metadata": {
+        "language": "bash",
+        "kind": "bash_entrypoint"
+      },
+      "norm_label": "download_sentiment_data.sh script",
+      "source_file": "env_scripts/download_sentiment_data.sh",
+      "source_location": "L1"
     },
     {
-      "id": "homlcpp_chapter011_pytorch_imdbdataset_imdbdataset_tokenizer",
-      "label": "tokenizer_",
+      "id": "env_scripts_download_sentiment_data_usage",
+      "label": "usage()",
       "_origin": "ast",
       "community": 51,
-      "community_name": "ImdbDataset",
+      "community_name": "download_sentiment_data.sh",
       "file_type": "code",
-      "norm_label": "tokenizer_",
-      "source_file": "homlcpp/chapter011/pytorch/imdbdataset.h",
-      "source_location": "L25"
+      "metadata": {
+        "language": "bash",
+        "kind": "bash_function"
+      },
+      "norm_label": "usage()",
+      "source_file": "env_scripts/download_sentiment_data.sh",
+      "source_location": "L19"
     },
     {
       "id": "homlcpp_chapter002_json_review_h_string",
@@ -9525,147 +9582,26 @@
       "source_location": "L15"
     },
     {
-      "id": "homlcpp_chapter011_pytorch_imdbdataset_cc_shared_ptr",
-      "label": "shared_ptr",
+      "id": "number_float_t",
+      "label": "number_float_t",
       "_origin": "ast",
       "community": 53,
-      "community_name": "Tokenizer",
+      "community_name": ".number_float",
       "file_type": "code",
-      "norm_label": "shared_ptr",
+      "norm_label": "number_float_t",
       "source_file": "",
       "source_location": ""
     },
     {
-      "id": "homlcpp_chapter011_pytorch_imdbdataset_cc_string",
-      "label": "string",
+      "id": "string_t",
+      "label": "string_t",
       "_origin": "ast",
       "community": 53,
-      "community_name": "Tokenizer",
+      "community_name": ".number_float",
       "file_type": "code",
-      "norm_label": "string",
+      "norm_label": "string_t",
       "source_file": "",
       "source_location": ""
-    },
-    {
-      "id": "homlcpp_chapter011_pytorch_tokenizer_h_string",
-      "label": "string",
-      "_origin": "ast",
-      "community": 53,
-      "community_name": "Tokenizer",
-      "file_type": "code",
-      "norm_label": "string",
-      "source_file": "",
-      "source_location": ""
-    },
-    {
-      "id": "homlcpp_chapter011_pytorch_tokenizer_tokenizer_max_len",
-      "label": "max_len_",
-      "_origin": "ast",
-      "community": 53,
-      "community_name": "Tokenizer",
-      "file_type": "code",
-      "norm_label": "max_len_",
-      "source_file": "homlcpp/chapter011/pytorch/tokenizer.h",
-      "source_location": "L17"
-    },
-    {
-      "id": "homlcpp_chapter011_pytorch_tokenizer_tokenizer_vocab",
-      "label": "vocab_",
-      "_origin": "ast",
-      "community": 53,
-      "community_name": "Tokenizer",
-      "file_type": "code",
-      "norm_label": "vocab_",
-      "source_file": "homlcpp/chapter011/pytorch/tokenizer.h",
-      "source_location": "L16"
-    },
-    {
-      "id": "homlcpp_chapter010_pytorch_lenet5_cpp_homlcpp_chapter010_pytorch_lenet5",
-      "label": "lenet5.cpp",
-      "_origin": "ast",
-      "community": 54,
-      "community_name": "LeNet5Impl",
-      "file_type": "code",
-      "norm_label": "lenet5.cpp",
-      "source_file": "homlcpp/chapter010/pytorch/lenet5.cpp",
-      "source_location": "L1"
-    },
-    {
-      "id": "homlcpp_chapter010_pytorch_lenet5_cpp_tensor",
-      "label": "Tensor",
-      "_origin": "ast",
-      "community": 54,
-      "community_name": "LeNet5Impl",
-      "file_type": "code",
-      "norm_label": "tensor",
-      "source_file": "",
-      "source_location": ""
-    },
-    {
-      "id": "homlcpp_chapter010_pytorch_lenet5_h_homlcpp_chapter010_pytorch_lenet5",
-      "label": "lenet5.h",
-      "_origin": "ast",
-      "community": 54,
-      "community_name": "LeNet5Impl",
-      "file_type": "code",
-      "norm_label": "lenet5.h",
-      "source_file": "homlcpp/chapter010/pytorch/lenet5.h",
-      "source_location": "L1"
-    },
-    {
-      "id": "homlcpp_chapter010_pytorch_lenet5_h_nn_module",
-      "label": "nn::Module",
-      "_origin": "ast",
-      "community": 54,
-      "community_name": "LeNet5Impl",
-      "file_type": "code",
-      "norm_label": "nn::module",
-      "source_file": "",
-      "source_location": ""
-    },
-    {
-      "id": "homlcpp_chapter010_pytorch_lenet5_lenet5impl_conv",
-      "label": "conv_",
-      "_origin": "ast",
-      "community": 54,
-      "community_name": "LeNet5Impl",
-      "file_type": "code",
-      "norm_label": "conv_",
-      "source_file": "homlcpp/chapter010/pytorch/lenet5.h",
-      "source_location": "L13"
-    },
-    {
-      "id": "homlcpp_chapter010_pytorch_lenet5_lenet5impl_full",
-      "label": "full_",
-      "_origin": "ast",
-      "community": 54,
-      "community_name": "LeNet5Impl",
-      "file_type": "code",
-      "norm_label": "full_",
-      "source_file": "homlcpp/chapter010/pytorch/lenet5.h",
-      "source_location": "L14"
-    },
-    {
-      "id": "sequential",
-      "label": "Sequential",
-      "_origin": "ast",
-      "community": 54,
-      "community_name": "LeNet5Impl",
-      "file_type": "code",
-      "norm_label": "sequential",
-      "source_file": "",
-      "source_location": ""
-    },
-    {
-      "id": "homlcpp_chapter011_pytorch_export",
-      "label": "export.py",
-      "_origin": "ast",
-      "community": 55,
-      "community_name": "export.py",
-      "file_type": "code",
-      "norm_label": "export.py",
-      "source_file": "homlcpp/chapter011/pytorch/export.py",
-      "source_location": "L1"
     },
     {
       "id": "homlcpp_chapter002_hdf5_hdf5",
@@ -10029,105 +9965,6 @@
       "source_location": ""
     },
     {
-      "id": "homlcpp_chapter008_eigen_data_loader_h_string",
-      "label": "string",
-      "_origin": "ast",
-      "community": 67,
-      "community_name": "string",
-      "file_type": "code",
-      "norm_label": "string",
-      "source_file": "",
-      "source_location": ""
-    },
-    {
-      "id": "homlcpp_chapter010_pytorch_mnistdataset_h_homlcpp_chapter010_pytorch_mnistdataset",
-      "label": "mnistdataset.h",
-      "_origin": "ast",
-      "community": 67,
-      "community_name": "string",
-      "file_type": "code",
-      "norm_label": "mnistdataset.h",
-      "source_file": "homlcpp/chapter010/pytorch/mnistdataset.h",
-      "source_location": "L1"
-    },
-    {
-      "id": "homlcpp_chapter011_pytorch_imdbdataset_h_homlcpp_chapter011_pytorch_imdbdataset",
-      "label": "imdbdataset.h",
-      "_origin": "ast",
-      "community": 67,
-      "community_name": "string",
-      "file_type": "code",
-      "norm_label": "imdbdataset.h",
-      "source_file": "homlcpp/chapter011/pytorch/imdbdataset.h",
-      "source_location": "L1"
-    },
-    {
-      "id": "homlcpp_chapter011_pytorch_imdbreader_h_homlcpp_chapter011_pytorch_imdbreader",
-      "label": "imdbreader.h",
-      "_origin": "ast",
-      "community": 67,
-      "community_name": "string",
-      "file_type": "code",
-      "norm_label": "imdbreader.h",
-      "source_file": "homlcpp/chapter011/pytorch/imdbreader.h",
-      "source_location": "L1"
-    },
-    {
-      "id": "homlcpp_chapter011_pytorch_tokenizer_h_homlcpp_chapter011_pytorch_tokenizer",
-      "label": "tokenizer.h",
-      "_origin": "ast",
-      "community": 67,
-      "community_name": "string",
-      "file_type": "code",
-      "norm_label": "tokenizer.h",
-      "source_file": "homlcpp/chapter011/pytorch/tokenizer.h",
-      "source_location": "L1"
-    },
-    {
-      "id": "homlcpp_chapter011_pytorch_tokenizer_cc_homlcpp_chapter011_pytorch_tokenizer",
-      "label": "tokenizer.cc",
-      "_origin": "ast",
-      "community": 68,
-      "community_name": ".tokenize",
-      "file_type": "code",
-      "norm_label": "tokenizer.cc",
-      "source_file": "homlcpp/chapter011/pytorch/tokenizer.cc",
-      "source_location": "L1"
-    },
-    {
-      "id": "homlcpp_chapter011_pytorch_tokenizer_cc_pair",
-      "label": "pair",
-      "_origin": "ast",
-      "community": 68,
-      "community_name": ".tokenize",
-      "file_type": "code",
-      "norm_label": "pair",
-      "source_file": "",
-      "source_location": ""
-    },
-    {
-      "id": "homlcpp_chapter011_pytorch_tokenizer_cc_string",
-      "label": "string",
-      "_origin": "ast",
-      "community": 68,
-      "community_name": ".tokenize",
-      "file_type": "code",
-      "norm_label": "string",
-      "source_file": "",
-      "source_location": ""
-    },
-    {
-      "id": "homlcpp_chapter011_pytorch_tokenizer_cc_tensor",
-      "label": "Tensor",
-      "_origin": "ast",
-      "community": 68,
-      "community_name": ".tokenize",
-      "file_type": "code",
-      "norm_label": "tensor",
-      "source_file": "",
-      "source_location": ""
-    },
-    {
       "id": "homlcpp_chapter005_mlpack_mlpack_anomaly_cc_path",
       "label": "path",
       "_origin": "ast",
@@ -10292,6 +10129,28 @@
       "source_location": ""
     },
     {
+      "id": "data_dataset_imdbdataset_imdbexample",
+      "label": "data::Dataset<ImdbDataset, ImdbExample>",
+      "_origin": "ast",
+      "community": 8,
+      "community_name": "dlib-cluster.cc",
+      "file_type": "code",
+      "norm_label": "data::dataset<imdbdataset, imdbexample>",
+      "source_file": "",
+      "source_location": ""
+    },
+    {
+      "id": "data_transforms_collation_imdbexample",
+      "label": "data::transforms::Collation<ImdbExample>",
+      "_origin": "ast",
+      "community": 8,
+      "community_name": "dlib-cluster.cc",
+      "file_type": "code",
+      "norm_label": "data::transforms::collation<imdbexample>",
+      "source_file": "",
+      "source_location": ""
+    },
+    {
       "id": "homlcpp_chapter004_dlib2_dlib_cluster",
       "label": "dlib-cluster.cc",
       "_origin": "ast",
@@ -10325,6 +10184,226 @@
       "source_location": ""
     },
     {
+      "id": "homlcpp_chapter011_pytorch_imdbdataset_cc_homlcpp_chapter011_pytorch_imdbdataset",
+      "label": "imdbdataset.cc",
+      "_origin": "ast",
+      "community": 8,
+      "community_name": "dlib-cluster.cc",
+      "file_type": "code",
+      "norm_label": "imdbdataset.cc",
+      "source_file": "homlcpp/chapter011/pytorch/imdbdataset.cc",
+      "source_location": "L1"
+    },
+    {
+      "id": "homlcpp_chapter011_pytorch_imdbdataset_cc_imdbexample",
+      "label": "ImdbExample",
+      "_origin": "ast",
+      "community": 8,
+      "community_name": "dlib-cluster.cc",
+      "file_type": "code",
+      "norm_label": "imdbexample",
+      "source_file": "",
+      "source_location": ""
+    },
+    {
+      "id": "homlcpp_chapter011_pytorch_imdbdataset_cc_optional",
+      "label": "optional",
+      "_origin": "ast",
+      "community": 8,
+      "community_name": "dlib-cluster.cc",
+      "file_type": "code",
+      "norm_label": "optional",
+      "source_file": "",
+      "source_location": ""
+    },
+    {
+      "id": "homlcpp_chapter011_pytorch_imdbdataset_cc_shared_ptr",
+      "label": "shared_ptr",
+      "_origin": "ast",
+      "community": 8,
+      "community_name": "dlib-cluster.cc",
+      "file_type": "code",
+      "norm_label": "shared_ptr",
+      "source_file": "",
+      "source_location": ""
+    },
+    {
+      "id": "homlcpp_chapter011_pytorch_imdbdataset_cc_string",
+      "label": "string",
+      "_origin": "ast",
+      "community": 8,
+      "community_name": "dlib-cluster.cc",
+      "file_type": "code",
+      "norm_label": "string",
+      "source_file": "",
+      "source_location": ""
+    },
+    {
+      "id": "homlcpp_chapter011_pytorch_imdbdataset_h_homlcpp_chapter011_pytorch_imdbdataset",
+      "label": "imdbdataset.h",
+      "_origin": "ast",
+      "community": 8,
+      "community_name": "dlib-cluster.cc",
+      "file_type": "code",
+      "norm_label": "imdbdataset.h",
+      "source_file": "homlcpp/chapter011/pytorch/imdbdataset.h",
+      "source_location": "L1"
+    },
+    {
+      "id": "homlcpp_chapter011_pytorch_imdbdataset_h_shared_ptr",
+      "label": "shared_ptr",
+      "_origin": "ast",
+      "community": 8,
+      "community_name": "dlib-cluster.cc",
+      "file_type": "code",
+      "norm_label": "shared_ptr",
+      "source_file": "",
+      "source_location": ""
+    },
+    {
+      "id": "homlcpp_chapter011_pytorch_imdbdataset_imdbdataset_reader",
+      "label": "reader_",
+      "_origin": "ast",
+      "community": 8,
+      "community_name": "dlib-cluster.cc",
+      "file_type": "code",
+      "norm_label": "reader_",
+      "source_file": "homlcpp/chapter011/pytorch/imdbdataset.h",
+      "source_location": "L24"
+    },
+    {
+      "id": "homlcpp_chapter011_pytorch_imdbdataset_imdbdataset_tokenizer",
+      "label": "tokenizer_",
+      "_origin": "ast",
+      "community": 8,
+      "community_name": "dlib-cluster.cc",
+      "file_type": "code",
+      "norm_label": "tokenizer_",
+      "source_file": "homlcpp/chapter011/pytorch/imdbdataset.h",
+      "source_location": "L25"
+    },
+    {
+      "id": "homlcpp_chapter011_pytorch_main",
+      "label": "chapter011/pytorch/main.cpp",
+      "_origin": "ast",
+      "community": 8,
+      "community_name": "dlib-cluster.cc",
+      "file_type": "code",
+      "norm_label": "chapter011/pytorch/main.cpp",
+      "source_file": "homlcpp/chapter011/pytorch/main.cpp",
+      "source_location": "L1"
+    },
+    {
+      "id": "homlcpp_chapter011_pytorch_main_cpp_imdbexample",
+      "label": "ImdbExample",
+      "_origin": "ast",
+      "community": 8,
+      "community_name": "dlib-cluster.cc",
+      "file_type": "code",
+      "norm_label": "imdbexample",
+      "source_file": "",
+      "source_location": ""
+    },
+    {
+      "id": "homlcpp_chapter011_pytorch_main_cpp_vector",
+      "label": "vector",
+      "_origin": "ast",
+      "community": 8,
+      "community_name": "dlib-cluster.cc",
+      "file_type": "code",
+      "norm_label": "vector",
+      "source_file": "",
+      "source_location": ""
+    },
+    {
+      "id": "homlcpp_chapter011_pytorch_tokenizer_cc_homlcpp_chapter011_pytorch_tokenizer",
+      "label": "tokenizer.cc",
+      "_origin": "ast",
+      "community": 8,
+      "community_name": "dlib-cluster.cc",
+      "file_type": "code",
+      "norm_label": "tokenizer.cc",
+      "source_file": "homlcpp/chapter011/pytorch/tokenizer.cc",
+      "source_location": "L1"
+    },
+    {
+      "id": "homlcpp_chapter011_pytorch_tokenizer_cc_pair",
+      "label": "pair",
+      "_origin": "ast",
+      "community": 8,
+      "community_name": "dlib-cluster.cc",
+      "file_type": "code",
+      "norm_label": "pair",
+      "source_file": "",
+      "source_location": ""
+    },
+    {
+      "id": "homlcpp_chapter011_pytorch_tokenizer_cc_string",
+      "label": "string",
+      "_origin": "ast",
+      "community": 8,
+      "community_name": "dlib-cluster.cc",
+      "file_type": "code",
+      "norm_label": "string",
+      "source_file": "",
+      "source_location": ""
+    },
+    {
+      "id": "homlcpp_chapter011_pytorch_tokenizer_cc_tensor",
+      "label": "Tensor",
+      "_origin": "ast",
+      "community": 8,
+      "community_name": "dlib-cluster.cc",
+      "file_type": "code",
+      "norm_label": "tensor",
+      "source_file": "",
+      "source_location": ""
+    },
+    {
+      "id": "homlcpp_chapter011_pytorch_tokenizer_h_homlcpp_chapter011_pytorch_tokenizer",
+      "label": "tokenizer.h",
+      "_origin": "ast",
+      "community": 8,
+      "community_name": "dlib-cluster.cc",
+      "file_type": "code",
+      "norm_label": "tokenizer.h",
+      "source_file": "homlcpp/chapter011/pytorch/tokenizer.h",
+      "source_location": "L1"
+    },
+    {
+      "id": "homlcpp_chapter011_pytorch_tokenizer_h_string",
+      "label": "string",
+      "_origin": "ast",
+      "community": 8,
+      "community_name": "dlib-cluster.cc",
+      "file_type": "code",
+      "norm_label": "string",
+      "source_file": "",
+      "source_location": ""
+    },
+    {
+      "id": "homlcpp_chapter011_pytorch_tokenizer_tokenizer_max_len",
+      "label": "max_len_",
+      "_origin": "ast",
+      "community": 8,
+      "community_name": "dlib-cluster.cc",
+      "file_type": "code",
+      "norm_label": "max_len_",
+      "source_file": "homlcpp/chapter011/pytorch/tokenizer.h",
+      "source_location": "L17"
+    },
+    {
+      "id": "homlcpp_chapter011_pytorch_tokenizer_tokenizer_vocab",
+      "label": "vocab_",
+      "_origin": "ast",
+      "community": 8,
+      "community_name": "dlib-cluster.cc",
+      "file_type": "code",
+      "norm_label": "vocab_",
+      "source_file": "homlcpp/chapter011/pytorch/tokenizer.h",
+      "source_location": "L16"
+    },
+    {
       "id": "i",
       "label": "I",
       "_origin": "ast",
@@ -10332,6 +10411,17 @@
       "community_name": "dlib-cluster.cc",
       "file_type": "code",
       "norm_label": "i",
+      "source_file": "",
+      "source_location": ""
+    },
+    {
+      "id": "unordered_map",
+      "label": "unordered_map",
+      "_origin": "ast",
+      "community": 8,
+      "community_name": "dlib-cluster.cc",
+      "file_type": "code",
+      "norm_label": "unordered_map",
       "source_file": "",
       "source_location": ""
     },
@@ -10540,17 +10630,6 @@
       "type": "external"
     },
     {
-      "id": "opencv",
-      "label": "opencv",
-      "community": 32,
-      "community_name": "YOLO",
-      "external": true,
-      "file_type": "concept",
-      "norm_label": "opencv",
-      "source_file": "",
-      "type": "external"
-    },
-    {
       "id": "amf",
       "label": "amf",
       "community": 35,
@@ -10650,13 +10729,13 @@
       "type": "external"
     },
     {
-      "id": "onnxruntime_cxx_api",
-      "label": "onnxruntime_cxx_api",
+      "id": "plot",
+      "label": "plot",
       "community": 35,
       "community_name": "eigen_recommender.cc",
       "external": true,
       "file_type": "concept",
-      "norm_label": "onnxruntime_cxx_api",
+      "norm_label": "plot",
       "source_file": "",
       "type": "external"
     },
@@ -10672,17 +10751,6 @@
       "type": "external"
     },
     {
-      "id": "sstream",
-      "label": "sstream",
-      "community": 35,
-      "community_name": "eigen_recommender.cc",
-      "external": true,
-      "file_type": "concept",
-      "norm_label": "sstream",
-      "source_file": "",
-      "type": "external"
-    },
-    {
       "id": "svm_threaded",
       "label": "svm_threaded",
       "community": 35,
@@ -10694,10 +10762,21 @@
       "type": "external"
     },
     {
+      "id": "tapkee",
+      "label": "tapkee",
+      "community": 35,
+      "community_name": "eigen_recommender.cc",
+      "external": true,
+      "file_type": "concept",
+      "norm_label": "tapkee",
+      "source_file": "",
+      "type": "external"
+    },
+    {
       "id": "algorithm",
       "label": "algorithm",
       "community": 36,
-      "community_name": "dlib-anomaly.cc",
+      "community_name": "isolation-forest.h",
       "external": true,
       "file_type": "concept",
       "norm_label": "algorithm",
@@ -10708,7 +10787,7 @@
       "id": "iterator",
       "label": "iterator",
       "community": 36,
-      "community_name": "dlib-anomaly.cc",
+      "community_name": "isolation-forest.h",
       "external": true,
       "file_type": "concept",
       "norm_label": "iterator",
@@ -10719,7 +10798,7 @@
       "id": "memory",
       "label": "memory",
       "community": 36,
-      "community_name": "dlib-anomaly.cc",
+      "community_name": "isolation-forest.h",
       "external": true,
       "file_type": "concept",
       "norm_label": "memory",
@@ -10730,10 +10809,21 @@
       "id": "unordered_set",
       "label": "unordered_set",
       "community": 36,
-      "community_name": "dlib-anomaly.cc",
+      "community_name": "isolation-forest.h",
       "external": true,
       "file_type": "concept",
       "norm_label": "unordered_set",
+      "source_file": "",
+      "type": "external"
+    },
+    {
+      "id": "opencv",
+      "label": "opencv",
+      "community": 37,
+      "community_name": "MNISTDataset",
+      "external": true,
+      "file_type": "concept",
+      "norm_label": "opencv",
       "source_file": "",
       "type": "external"
     },
@@ -10815,6 +10905,28 @@
       "type": "external"
     },
     {
+      "id": "onnxruntime_cxx_api",
+      "label": "onnxruntime_cxx_api",
+      "community": 40,
+      "community_name": "onnxruntime/main.cc",
+      "external": true,
+      "file_type": "concept",
+      "norm_label": "onnxruntime_cxx_api",
+      "source_file": "",
+      "type": "external"
+    },
+    {
+      "id": "sstream",
+      "label": "sstream",
+      "community": 40,
+      "community_name": "onnxruntime/main.cc",
+      "external": true,
+      "file_type": "concept",
+      "norm_label": "sstream",
+      "source_file": "",
+      "type": "external"
+    },
+    {
       "id": "chrono",
       "label": "chrono",
       "community": 41,
@@ -10855,28 +10967,6 @@
       "external": true,
       "file_type": "concept",
       "norm_label": "iostream",
-      "source_file": "",
-      "type": "external"
-    },
-    {
-      "id": "plot",
-      "label": "plot",
-      "community": 42,
-      "community_name": "tapkee-dr.cc",
-      "external": true,
-      "file_type": "concept",
-      "norm_label": "plot",
-      "source_file": "",
-      "type": "external"
-    },
-    {
-      "id": "tapkee",
-      "label": "tapkee",
-      "community": 42,
-      "community_name": "tapkee-dr.cc",
-      "external": true,
-      "file_type": "concept",
-      "norm_label": "tapkee",
       "source_file": "",
       "type": "external"
     },
@@ -11101,6 +11191,17 @@
       "type": "external"
     },
     {
+      "id": "pathlib",
+      "label": "pathlib",
+      "community": 46,
+      "community_name": "ModelImpl",
+      "external": true,
+      "file_type": "concept",
+      "norm_label": "pathlib",
+      "source_file": "",
+      "type": "external"
+    },
+    {
       "id": "script",
       "label": "script",
       "community": 46,
@@ -11108,6 +11209,50 @@
       "external": true,
       "file_type": "concept",
       "norm_label": "script",
+      "source_file": "",
+      "type": "external"
+    },
+    {
+      "id": "torch",
+      "label": "torch",
+      "community": 46,
+      "community_name": "ModelImpl",
+      "external": true,
+      "file_type": "concept",
+      "norm_label": "torch",
+      "source_file": "",
+      "type": "external"
+    },
+    {
+      "id": "torch_nn",
+      "label": "torch_nn",
+      "community": 46,
+      "community_name": "ModelImpl",
+      "external": true,
+      "file_type": "concept",
+      "norm_label": "torch_nn",
+      "source_file": "",
+      "type": "external"
+    },
+    {
+      "id": "tqdm",
+      "label": "tqdm",
+      "community": 46,
+      "community_name": "ModelImpl",
+      "external": true,
+      "file_type": "concept",
+      "norm_label": "tqdm",
+      "source_file": "",
+      "type": "external"
+    },
+    {
+      "id": "transformers",
+      "label": "transformers",
+      "community": 46,
+      "community_name": "ModelImpl",
+      "external": true,
+      "file_type": "concept",
+      "norm_label": "transformers",
       "source_file": "",
       "type": "external"
     },
@@ -11279,66 +11424,11 @@
     {
       "id": "cassert",
       "label": "cassert",
-      "community": 51,
-      "community_name": "ImdbDataset",
+      "community": 8,
+      "community_name": "dlib-cluster.cc",
       "external": true,
       "file_type": "concept",
       "norm_label": "cassert",
-      "source_file": "",
-      "type": "external"
-    },
-    {
-      "id": "pathlib",
-      "label": "pathlib",
-      "community": 55,
-      "community_name": "export.py",
-      "external": true,
-      "file_type": "concept",
-      "norm_label": "pathlib",
-      "source_file": "",
-      "type": "external"
-    },
-    {
-      "id": "torch_nn",
-      "label": "torch_nn",
-      "community": 55,
-      "community_name": "export.py",
-      "external": true,
-      "file_type": "concept",
-      "norm_label": "torch_nn",
-      "source_file": "",
-      "type": "external"
-    },
-    {
-      "id": "tqdm",
-      "label": "tqdm",
-      "community": 55,
-      "community_name": "export.py",
-      "external": true,
-      "file_type": "concept",
-      "norm_label": "tqdm",
-      "source_file": "",
-      "type": "external"
-    },
-    {
-      "id": "transformers",
-      "label": "transformers",
-      "community": 55,
-      "community_name": "export.py",
-      "external": true,
-      "file_type": "concept",
-      "norm_label": "transformers",
-      "source_file": "",
-      "type": "external"
-    },
-    {
-      "id": "torch",
-      "label": "torch",
-      "community": 67,
-      "community_name": "string",
-      "external": true,
-      "file_type": "concept",
-      "norm_label": "torch",
       "source_file": "",
       "type": "external"
     },
@@ -11355,6 +11445,66 @@
     }
   ],
   "links": [
+    {
+      "source": "env_scripts_download_sentiment_data_download_archive",
+      "target": "env_scripts_download_sentiment_data_download",
+      "relation": "calls",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "call",
+      "source_file": "env_scripts/download_sentiment_data.sh",
+      "source_location": "L58",
+      "weight": 1.0
+    },
+    {
+      "source": "env_scripts_download_sentiment_data_download_huggingface",
+      "target": "env_scripts_download_sentiment_data_download",
+      "relation": "calls",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "call",
+      "source_file": "env_scripts/download_sentiment_data.sh",
+      "source_location": "L75",
+      "weight": 1.0
+    },
+    {
+      "source": "env_scripts_download_sentiment_data_sh__entry",
+      "target": "env_scripts_download_sentiment_data_download_archive",
+      "relation": "calls",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "call",
+      "source_file": "env_scripts/download_sentiment_data.sh",
+      "source_location": "L107",
+      "weight": 1.0
+    },
+    {
+      "source": "env_scripts_download_sentiment_data_sh__entry",
+      "target": "env_scripts_download_sentiment_data_download_huggingface",
+      "relation": "calls",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "call",
+      "source_file": "env_scripts/download_sentiment_data.sh",
+      "source_location": "L109",
+      "weight": 1.0
+    },
+    {
+      "source": "env_scripts_download_sentiment_data_sh__entry",
+      "target": "env_scripts_download_sentiment_data_usage",
+      "relation": "calls",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "call",
+      "source_file": "env_scripts/download_sentiment_data.sh",
+      "source_location": "L33",
+      "weight": 1.0
+    },
     {
       "source": "homlcpp_chapter001_blaze_linreg_blaze_main",
       "target": "homlcpp_chapter001_blaze_linreg_blaze_generatedata",
@@ -22033,6 +22183,17 @@
       "weight": 1.0
     },
     {
+      "source": "env_scripts_download_sentiment_data",
+      "target": "env_scripts_download_sentiment_data_sh__entry",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "env_scripts/download_sentiment_data.sh",
+      "source_location": "L1",
+      "weight": 1.0
+    },
+    {
       "source": "env_scripts_install_android",
       "target": "env_scripts_install_android_sh__entry",
       "relation": "contains",
@@ -24779,7 +24940,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "README.md",
-      "source_location": "L335",
+      "source_location": "L342",
       "weight": 1.0
     },
     {
@@ -24790,7 +24951,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "README.md",
-      "source_location": "L341",
+      "source_location": "L348",
       "weight": 1.0
     },
     {
@@ -24878,6 +25039,50 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "README.md",
+      "source_location": "L66",
+      "weight": 1.0
+    },
+    {
+      "source": "env_scripts_download_sentiment_data",
+      "target": "env_scripts_download_sentiment_data_usage",
+      "relation": "defines",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "env_scripts/download_sentiment_data.sh",
+      "source_location": "L19",
+      "weight": 1.0
+    },
+    {
+      "source": "env_scripts_download_sentiment_data",
+      "target": "env_scripts_download_sentiment_data_download",
+      "relation": "defines",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "env_scripts/download_sentiment_data.sh",
+      "source_location": "L46",
+      "weight": 1.0
+    },
+    {
+      "source": "env_scripts_download_sentiment_data",
+      "target": "env_scripts_download_sentiment_data_download_archive",
+      "relation": "defines",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "env_scripts/download_sentiment_data.sh",
+      "source_location": "L55",
+      "weight": 1.0
+    },
+    {
+      "source": "env_scripts_download_sentiment_data",
+      "target": "env_scripts_download_sentiment_data_download_huggingface",
+      "relation": "defines",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "env_scripts/download_sentiment_data.sh",
       "source_location": "L66",
       "weight": 1.0
     },
@@ -26536,5 +26741,5 @@
     }
   ],
   "hyperedges": [],
-  "built_at_commit": "ca22d265ffadd9738253c1ed8b8c86352dc741ec"
+  "built_at_commit": "7cf22ebc847bdade29b9444769f9a7aa40975f2c"
 }

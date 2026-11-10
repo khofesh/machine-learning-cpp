@@ -1,10 +1,14 @@
 #include "model.h"
 
-ModelImpl::ModelImpl(const std::string& bert_model_path)
+ModelImpl::ModelImpl(const std::string& bert_model_path, torch::Device device)
     : dropout_(register_module("dropout", torch::nn::Dropout(torch::nn::DropoutOptions().p(0.2)))),
       fc1_(register_module("fc1", torch::nn::Linear(torch::nn::LinearOptions(768, 512)))),
       fc2_(register_module("fc2", torch::nn::Linear(torch::nn::LinearOptions(512, 2)))) {
   bert_ = torch::jit::load(bert_model_path);
+  // bert_ is a jit module, so Module::to() of the enclosing module does not
+  // move its parameters; move it explicitly to keep it on the same device as
+  // the inputs.
+  bert_.to(device);
 }
 
 torch::Tensor ModelImpl::forward(at::Tensor input_ids, at::Tensor attention_masks) {

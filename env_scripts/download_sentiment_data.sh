@@ -124,10 +124,10 @@ if [ "${SUBSET}" -gt 0 ]; then
   rm -rf "${small}"
   mkdir -p "${small}/train/pos" "${small}/train/neg"
   for label in pos neg; do
-    find "${DEST}/aclImdb/train/${label}" -maxdepth 1 -type f | head -n "${SUBSET}" |
-      while IFS= read -r file; do
-        cp "${file}" "${small}/train/${label}/"
-      done
+    mapfile -t files < <(find "${DEST}/aclImdb/train/${label}" -maxdepth 1 -type f | head -n "${SUBSET}")
+    for file in "${files[@]}"; do
+      cp "${file}" "${small}/train/${label}/"
+    done
   done
   echo "Smoke-test subset: ${small}"
   dataset="${small}"
@@ -137,7 +137,7 @@ cat <<EOF
 
 Next: export a TorchScript BERT once (requires Python torch + transformers):
   python3 -m venv .venv && . .venv/bin/activate
-  pip install torch transformers tqdm
+  pip install "transformers<5" torch tqdm
   (cd homlcpp/chapter011/pytorch && python export.py)
 
 Then run:

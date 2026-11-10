@@ -6,7 +6,7 @@
 class ModelImpl : public torch::nn::Module {
  public:
   ModelImpl() = delete;
-  ModelImpl(const std::string& bert_model_path);
+  ModelImpl(const std::string& bert_model_path, torch::Device device);
 
   torch::Tensor forward(at::Tensor input_ids, at::Tensor attention_masks);
 

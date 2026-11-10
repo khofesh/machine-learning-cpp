@@ -319,7 +319,8 @@ Datasets used by the runs above but not committed:
 ```shell
 python3 -m venv .venv
 . .venv/bin/activate
-pip install torch transformers tqdm
+# transformers 5.x dropped the `torchscript=` flag used by export.py
+pip install "transformers<5" torch tqdm
 cd homlcpp/chapter011/pytorch
 python export.py
 ```

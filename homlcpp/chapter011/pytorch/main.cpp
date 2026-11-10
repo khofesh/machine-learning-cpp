@@ -28,14 +28,17 @@ int main(int argc, char** argv) {
     auto dataset_path = fs::path(argv[1]);
     if (!fs::exists(dataset_path)) {
       std::cerr << "Incorrect dataset path!\n";
+      return 1;
     }
     auto vocab_path = fs::path(argv[2]);
-    if (!fs::exists(vocab_path)) {
+    if (!fs::is_regular_file(vocab_path)) {
       std::cerr << "Incorrect vocabulary path!\n";
+      return 1;
     }
     auto model_path = fs::path(argv[3]);
-    if (!fs::exists(model_path)) {
+    if (!fs::is_regular_file(model_path)) {
       std::cerr << "Incorrect model path!\n";
+      return 1;
     }
 
     torch::DeviceType device = torch::cuda::is_available()
@@ -50,7 +53,7 @@ int main(int argc, char** argv) {
         train_dataset.map(Stack()),
         torch::data::DataLoaderOptions().batch_size(batch_size).workers(8));  // random sampler is default
 
-    Model model(model_path);
+    Model model(model_path, device);
     model->to(device);
 
     torch::optim::AdamW optimizer(model->parameters(),
